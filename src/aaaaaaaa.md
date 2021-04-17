@@ -2,6 +2,6 @@
 title: aaaaaaaa
 thumbnail: /uploads/cinnamon-roll.jpg
 ---
-this is the body text \
-\
+this is the body text
+
 ## woooo
