@@ -5,8 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "npm run build && concurrently --kill-others \"npx eleventy --serve\" \"npm run sass-watch\" \"npm run watch-js\"",
-    "copy": "mkdir -p public && mkdir -p public/admin && cp src/admin/* public/admin && cp src/index.html public",
-    "build": "npm run copy && npm run sass && npm run build-js",
+    "build": "mkdir -p public && mkdir -p public/admin && npm run sass && npm run build-js",
     "build-js": "browserify --debug -p esmify src/index.js > public/bundle.js ",
     "watch-js": "watchify --debug -p esmify src/index.js -o public/bundle.js ",
     "sass": "sass ./src/style/style.scss ./public/style.css",
@@ -27,6 +26,7 @@
     "@11ty/eleventy": "^0.12.1",
     "browserify": "^16.5.2",
     "budo": "^11.6.4",
+    "concurrently": "^6.0.2",
     "esmify": "^2.1.1",
     "sass": "^1.32.10"
   }
