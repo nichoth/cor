@@ -4,6 +4,7 @@
   "description": "cor",
   "main": "index.js",
   "scripts": {
+    "start": "npm run build && concurrently --kill-others \"npm run serve\" \"npm run sass-watch\"",
     "copy": "mkdir -p public && mkdir -p public/admin && cp src/admin/* public/admin && cp src/index.html public",
     "build": "npm run copy && npm run sass",
     "serve": "budo src/index.js:bundle.js --pushstate --dir=public --live --open -- -p esmify --debug",
