@@ -1,0 +1,26 @@
+{
+  "name": "cor",
+  "version": "0.0.0",
+  "description": "cor",
+  "main": "index.js",
+  "scripts": {
+    "copy": "mkdir -p public && mkdir -p public/admin && cp src/admin/* public/admin && cp src/index.html public",
+    "build": "npm run copy",
+    "sass": "sass ./src/style/style.scss ./public/style.css",
+    "sass-watch": "sass --watch src/style:public",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/nichoth/cor.git"
+  },
+  "author": "Nick Thomas <nichoth@gmail.com>",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/nichoth/cor/issues"
+  },
+  "homepage": "https://github.com/nichoth/cor#readme",
+  "devDependencies": {
+    "sass": "^1.32.10"
+  }
+}
