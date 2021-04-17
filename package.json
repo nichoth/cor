@@ -23,6 +23,7 @@
   },
   "homepage": "https://github.com/nichoth/cor#readme",
   "devDependencies": {
+    "@11ty/eleventy": "^0.12.1",
     "budo": "^11.6.4",
     "sass": "^1.32.10"
   }
