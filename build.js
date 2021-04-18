@@ -62,11 +62,7 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
 
             hs = hyperstream({
                 '#content': {
-                    _appendHtml: _homeContent + `<ul class="main-nav">
-                        ${names.map(name => `<li>
-                            <a href="/${name}">${name}</a>
-                        </li>`).join('')}
-                    </ul>`
+                    _appendHtml: _homeContent,
                 }
             })
             var outFileDir = __dirname + '/public'
