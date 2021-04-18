@@ -24,7 +24,6 @@
   },
   "homepage": "https://github.com/nichoth/cor#readme",
   "devDependencies": {
-    "@11ty/eleventy": "^0.12.1",
     "browserify": "^16.5.2",
     "budo": "^11.6.4",
     "concurrently": "^6.0.2",
