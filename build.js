@@ -58,11 +58,14 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
         fs.readFile(homePath, 'utf8', (err, homeContent) => {
             if (err) throw err
 
-            var _homeContent = marked(matter(homeContent).content)
+            var fm = matter(homeContent)
+            var _homeContent = marked(fm.content)
 
             hs = hyperstream({
                 '#content': {
-                    _appendHtml: _homeContent,
+                    _appendHtml: _homeContent + `<div>
+                        <img src=${fm.data.thumbnail}>
+                    </div>`,
                 }
             })
             var outFileDir = __dirname + '/public'
