@@ -30,6 +30,7 @@
     "esmify": "^2.1.1",
     "gray-matter": "^4.0.2",
     "hyperstream": "^1.2.2",
+    "marked": "^2.0.3",
     "mkdirp": "^1.0.4",
     "sass": "^1.32.10"
   }

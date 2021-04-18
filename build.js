@@ -3,6 +3,7 @@ var fs = require('fs')
 var path = require('path')
 var matter = require('gray-matter')
 var mkdirp = require('mkdirp')
+var marked = require('marked')
 
 var templatePath = __dirname + '/src/_index.html'
 buildThem(
@@ -19,7 +20,7 @@ function makeHs (file, baseName) {
             class: { append: baseName }
         },
         '#content': {
-            _appendHtml: matter(file).content
+            _appendHtml: marked( matter(file).content )
         }
     })
 }
@@ -65,7 +66,7 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
                 _appendHtml: `<ul class="main-nav">
                     ${names.map(name => `<li>
                         <a href="/${name}">${name}</a>
-                    </li>`)}
+                    </li>`).join('')}
                 </ul>`
             }
         })
