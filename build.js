@@ -35,16 +35,9 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
             var _path = path.join(inputDir, fileName)
             var baseName = path.basename(fileName, '.md')
 
-            // pipe src/_index.html into a hs into public/index.html
-            // hs should create navigation based on file names
-            // could create an array here, then afer the forEach loop write
-            // index file with the array
+            if (baseName === 'home') return
 
-
-            // names.push(baseName)
             names.push(baseName)
-            // then create the nav after
-
 
             fs.readFile(_path, 'utf8', (err, file) => {
                 if (err) throw err
@@ -61,19 +54,27 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
             })
         })
 
-        hs = hyperstream({
-            '#content': {
-                _appendHtml: `<ul class="main-nav">
-                    ${names.map(name => `<li>
-                        <a href="/${name}">${name}</a>
-                    </li>`).join('')}
-                </ul>`
-            }
+        var homePath = path.join(inputDir, 'home.md')
+        fs.readFile(homePath, 'utf8', (err, homeContent) => {
+            if (err) throw err
+
+            var _homeContent = marked(matter(homeContent).content)
+
+            hs = hyperstream({
+                '#content': {
+                    _appendHtml: _homeContent + `<ul class="main-nav">
+                        ${names.map(name => `<li>
+                            <a href="/${name}">${name}</a>
+                        </li>`).join('')}
+                    </ul>`
+                }
+            })
+            var outFileDir = __dirname + '/public'
+            var ws = fs.createWriteStream(outFileDir + '/index.html')
+            var rs = fs.createReadStream(templatePath)
+            rs.pipe(hs).pipe(ws)
         })
-        var outFileDir = __dirname + '/public'
-        var ws = fs.createWriteStream(outFileDir + '/index.html')
-        var rs = fs.createReadStream(templatePath)
-        rs.pipe(hs).pipe(ws)
+
     })
 
 }

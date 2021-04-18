@@ -2,3 +2,9 @@ body {
     background-color: pink;
 }
 
+.main-nav {
+    padding: 0;
+    display: flex;
+    justify-content: space-evenly;
+    list-style: none;
+}
