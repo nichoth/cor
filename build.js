@@ -4,10 +4,11 @@ var path = require('path')
 var matter = require('gray-matter')
 var mkdirp = require('mkdirp')
 
+var templatePath = __dirname + '/src/_index.html'
 buildThem(
     __dirname + '/src/_pages',
     __dirname + '/public',
-    __dirname + '/src/_index.html',
+    templatePath,
     makeHs
 )
 
@@ -28,9 +29,21 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
         if (err) throw err
         console.log('files:  ', files)
 
+        var names = []
         files.forEach(fileName => {
             var _path = path.join(inputDir, fileName)
             var baseName = path.basename(fileName, '.md')
+
+            // pipe src/_index.html into a hs into public/index.html
+            // hs should create navigation based on file names
+            // could create an array here, then afer the forEach loop write
+            // index file with the array
+
+
+            // names.push(baseName)
+            names.push(baseName)
+            // then create the nav after
+
 
             fs.readFile(_path, 'utf8', (err, file) => {
                 if (err) throw err
@@ -47,5 +60,19 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
             })
         })
 
+        hs = hyperstream({
+            '#content': {
+                _appendHtml: `<ul class="main-nav">
+                    ${names.map(name => `<li>
+                        <a href="/${name}">${name}</a>
+                    </li>`)}
+                </ul>`
+            }
+        })
+        var outFileDir = __dirname + '/public'
+        var ws = fs.createWriteStream(outFileDir + '/index.html')
+        var rs = fs.createReadStream(templatePath)
+        rs.pipe(hs).pipe(ws)
     })
+
 }
