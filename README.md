@@ -9,8 +9,9 @@ A website
 * https://dev.to/koabrook/creating-a-basic-blog-with-eleventy-and-netlify-cms-completely-from-scratch-197e
 
 
-## todo
+## it should have
 
-* get each page (md file) and write the page html
-    - could take an input folder and an output folder
-
+* About
+* Services
+* Support/resources
+* Contact
