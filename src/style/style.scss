@@ -1,18 +1,19 @@
 @font-face {
-    font-family: 'merriweather';
+    font-family: 'lora';
     // src: url('webfont.eot'); /* IE9 Compat Modes */
-    src: url('Merriweather-Regular.ttf')  format('truetype')
+    // src: url('Merriweather-Regular.ttf')  format('truetype')
+    src: url('Lora-VariableFont_wght.ttf')  format('truetype')
 }
 
 body {
-    background-color: pink;
+    // background-color: pink;
 
     .featured-image {
         text-align: center;
     }
     
     #content {
-        font-family: 'merriweather', serif;
+        font-family: 'lora', serif;
     }
 }
 
