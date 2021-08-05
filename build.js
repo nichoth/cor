@@ -19,8 +19,6 @@ function makeHs (file, baseName, navLinks) {
     var fm = matter(file)
     var content = marked(fm.content)
 
-    console.log('basename', baseName)
-
     return hyperstream({
         body: {
             class: { append: baseName }
@@ -31,7 +29,6 @@ function makeHs (file, baseName, navLinks) {
                     <img src=${fm.data.thumbnail}>
                 </div>` :
                 '')
-            // _appendHtml: marked( matter(file).content )
         },
         // build the nav links for each page
         // b/c there is a different 'active' link on each page

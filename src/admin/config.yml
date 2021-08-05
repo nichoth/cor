@@ -1,5 +1,5 @@
 backend:
-  name: git-gateway
+  name: github
   branch: main # Branch to update (optional; defaults to master)
 media_folder: "/src/uploads" # Media files will be stored in the repo 
 public_folder: "/uploads"
