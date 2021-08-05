@@ -16,8 +16,6 @@ buildThem(
 
 // a fn that returns a hs instance
 function makeHs (file, baseName, navLinks) {
-    // var linkNames = [ 'home', 'page two', 'page three']
-
     var fm = matter(file)
     var content = marked(fm.content)
 
@@ -61,7 +59,6 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
         if (err) throw err
         console.log('files:  ', files)
 
-        // var names = []
         files.forEach(fileName => {
             var _path = path.join(inputDir, fileName)
             var baseName = path.basename(fileName, '.md')
