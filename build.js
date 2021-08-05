@@ -66,7 +66,7 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
                 '#content': {
                     _appendHtml: _homeContent + `<div>
                         <img src=${fm.data.thumbnail}>
-                    </div>`,
+                    </div>`
                 }
             })
             var outFileDir = __dirname + '/public'
