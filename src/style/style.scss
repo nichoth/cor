@@ -11,4 +11,14 @@ body {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    
+    li {
+        a {
+            text-decoration: none;
+        }
+
+        &.active {
+            border-bottom: 3px solid #000;
+        }
+    }
 }

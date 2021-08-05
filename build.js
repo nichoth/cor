@@ -16,17 +16,40 @@ buildThem(
 
 // a fn that returns a hs instance
 function makeHs (file, baseName, navLinks) {
+    // var linkNames = [ 'home', 'page two', 'page three']
+
+    var fm = matter(file)
+    var content = marked(fm.content)
+
+    console.log('basename', baseName)
+
     return hyperstream({
         body: {
             class: { append: baseName }
         },
         '#content': {
-            _appendHtml: marked( matter(file).content )
+            _appendHtml: content + (fm.data.thumbnail ?
+                `<div>
+                    <img src=${fm.data.thumbnail}>
+                </div>` :
+                '')
+            // _appendHtml: marked( matter(file).content )
         },
+        // build the nav links for each page
+        // b/c there is a different 'active' link on each page
         '.main-nav': {
-            _appendHtml: navLinks.reduce((acc, link) => {
-                basename = path.basename(link, '.md')
-                acc += `<li><a href="/${basename}">${basename}</a></li>`
+            // need to deal with the order of the links
+            _appendHtml: navLinks.reduce((acc, [link, href]) => {
+                // var _basename = path.basename(filename, '.md')
+                var cl = path.basename(href) === baseName ?
+                    'active' :
+                    ''
+                if (baseName === 'home' && path.basename(href) === '') {
+                    cl = 'active'
+                }
+                acc += `<li class="${cl}">
+                    <a href="${href}">${link}</a>
+                </li>`
                 return acc
             }, '')
         }
@@ -43,43 +66,25 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
             var _path = path.join(inputDir, fileName)
             var baseName = path.basename(fileName, '.md')
 
-            if (baseName === 'home') return
-
-            // names.push(baseName)
-
             fs.readFile(_path, 'utf8', (err, file) => {
                 if (err) throw err
 
-                var outFileDir = outputDir + '/' + baseName
+                var outFileDir = outputDir + '/' + (baseName === 'home' ?
+                    '' :
+                    baseName)
                 mkdirp.sync(outFileDir)
 
-                var hs = makeHs(file, baseName, files)
+                var hs = makeHs(file, baseName, [
+                    ['home', '/'],
+                    ['page two', '/page-two'],
+                    ['page three', '/page-three']
+                ])
 
                 var ws = fs.createWriteStream(outFileDir + '/index.html')
                 var rs = fs.createReadStream(templateFile)
 
                 rs.pipe(hs).pipe(ws)
             })
-        })
-
-        var homePath = path.join(inputDir, 'home.md')
-        fs.readFile(homePath, 'utf8', (err, homeContent) => {
-            if (err) throw err
-
-            var fm = matter(homeContent)
-            var _homeContent = marked(fm.content)
-
-            hs = hyperstream({
-                '#content': {
-                    _appendHtml: _homeContent + `<div>
-                        <img src=${fm.data.thumbnail}>
-                    </div>`
-                }
-            })
-            var outFileDir = __dirname + '/public'
-            var ws = fs.createWriteStream(outFileDir + '/index.html')
-            var rs = fs.createReadStream(templatePath)
-            rs.pipe(hs).pipe(ws)
         })
 
     })
