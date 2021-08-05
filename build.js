@@ -15,13 +15,20 @@ buildThem(
 )
 
 // a fn that returns a hs instance
-function makeHs (file, baseName) {
+function makeHs (file, baseName, navLinks) {
     return hyperstream({
         body: {
             class: { append: baseName }
         },
         '#content': {
             _appendHtml: marked( matter(file).content )
+        },
+        '.main-nav': {
+            _appendHtml: navLinks.reduce((acc, link) => {
+                basename = path.basename(link, '.md')
+                acc += `<li><a href="/${basename}">${basename}</a></li>`
+                return acc
+            }, '')
         }
     })
 }
@@ -31,14 +38,14 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
         if (err) throw err
         console.log('files:  ', files)
 
-        var names = []
+        // var names = []
         files.forEach(fileName => {
             var _path = path.join(inputDir, fileName)
             var baseName = path.basename(fileName, '.md')
 
             if (baseName === 'home') return
 
-            names.push(baseName)
+            // names.push(baseName)
 
             fs.readFile(_path, 'utf8', (err, file) => {
                 if (err) throw err
@@ -46,7 +53,7 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
                 var outFileDir = outputDir + '/' + baseName
                 mkdirp.sync(outFileDir)
 
-                var hs = makeHs(file, baseName)
+                var hs = makeHs(file, baseName, files)
 
                 var ws = fs.createWriteStream(outFileDir + '/index.html')
                 var rs = fs.createReadStream(templateFile)
