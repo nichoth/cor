@@ -1,6 +1,4 @@
-#cor
-
-aaaaaaa
+# cor
 
 A website
 
@@ -17,3 +15,4 @@ Be sure to copy over the `config.yml` file from the `src` directory --
 
 * get each page (md file) and write the page html
     - could take an input folder and an output folder
+
