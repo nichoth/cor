@@ -2,6 +2,8 @@
 
 A website
 
+[![Netlify Status](https://api.netlify.com/api/v1/badges/e44c3b41-bf91-464a-acf2-425be7a9e6ef/deploy-status)](https://app.netlify.com/sites/corrr/deploys)
+
 Be sure to copy over the `config.yml` file from the `src` directory --
 ```js
     eleventyConfig.addPassthroughCopy("src/admin/config.yml");
