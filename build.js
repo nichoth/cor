@@ -24,7 +24,9 @@ function makeHs (file, baseName, navLinks) {
             class: { append: baseName }
         },
         '#content': {
-            _appendHtml: `<h1>${fm.title}</h1>` +
+            _appendHtml: (fm.data.title ?
+                `<h1>${fm.data.title}</h1>` :
+                '') +
                 content +
                 (fm.data.thumbnail ?
                 `<div class="featured-image">

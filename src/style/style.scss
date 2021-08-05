@@ -1,8 +1,18 @@
+@font-face {
+    font-family: 'merriweather';
+    // src: url('webfont.eot'); /* IE9 Compat Modes */
+    src: url('Merriweather-Regular.ttf')  format('truetype')
+}
+
 body {
     background-color: pink;
 
     .featured-image {
         text-align: center;
+    }
+    
+    #content {
+        font-family: 'merriweather', serif;
     }
 }
 
