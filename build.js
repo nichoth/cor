@@ -72,12 +72,14 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
                 var outFileDir = outputDir + '/' + (baseName === 'home' ?
                     '' :
                     baseName)
+
                 mkdirp.sync(outFileDir)
 
                 var hs = makeHs(file, baseName, [
                     ['home', '/'],
-                    ['page two', '/page-two'],
-                    ['page three', '/page-three']
+                    ['About', '/about'],
+                    ['Resources', '/resources'],
+                    ['Contact', '/contact']
                 ])
 
                 var ws = fs.createWriteStream(outFileDir + '/index.html')
