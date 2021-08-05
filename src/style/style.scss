@@ -1,9 +1,11 @@
-@font-face {
-    font-family: 'lora';
-    // src: url('webfont.eot'); /* IE9 Compat Modes */
-    // src: url('Merriweather-Regular.ttf')  format('truetype')
-    src: url('Lora-VariableFont_wght.ttf')  format('truetype')
-}
+// @font-face {
+//     font-family: 'lora';
+//     // src: url('webfont.eot'); /* IE9 Compat Modes */
+//     // src: url('Merriweather-Regular.ttf')  format('truetype')
+//     src: url('Lora-VariableFont_wght.ttf')  format('truetype')
+// }
+
+@import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300;400&display=swap');
 
 body {
     // background-color: pink;
@@ -13,7 +15,8 @@ body {
     }
     
     #content {
-        font-family: 'lora', serif;
+        font-family: 'Yrsa', serif;
+        // font-family: 'lora', serif;
     }
 }
 
