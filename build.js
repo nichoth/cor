@@ -6,6 +6,7 @@ var mkdirp = require('mkdirp')
 var marked = require('marked')
 
 var templatePath = __dirname + '/src/_index.html'
+
 buildThem(
     __dirname + '/src/_pages',
     __dirname + '/public',
