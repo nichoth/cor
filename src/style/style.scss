@@ -7,6 +7,8 @@
 
 @import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300;400&display=swap');
 
+$green: #3dfd9d;
+
 body {
     // background-color: pink;
 
@@ -25,8 +27,28 @@ body {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
-    
+
+    .home-link {
+        width: 2rem;
+        height: 2rem;
+
+        &:hover {
+            opacity: 0.6;
+        }
+
+        svg {
+            stroke-width: 14px;
+        }
+    }
+
     li {
+        &.home-link {
+            position: absolute;
+            left: 0;
+            top: 0.8rem;
+            margin: 0 1rem;
+        }
+
         a {
             text-decoration: none;
         }
