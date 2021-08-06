@@ -9,6 +9,8 @@
 
 $green: #008051;
 $lightGreen: #3dfd9d;
+// $purp: #7405d6;
+$purp: #6a05d6;
 
 body {
     // background-color: pink;
@@ -19,8 +21,26 @@ body {
     
     #content {
         font-family: 'Yrsa', serif;
-        margin-top: 3rem;
         // font-family: 'lora', serif;
+        font-weight: 300;
+        margin-top: 3rem;
+
+        > p {
+            font-size: 1.2rem;
+        }
+
+        blockquote {
+            font-size: 1.5rem;
+        }
+    }
+
+    p {
+        max-width: 40rem;
+        margin: 2rem auto;
+    }
+
+    h2 {
+        color: $purp;
     }
 }
 
