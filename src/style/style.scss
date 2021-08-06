@@ -83,6 +83,9 @@ body {
 
         svg {
             stroke-width: 14px;
+            polygon {
+                fill: transparent;
+            }
         }
     }
 
