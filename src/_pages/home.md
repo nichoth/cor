@@ -1,5 +1,5 @@
 ---
-title: ""
+title: home
 thumbnail: /uploads/cinnamon-roll.jpg
 ---
 Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis eget gravida ipsum, eget finibus tellus. Ut molestie nec mi in vehicula. Cras rutrum elit vel pellentesque vestibulum. Phasellus gravida ornare nulla, eget viverra augue volutpat ut. Aliquam elementum ipsum vitae consectetur venenatis. Nullam rutrum viverra sem ac accumsan. Nulla fringilla mauris eu justo sodales, quis commodo dui lacinia. Ut vitae leo purus. Nullam ut mollis ante. Fusce ut erat fermentum, aliquam mauris ut, interdum nibh. Integer consequat dictum dui nec porta. Etiam eget orci a enim rhoncus pretium. Quisque accumsan lacus a nunc bibendum, vel elementum lorem dignissim. Aliquam consectetur felis eu lacus volutpat tempus. Fusce dictum, neque vel viverra vestibulum, ligula ante gravida nisi, sed interdum turpis neque in est.
