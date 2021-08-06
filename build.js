@@ -74,7 +74,7 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
                 mkdirp.sync(outFileDir)
 
                 var hs = makeHs(file, baseName, [
-                    ['home', '/'],
+                    // ['home', '/'],
                     ['About', '/about'],
                     ['Resources', '/resources'],
                     ['Contact', '/contact']
