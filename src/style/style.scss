@@ -11,27 +11,44 @@ $green: #008051;
 $lightGreen: #3dfd9d;
 // $purp: #7405d6;
 $purp: #6a05d6;
+$textMw: 40rem;
 
 body {
-    // background-color: pink;
+    background-color: lavender;
 
     .featured-image {
         text-align: center;
+        width: 100%;
+        margin: 2rem 0;
+
+        img {
+            max-width: 100%;
+        }
     }
     
     #content {
         font-family: 'Yrsa', serif;
         // font-family: 'lora', serif;
         font-weight: 300;
+        max-width: $textMw;
+        margin: 0 auto;
         margin-top: 3rem;
+        line-height: 1.8rem;
 
         > p {
             font-size: 1.2rem;
+            margin-bottom: 1rem;
         }
 
         blockquote {
             font-size: 1.5rem;
+            padding-left: 2rem;
+            margin: 1rem auto;
         }
+    }
+
+    p, h2, blockquote {
+        max-width: $textMw;;
     }
 
     h2 {
@@ -39,7 +56,6 @@ body {
     }
 
     p {
-        max-width: 40rem;
         margin: 0rem auto;
     }
 
