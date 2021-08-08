@@ -14,10 +14,11 @@ $purp: #6a05d6;
 $textMw: 40rem;
 $teal: #00b3b3;
 $navHoverBorder: #00ffff;
+$lavendar: #e6e6fa;
 
 body {
     // background-color: white;
-    background-color: #e6e6fa;
+    background-color: $lavendar;
     margin: 0;
 
     .featured-image {
