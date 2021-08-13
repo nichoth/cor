@@ -19,14 +19,17 @@ function makeHs (file, baseName, navLinks) {
     var fm = matter(file)
     var content = marked(fm.content)
 
+    var h1 = fm.data.title ? `<h1>${fm.data.title}</h1>` : ''
+    if (fm.data.title === 'home') {
+        h1 = ''
+    }
+
     return hyperstream({
         body: {
             class: { append: baseName }
         },
         '#content': {
-            _appendHtml: (fm.data.h1 ?
-                `<h1>${fm.data.h1}</h1>` :
-                '') +
+            _appendHtml: h1 +
                 content +
                 (fm.data.thumbnail ?
                 `<div class="featured-image">
