@@ -12,9 +12,12 @@ $lightGreen: #3dfd9d;
 // $purp: #7405d6;
 $purp: #6a05d6;
 $textMw: 40rem;
+$teal: #00b3b3;
+$navHoverBorder: #00ffff;
 
 body {
-    background-color: lavender;
+    background-color: white;
+    margin: 0;
 
     .featured-image {
         text-align: center;
@@ -69,6 +72,10 @@ body {
     display: flex;
     justify-content: space-evenly;
     list-style: none;
+    background-color: #f97474;
+    padding: 1rem 0;
+    margin-top: 0;
+    border-bottom: 1rem solid $teal;
 
     .home-link {
         width: 2rem;
@@ -93,15 +100,21 @@ body {
         &.home-link {
             position: absolute;
             left: 0;
-            top: 0.8rem;
+            top: 0.6rem;
             margin: 0 1rem;
+
+            svg {
+                polygon {
+                    stroke: black;
+                }
+            }
         }
 
         a {
             text-decoration: none;
-            color: $green;
+            color: black;
             &:hover {
-                border-bottom: 3px solid gray;
+                border-bottom: 3px solid $navHoverBorder;
                 // color: $lightGreen;
             }
         }
