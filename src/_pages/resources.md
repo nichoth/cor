@@ -1,6 +1,6 @@
 ---
 title: Resources
-thumbnail: /uploads/cinnamon-roll.jpg
+thumbnail: ""
 ---
 Some resources go here
 * a
