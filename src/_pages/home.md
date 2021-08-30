@@ -9,4 +9,6 @@ As an end of life doula, Corey offers an array of experiences that nurture the d
 
 
 
-<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="47320826-a51e-4e39-b892-f7e2aafb8f0f" data-share-badge-host="https://www.credly.com"></div><script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
+<div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="47320826-a51e-4e39-b892-f7e2aafb8f0f" data-share-badge-host="https://www.credly.com"></div>
+
+<script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
