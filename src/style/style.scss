@@ -4,6 +4,10 @@
 //     // src: url('Merriweather-Regular.ttf')  format('truetype')
 //     src: url('Lora-VariableFont_wght.ttf')  format('truetype')
 // }
+@font-face {
+    font-family: 'Mackinac';
+    src: url('P22MackinacPro-Book_25.otf') format('opentype');
+}
 
 @import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300;400&display=swap');
 
@@ -36,6 +40,7 @@ body {
     &.home {
         #content {
             display: flex;
+            align-items: center;
 
             p {
                 max-width: 50%;
@@ -45,11 +50,14 @@ body {
         .featured-image {
             width: 50%;
             margin: 1rem;
+            border-right: 1px solid;
+            padding-right: 1rem;
         }
     }
     
     #content {
-        font-family: 'Yrsa', serif;
+        // font-family: 'Yrsa', serif;
+        font-family: 'Mackinac', sans-serif;
         // font-family: 'lora', serif;
         font-weight: 300;
         // max-width: $textMw;
