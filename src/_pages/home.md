@@ -1,7 +1,7 @@
 ---
 title: home
 h1: Personalized, holistic guidance during the dying process
-thumbnail: ""
+thumbnail: /uploads/35_daisies-3.png
 ---
 <div data-iframe-width="150" data-iframe-height="270" data-share-badge-id="47320826-a51e-4e39-b892-f7e2aafb8f0f" data-share-badge-host="https://www.credly.com"></div>
 
