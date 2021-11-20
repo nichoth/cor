@@ -21,6 +21,9 @@ function makeHs (file, baseName, navLinks) {
     var fm = matter(file)
     var content = marked(fm.content)
 
+    var { badge } = fm.data
+    var featuredImage = fm.data['featured-image']
+
     var h1 = fm.data.title ? `<h1>${fm.data.title}</h1>` : ''
     if (fm.data.title === 'home') {
         h1 = ''
@@ -32,12 +35,11 @@ function makeHs (file, baseName, navLinks) {
         },
         '#content': {
             _appendHtml: h1 +
-                content +
-                (fm.data.thumbnail ?
-                `<div class="featured-image">
-                    <img src=${fm.data.thumbnail}>
+                (featuredImage ? `<div class="featured-image">
+                    <img src=${featuredImage}>
                 </div>` :
-                '')
+                '') +
+                content
         },
         // build the nav links for each page
         // b/c there is a different 'active' link on each page

@@ -32,12 +32,27 @@ body {
             max-width: 100%;
         }
     }
+
+    &.home {
+        #content {
+            display: flex;
+
+            p {
+                max-width: 50%;
+            }
+        }
+
+        .featured-image {
+            width: 50%;
+            margin: 1rem;
+        }
+    }
     
     #content {
         font-family: 'Yrsa', serif;
         // font-family: 'lora', serif;
         font-weight: 300;
-        max-width: $textMw;
+        // max-width: $textMw;
         margin: 0 auto;
         margin-top: 3rem;
         line-height: 1.8rem;
