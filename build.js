@@ -7,6 +7,8 @@ var marked = require('marked')
 
 var templatePath = __dirname + '/src/_index.html'
 
+// templateFile is the template for index.html
+// buildThem (inputDir, outputDir, templateFile, makeHs) {
 buildThem(
     __dirname + '/src/_pages',
     __dirname + '/public',
@@ -71,12 +73,16 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
             fs.readFile(_path, 'utf8', (err, file) => {
                 if (err) throw err
 
+                // make a directory for each file that is the name of the file
+                // (clean urls) (url with no file extension)
+                // the 'home' file is special
                 var outFileDir = outputDir + '/' + (baseName === 'home' ?
                     '' :
                     baseName)
 
                 mkdirp.sync(outFileDir)
 
+                // makeHs (file, baseName, navLinks) {
                 var hs = makeHs(file, baseName, [
                     ['About', '/about'],
                     ['Resources', '/resources'],

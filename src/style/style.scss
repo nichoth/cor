@@ -15,8 +15,12 @@ $textMw: 40rem;
 $teal: #00b3b3;
 $navHoverBorder: #00ffff;
 
+// ------------------------------------------------------
+
+$bgColor: #EDEEEC;
+
 body {
-    background-color: white;
+    background-color: $bgColor;
     margin: 0;
 
     .featured-image {
