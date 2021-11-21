@@ -37,13 +37,21 @@ body {
         }
     }
 
+    .top-nav {
+        display: flex;
+        align-items: center;
+        justify-content: space-around;
+    }
+
     &.home {
         #content {
             display: flex;
             align-items: center;
 
             p {
-                max-width: 50%;
+                width: calc(50% - 4rem);
+                text-align: center;
+                padding: 0 2rem;
             }
         }
 
