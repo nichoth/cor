@@ -40,9 +40,15 @@ body {
         text-transform: uppercase;
         text-align: center;
         line-height: 1.5rem;
-        // text: {
-        //     font-size: 2rem!important;
-        // }
+        height: 30vh;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: center;
+
+        &:last-child {
+            border-left: 1px solid black;
+        }
+        
         text {
             font-size: 2rem;
             letter-spacing: 0.25rem;
@@ -52,6 +58,7 @@ body {
             fill: transparent;
         }
         span {
+            width: 100%;
             display: block;
             &:first-child {
                 letter-spacing: 0.2rem;
@@ -73,6 +80,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-around;
+        margin: 1rem 0;
     }
 
     &.home {
