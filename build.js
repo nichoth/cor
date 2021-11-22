@@ -86,10 +86,10 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
 
                 // makeHs (file, baseName, navLinks) {
                 var hs = makeHs(file, baseName, [
-                    ['About', '/about'],
-                    ['Resources', '/resources'],
                     ['Services', '/services'],
-                    ['Contact', '/contact']
+                    ['Resources', '/resources'],
+                    ['About', '/about'],
+                    ['Consultation', '/consultation']
                 ])
 
                 var ws = fs.createWriteStream(outFileDir + '/index.html')

@@ -9,7 +9,12 @@
     src: url('P22MackinacPro-Book_25.otf') format('opentype');
 }
 
-@import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300;400&display=swap');
+@font-face {
+    font-family: 'Wigrum';
+    src: url('wigrum-light.otf') format('opentype');
+}
+
+// @import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300;400&display=swap');
 
 $green: #008051;
 $lightGreen: #3dfd9d;
@@ -23,9 +28,36 @@ $navHoverBorder: #00ffff;
 
 $bgColor: #EDEEEC;
 
+// Wigrum
+
 body {
     background-color: $bgColor;
     margin: 0;
+    font-family: 'Mackinac', sans-serif;
+
+    .description {
+        font-family: 'Wigrum', serif;
+        text-transform: uppercase;
+        text-align: center;
+        line-height: 1.5rem;
+        // text: {
+        //     font-size: 2rem!important;
+        // }
+        text {
+            font-size: 2rem;
+            letter-spacing: 0.25rem;
+        }
+
+        path {
+            fill: transparent;
+        }
+        span {
+            display: block;
+            &:first-child {
+                letter-spacing: 0.2rem;
+            }
+        }
+    }
 
     .featured-image {
         text-align: center;
