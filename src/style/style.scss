@@ -59,16 +59,18 @@ body {
         text-align: center;
         line-height: 1.5rem;
         height: 30vh;
-        width: 25vw;
+        width: 27vw;
         display: flex;
         flex-wrap: wrap;
         align-items: center;
 
         &:first-child {
             border-right: 1px solid black;
+            padding-right: 2rem;
         }
 
         &:last-child {
+            padding-left: 2rem;
             border-left: 1px solid black;
         }
         
