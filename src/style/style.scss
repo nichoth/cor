@@ -17,12 +17,14 @@
 // @import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300;400&display=swap');
 
 $green: #008051;
-$lightGreen: #3dfd9d;
+// $lightGreen: #3dfd9d;
 // $purp: #7405d6;
-$purp: #6a05d6;
+// $purp: #6a05d6;
 $textMw: 40rem;
-$teal: #00b3b3;
-$navHoverBorder: #00ffff;
+// $teal: #00b3b3;
+// $navHoverBorder: #00ffff;
+$btnCol: #EEE8E1;
+
 
 // ------------------------------------------------------
 
@@ -34,6 +36,22 @@ body {
     background-color: $bgColor;
     margin: 0;
     font-family: 'Mackinac', sans-serif;
+
+    .btn-link {
+        color: black;
+        text-transform: uppercase;
+        text-decoration: none;
+        border: 1px solid black;
+        width: 20rem;
+        margin: 0 auto;
+        display: block;
+        text-align: center;
+        margin-top: 2rem;
+        padding: 0.4rem 0;
+        background-color: $btnCol;
+        font-family: 'Wigrum';
+        padding-bottom: 0.2rem;
+    }
 
     .description {
         font-family: 'Wigrum', serif;
@@ -94,7 +112,6 @@ body {
             align-items: center;
 
             p {
-                width: calc(50% - 4rem);
                 text-align: center;
                 padding: 0 2rem;
             }
@@ -105,6 +122,7 @@ body {
             margin: 1rem;
             border-right: 1px solid;
             padding-right: 1rem;
+            margin-right: 0;
         }
     }
     
@@ -142,10 +160,6 @@ body {
 
     p {
         margin: 0rem auto;
-    }
-
-    h2 {
-        color: $purp;
     }
 }
 

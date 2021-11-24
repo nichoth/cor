@@ -39,7 +39,14 @@ function makeHs (file, baseName, navLinks) {
                     <img src=${featuredImage}>
                 </div>` :
                 '') +
-                content
+                '<div>' +
+                    content +
+                    (fm.data.title === 'home' ?
+                        `<a class="btn-link" href="/consultation">
+                            Schedule A Consultation
+                        </a>` :
+                        '') +
+                '</div>'
         },
         // build the nav links for each page
         // b/c there is a different 'active' link on each page
