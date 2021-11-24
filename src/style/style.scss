@@ -51,6 +51,12 @@ body {
         background-color: $btnCol;
         font-family: 'Wigrum';
         padding-bottom: 0.2rem;
+        transition: 0.4s background-color;
+
+        &:hover {
+            border-width: 2px;
+            background-color: darken($btnCol, 10%);
+        }
     }
 
     .description {
