@@ -1,5 +1,5 @@
 ---
-title: Meet Corey
+title: About Me
 h1: ""
 thumbnail: ""
 ---
