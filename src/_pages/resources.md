@@ -1,6 +1,5 @@
 ---
 title: Resources
-thumbnail: ""
 ---
 Some resources go here
 * a
