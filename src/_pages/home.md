@@ -15,5 +15,7 @@ intro: >+
 ---
 My role is to help you die with grace and diginity. More things straight and to the point go here. Together, we will develop and end of life plan that honors your values and resources. Relieve stress for your loved ones. Ecetera ecetera.
 
-Corey Coomes, End-of-Life Doula
+<div class="my-credentials">
+## Corey Coomes, End-of-Life Doula
 Professional Certificate, University of Vermont 2020
+</div>
