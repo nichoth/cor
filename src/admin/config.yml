@@ -13,7 +13,6 @@ collections:
       - { label: "Section 1", name: "section1", widget: "markdown" }
       - { label: "Section 2", name: "section2", widget: "markdown" }
       - { label: "consultation", name: "consultation", widget: "markdown" }
-      - { label: "action", name: "action", widget: "markdown" }
     
   - name: "pages" # Used in routes, e.g., /admin/collections/blog
     label: "Page" # Used in the UI
