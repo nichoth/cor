@@ -10,7 +10,7 @@ collections:
     create: true
     slug: "{{slug}}"
     fields:
-      - { label: "Section 1", name: "section1", widget: "markdown" }
+      - { label: "Body", name: "body", widget: "markdown" }
       - { label: "Section 2", name: "section2", widget: "markdown" }
       - { label: "consultation", name: "consultation", widget: "markdown" }
     
