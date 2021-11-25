@@ -13,14 +13,19 @@ collections:
         # file: "site/content/about.yml"
         fields:
           - {label: Title, name: title, widget: string}
-          - {label: Intro, name: intro, widget: markdown}
-          - { label: "body", name: "body", widget: markdown }
           - { label: "Badge", name: "badge", widget: "code", required: false, output_code_only: true }
+          - { label: Intro, name: intro, widget: markdown }
+          - { label: "body", name: "body", widget: markdown }
       - label: "About Page"
         name: "about"
-        file: "site/_pages/about.md"
+        file: "src/_pages/about.md"
         fields:
           - {label: Title, name: title, widget: string}
           - {label: Intro, name: intro, widget: markdown}
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Badge", name: "badge", widget: "code", required: false, output_code_only: true }
+      - label: "Services Page"
+        name: "services"
+        file: "src/_pages/services.md"
+        fields:
+          - { label: "Body", name: "body", widget: "markdown" }
