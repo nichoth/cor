@@ -73,8 +73,9 @@ body {
         height: 30vh;
         width: 27vw;
         display: flex;
-        flex-wrap: wrap;
+        flex-direction: column;
         align-items: center;
+        justify-content: space-evenly;
 
         &:first-child {
             border-right: 1px solid black;
@@ -151,6 +152,10 @@ body {
         line-height: 1.8rem;
         margin-bottom: 8rem;
 
+        > div {
+            width: 50%;
+        }
+
         > p {
             font-size: 1.2rem;
             margin-bottom: 1rem;
@@ -183,7 +188,9 @@ body {
     list-style: none;
     padding: 1rem 0;
     margin-top: 0;
-    border: 1px solid black;
+    // border: 1px solid black;
+    border-top: 1px solid black;
+    border-bottom: 1px solid black;
 
     li {
         a {
