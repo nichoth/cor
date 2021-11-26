@@ -16,7 +16,10 @@ collections:
           - { label: Intro, name: intro, widget: markdown }
           - { label: "body", name: "body", widget: markdown }
           - { label: "credentials", name: "credentials", widget: markdown }
-          - { label: "services", name: "services", widget: markdown }
+          - { label: "Services", name: "services", widget: markdown }
+          - { label: "End of life support", name: eol-support, widget: list }
+          - { label: "Sensory curation", name: sensory-curation, widget: list }
+          - { label: "Education", name: education, widget: list }
       - label: "About Page"
         name: "about"
         file: "src/_pages/about.md"

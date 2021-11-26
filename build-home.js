@@ -70,11 +70,22 @@ function buildHome () {
 
                     <div id="services">
                         ${services}
+                        <ul class="services-icons">
+                            <li>
+                                <h3>End of Life Support</h3>
+                            </li>
+                            <li>
+                                <h3>Sensory Curation</h3>
+                            </li>
+                            <li>
+                                <h3>Education</h3>
+                            </li>
+                        </ul>
+                        </ul>
                     </div>
                     `
                 },
                 '.main-nav': {
-                    // need to deal with the order of the links
                     _appendHtml: navLinks.reduce(function (acc, item) {
                         var [link, href] = item
                         acc += `<li>
