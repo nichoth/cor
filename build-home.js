@@ -27,6 +27,7 @@ function buildHome () {
             var featuredImage = fm.data['featured-image']
             var content = marked(fm.content)
             var intro = marked(fm.data.intro)
+            var services = marked(fm.data.services)
             // var credentials = marked(fm.data.credentials)
             var { credentials } = fm.data
 
@@ -65,7 +66,10 @@ function buildHome () {
                         </div>
                     </div>
 
+                    <h2>Services</h2>
+
                     <div id="services">
+                        ${services}
                     </div>
                     `
                 },

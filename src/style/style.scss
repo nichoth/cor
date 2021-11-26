@@ -123,6 +123,14 @@ body {
     }
 
     &.home {
+        h2 {
+            text-transform: uppercase;
+            font-size: 1rem;
+            margin: 4rem 1rem;
+            font-family: 'Wigrum', serif;
+            font-weight: 100;
+        }
+
         .section-one {
             display: flex;
             text-align: center;
@@ -173,11 +181,6 @@ body {
                 }
             }
 
-            h2 {
-                font-size: 1.2rem;
-                margin-bottom: 0.5rem;
-            }
-
             .more-about-me {
                 a.btn-link {
                     background-color: $black;
@@ -201,6 +204,15 @@ body {
                 }
             }
         }
+
+        #services {
+            max-width: $textMw;
+            margin: 2rem auto;
+
+            p {
+                margin-top: 1rem;
+            }
+        }
     }
     
     #content {
@@ -213,14 +225,6 @@ body {
         margin-top: 3rem;
         line-height: 1.8rem;
         // margin-bottom: 8rem;
-    }
-
-    p, h2, blockquote {
-        max-width: $textMw;;
-    }
-
-    h2 {
-        margin: 1rem auto;
     }
 
     p {
