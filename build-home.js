@@ -28,8 +28,15 @@ function buildHome () {
             var content = marked(fm.content)
             var intro = marked(fm.data.intro)
             var services = marked(fm.data.services)
-            // var credentials = marked(fm.data.credentials)
             var { credentials } = fm.data
+            // console.log('.data', fm.data)
+            // console.log('edu', fm.data.education)
+            // var education = marked(fm.data.education)
+            // var eolSupport = marked(fm.data['eol-support'])
+            // var sensoryCuration = marked(fm.data['sensory-curation'])
+            var education = fm.data.education
+            var eolSupport = fm.data['eol-support']
+            var sensoryCuration = fm.data['sensory-curation']
 
             var hs = hyperstream({
                 body: {
@@ -73,12 +80,27 @@ function buildHome () {
                         <ul class="services-icons">
                             <li>
                                 <h3>End of Life Support</h3>
+                                <ul>
+                                    ${eolSupport.map(item => {
+                                        return `<li>${item}</li>`
+                                    }).join('')}
+                                </ul>
                             </li>
                             <li>
                                 <h3>Sensory Curation</h3>
+                                <ul>
+                                    ${sensoryCuration.map(item => {
+                                        return `<li>${item}</li>`
+                                    }).join('')}
+                                </ul>
                             </li>
                             <li>
                                 <h3>Education</h3>
+                                <ul>
+                                    ${education.map(item => {
+                                        return `<li>${item}</li>`
+                                    }).join('')}
+                                </ul>
                             </li>
                         </ul>
                         </ul>
