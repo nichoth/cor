@@ -79,6 +79,7 @@ function buildHome () {
                         ${services}
                         <ul class="services-icons">
                             <li>
+                                <img src="/olive-branch.png" alt="olive branch">
                                 <h3>End of Life Support</h3>
                                 <ul>
                                     ${eolSupport.map(item => {
@@ -87,6 +88,7 @@ function buildHome () {
                                 </ul>
                             </li>
                             <li>
+                                <img src="/sounds.png" alt="sounds">
                                 <h3>Sensory Curation</h3>
                                 <ul>
                                     ${sensoryCuration.map(item => {
@@ -95,6 +97,7 @@ function buildHome () {
                                 </ul>
                             </li>
                             <li>
+                                <img src="/basket-icon.png" alt="basket">
                                 <h3>Education</h3>
                                 <ul>
                                     ${education.map(item => {
