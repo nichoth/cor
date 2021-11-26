@@ -101,7 +101,6 @@ function buildThem (inputDir, outputDir, templateFile, makeHs) {
 
                 var ws = fs.createWriteStream(outFileDir + '/index.html')
                 var rs = fs.createReadStream(templateFile)
-
                 rs.pipe(hs).pipe(ws)
             })
         })

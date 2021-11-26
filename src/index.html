@@ -9,21 +9,6 @@
 </head>
 
 <body>
-    <p>placeholder</p>
-
     <div id="content"></div>
-
-    <script>
-    if (window.netlifyIdentity) {
-        window.netlifyIdentity.on("init", user => {
-            if (!user) {
-                window.netlifyIdentity.on("login", () => {
-                    document.location.href = "/admin/";
-                });
-            }
-        });
-    }
-    </script>
 </body>
 </html>
-

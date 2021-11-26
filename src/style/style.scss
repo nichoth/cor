@@ -24,6 +24,8 @@ $textMw: 40rem;
 // $teal: #00b3b3;
 // $navHoverBorder: #00ffff;
 $btnCol: #EEE8E1;
+$white: #EDEEEC;
+$black: #131311;
 
 
 // ------------------------------------------------------
@@ -107,7 +109,7 @@ body {
     .featured-image {
         text-align: center;
         width: 100%;
-        margin: 2rem 0;
+        margin: 0 2rem;
 
         img {
             max-width: 100%;
@@ -122,13 +124,13 @@ body {
     }
 
     &.home {
-        #content {
+        .section-one {
             display: flex;
-            align-items: center;
+            text-align: center;
+            margin: 0 1rem;
 
-            p {
-                text-align: center;
-                padding: 0 2rem;
+            .intro {
+                width: 50%;
             }
         }
 
@@ -138,6 +140,25 @@ body {
             border-right: 1px solid;
             padding-right: 1rem;
             margin-right: 0;
+        }
+
+        .section-two {
+            background-color: $black;
+            color: $white;
+            padding-top: 4rem;
+            padding-left: 2rem;
+            padding-right: 2rem;
+            display: flex;
+            > div {
+                padding: 0 1rem;
+                width: 50%;
+            }
+
+            .img-two {
+                img {
+                    max-width: 100%;
+                }
+            }
         }
     }
     
@@ -150,23 +171,7 @@ body {
         margin: 0 auto;
         margin-top: 3rem;
         line-height: 1.8rem;
-        margin-bottom: 8rem;
-
-        > div {
-            width: 50%;
-        }
-
-        > p {
-            font-size: 1.2rem;
-            margin-bottom: 1rem;
-            margin-top: 1rem;
-        }
-
-        blockquote {
-            font-size: 1.5rem;
-            padding-left: 2rem;
-            margin: 1rem auto;
-        }
+        // margin-bottom: 8rem;
     }
 
     p, h2, blockquote {
