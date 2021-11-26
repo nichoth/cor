@@ -19,7 +19,7 @@ services: >-
   being flexible and keeping a beginner's mind.
 
 
-  Below are a few areas of service and what they entail. Everything is in response to the individuals needs. A doula aids in finishing the last chapter of one’s life.
+  Below are a few areas of service and what they entail. Everything is in response to the individual's needs. A doula aids in finishing the last chapter of one’s life.
 eol-support:
   - foo
   - bar
