@@ -10,12 +10,12 @@ collections:
       - label: "Home Page"
         name: "home"
         file: "src/_pages/home.md"
-        # file: "site/content/about.yml"
         fields:
           - { label: Title, name: title, widget: string }
           - { label: "Badge", name: "badge", widget: "code", required: false, output_code_only: true }
           - { label: Intro, name: intro, widget: markdown }
           - { label: "body", name: "body", widget: markdown }
+          - { label: "credentials", name: "credentials", widget: markdown }
       - label: "About Page"
         name: "about"
         file: "src/_pages/about.md"
