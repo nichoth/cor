@@ -212,6 +212,12 @@ body {
             p {
                 margin-top: 1rem;
             }
+
+            .services-icons {
+                display: flex;
+                list-style: none;
+                justify-content: space-between;
+            }
         }
     }
     
