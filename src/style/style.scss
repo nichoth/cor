@@ -43,13 +43,12 @@ body {
     background-color: $bgColor;
     margin: 0;
     font-family: 'Mackinac', sans-serif;
-
+ 
     .btn-link {
         color: black;
         text-transform: uppercase;
         text-decoration: none;
         border: 1px solid black;
-        width: 20rem;
         margin: 0 auto;
         display: block;
         text-align: center;
@@ -131,6 +130,9 @@ body {
 
             .intro {
                 width: 50%;
+                .btn-link {
+                    width: 20rem;
+                }
             }
         }
 
@@ -149,6 +151,25 @@ body {
             padding-left: 2rem;
             padding-right: 2rem;
             display: flex;
+
+            h2 {
+                font-size: 1.2rem;
+                margin-bottom: 0.5rem;
+            }
+
+            .more-about-me {
+                a {
+                    background-color: $black;
+                    color: $white;
+                    border-color: $white;
+                    max-width: 15rem;
+                }
+            }
+
+            .my-credentials {
+                font-size: 0.8rem;
+            }
+
             > div {
                 padding: 0 1rem;
                 width: 50%;

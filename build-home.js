@@ -40,7 +40,7 @@ function buildHome () {
                         <div class="intro">
                             ${intro}
                             <a class="btn-link" href="/consultation">
-                                Schedule A Consultation
+                               Schedule A Consultation
                             </a>
                         </div>
                     </div>
@@ -48,6 +48,11 @@ function buildHome () {
                     <div class="section-two">
                         <div>
                             ${content}
+                            <div class="more-about-me">
+                                <a class="btn-link" href="/about">
+                                    More about me
+                                </a>
+                            </div>
                         </div>
                         <div class="img-two">
                             <img src="/rectangle-38.png">
