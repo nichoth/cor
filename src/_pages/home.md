@@ -7,7 +7,6 @@ badge: >-
 
 
   <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-featured-image: /uploads/35_daisies-3.png
 intro: >
   An End-of-Life Doula is someone who offers holistic, unconditional support and
   guidance to individuals and their loved ones as they navigate the complex and
@@ -21,6 +20,19 @@ services: >-
 
 
   Below are a few areas of service and what they entail. Everything is in response to the individuals needs. A doula aids in finishing the last chapter of one’s life.
+eol-support:
+  - foo
+  - bar
+  - ham
+sensory-curation:
+  - aaa
+  - bbbb
+  - ccc
+education:
+  - eee
+  - ffff
+  - gggg
+featured-image: /uploads/35_daisies-3.png
 ---
 My role is to help you die with grace and diginity. More things straight and to the point go here. Together, we will develop and end of life plan that honors your values and resources. Relieve stress for your loved ones. Ecetera ecetera.
 
