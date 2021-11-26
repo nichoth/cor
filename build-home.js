@@ -27,6 +27,8 @@ function buildHome () {
             var featuredImage = fm.data['featured-image']
             var content = marked(fm.content)
             var intro = marked(fm.data.intro)
+            // var credentials = marked(fm.data.credentials)
+            var { credentials } = fm.data
 
             var hs = hyperstream({
                 body: {
@@ -46,8 +48,12 @@ function buildHome () {
                     </div>
 
                     <div class="section-two">
-                        <div>
+                        <div class="section-two-content">
                             ${content}
+                            <div class="credentials">
+                                <div>Corey Coomes, End-of-Life Doula</div>
+                                <div>${credentials}</div>
+                            </div>
                             <div class="more-about-me">
                                 <a class="btn-link" href="/about">
                                     More about me

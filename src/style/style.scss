@@ -153,10 +153,23 @@ body {
             display: flex;
 
             div {
-                &:first-child {
+                .section-two-content {
                     margin-top: 3rem;
                     border-top: 1px solid;
                     padding-top: 3rem;
+                }
+            }
+
+            .credentials {
+                margin-top: 1rem;
+                text-align: center;
+
+                div:first-child {
+                    font-size: 1.2rem;
+                }
+
+                div:last-child {
+                    font-size: 0.8rem;
                 }
             }
 
@@ -175,10 +188,6 @@ body {
                         background-color: lighten($black, 20%);
                     }
                 }
-            }
-
-            .my-credentials {
-                font-size: 0.8rem;
             }
 
             > div {
