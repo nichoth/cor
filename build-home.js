@@ -57,7 +57,11 @@ function buildHome () {
                         <div class="img-two">
                             <img src="/rectangle-38.png">
                         </div>
-                    </div>`
+                    </div>
+
+                    <div id="services">
+                    </div>
+                    `
                 },
                 '.main-nav': {
                     // need to deal with the order of the links

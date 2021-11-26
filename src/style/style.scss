@@ -158,11 +158,14 @@ body {
             }
 
             .more-about-me {
-                a {
+                a.btn-link {
                     background-color: $black;
                     color: $white;
                     border-color: $white;
                     max-width: 15rem;
+                    &:hover {
+                        background-color: lighten($black, 20%);
+                    }
                 }
             }
 
