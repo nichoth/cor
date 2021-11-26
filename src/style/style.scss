@@ -152,6 +152,14 @@ body {
             padding-right: 2rem;
             display: flex;
 
+            div {
+                &:first-child {
+                    margin-top: 3rem;
+                    border-top: 1px solid;
+                    padding-top: 3rem;
+                }
+            }
+
             h2 {
                 font-size: 1.2rem;
                 margin-bottom: 0.5rem;
