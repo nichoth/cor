@@ -31,12 +31,12 @@ function buildHome () {
             var { credentials } = fm.data
             // console.log('.data', fm.data)
             // console.log('edu', fm.data.education)
-            // var education = marked(fm.data.education)
-            // var eolSupport = marked(fm.data['eol-support'])
-            // var sensoryCuration = marked(fm.data['sensory-curation'])
-            var education = fm.data.education || []
-            var eolSupport = fm.data['eol-support'] || []
-            var sensoryCuration = fm.data['sensory-curation'] || []
+            var education = marked(fm.data.education)
+            var eolSupport = marked(fm.data['eol-support'])
+            var sensoryCuration = marked(fm.data['sensory-curation'])
+            // var eolSupport = fm.data['eol-support'] || []
+            // var education = fm.data.education || []
+            // var sensoryCuration = fm.data['sensory-curation'] || []
 
             var hs = hyperstream({
                 body: {
@@ -81,28 +81,20 @@ function buildHome () {
                             <li>
                                 <img src="/olive-branch.png" alt="olive branch">
                                 <h3>End of Life Support</h3>
-                                <ul>
-                                    ${eolSupport.map(item => {
-                                        return `<li>${item}</li>`
-                                    }).join('')}
-                                </ul>
+                                ${eolSupport}
                             </li>
                             <li>
                                 <img src="/sounds.png" alt="sounds">
                                 <h3>Sensory Curation</h3>
                                 <ul>
-                                    ${sensoryCuration.map(item => {
-                                        return `<li>${item}</li>`
-                                    }).join('')}
+                                    ${sensoryCuration}
                                 </ul>
                             </li>
                             <li>
                                 <img src="/basket-icon.png" alt="basket">
                                 <h3>Education</h3>
                                 <ul>
-                                    ${education.map(item => {
-                                        return `<li>${item}</li>`
-                                    }).join('')}
+                                    ${education}
                                 </ul>
                             </li>
                         </ul>
