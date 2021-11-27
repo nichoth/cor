@@ -107,6 +107,26 @@ function buildHome () {
                             </a>
                         </div>
                     </div>
+
+                    <div class="foot">
+                        <ul class="main-nav">
+                            ${navLinks.reduce(function (acc, item) {
+                                var [link, href] = item
+                                acc += `<li>
+                                    <a href="${href}">${link}</a>
+                                </li>`
+
+                                return acc
+                            }, '')}
+                        </ul>
+                        <h2>Contact</h2>
+                        <div class="contact-info">
+                            <p>Corey Coomes</p>
+                            <p>(815) 677-5152</p>
+                            <p>seijocoomes@gmail.com</p>
+                            <p>© Still Brilliance 2021</p>
+                        </div>
+                    </div>
                     `
                 },
                 '.main-nav': {

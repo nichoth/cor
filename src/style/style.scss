@@ -268,6 +268,33 @@ body {
                 }
             }
         }
+
+        .foot {
+            background-color: $black;
+            color: $white;
+            padding: 2rem 1rem;
+            border-top: 1px solid;
+            padding-top: 0;
+
+            h2 {
+                margin: 0;
+                margin-bottom: 2rem;
+            }
+
+            .main-nav {
+                border: none;
+                margin-bottom: 6rem;
+            }
+
+            ul {
+                border-color: $white;
+                margin-bottom: 0;
+                border-bottom-width: 0;
+                a {
+                    color: $white;
+                }
+            }
+        }
     }
     
     #content {
