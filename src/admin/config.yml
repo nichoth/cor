@@ -20,8 +20,9 @@ collections:
           - label: "End of life support"
             name: eol-support
             widget: list
-            fields:
-              - { widget: string }
+            field: string
+            # fields:
+            #   - { label: Quote, name: quote, widget: string }
           - label: "Sensory curation"
             name: sensory-curation
             widget: list
