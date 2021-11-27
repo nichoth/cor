@@ -34,9 +34,9 @@ function buildHome () {
             // var education = marked(fm.data.education)
             // var eolSupport = marked(fm.data['eol-support'])
             // var sensoryCuration = marked(fm.data['sensory-curation'])
-            var education = fm.data.education
-            var eolSupport = fm.data['eol-support']
-            var sensoryCuration = fm.data['sensory-curation']
+            var education = fm.data.education || []
+            var eolSupport = fm.data['eol-support'] || []
+            var sensoryCuration = fm.data['sensory-curation'] || []
 
             var hs = hyperstream({
                 body: {
