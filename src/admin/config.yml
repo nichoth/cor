@@ -21,8 +21,12 @@ collections:
             name: eol-support
             widget: list
             fields: { label: Quote, name: quote, widget: string }
-          - { label: "Sensory curation", name: sensory-curation, widget: list }
-          - { label: "Education", name: education, widget: list }
+          - label: "Sensory curation"
+            name: sensory-curation
+            widget: list
+          - label: "Education"
+            name: education
+            widget: list
       - label: "About Page"
         name: "about"
         file: "src/_pages/about.md"
