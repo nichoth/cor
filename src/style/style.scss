@@ -60,8 +60,6 @@ body {
         transition: 0.4s background-color;
 
         &:hover {
-            // text-decoration: underline;
-            // background-color: $bgColor;
             background-color: lighten($btnCol, 10%);
         }
     }
@@ -155,9 +153,7 @@ body {
         .section-two {
             background-color: $black;
             color: $white;
-            padding-top: 4rem;
-            padding-left: 2rem;
-            padding-right: 2rem;
+            padding: 4rem 2rem;
             display: flex;
 
             div {

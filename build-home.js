@@ -32,6 +32,7 @@ function buildHome () {
             var education = marked(fm.data.education)
             var eolSupport = marked(fm.data['eol-support'])
             var sensoryCuration = marked(fm.data['sensory-curation'])
+            var consultation = marked(fm.data['consultation'])
 
             var hs = hyperstream({
                 body: {
@@ -94,6 +95,14 @@ function buildHome () {
                             </li>
                         </ul>
                         </ul>
+                    </div>
+
+                    <div class="schedule-consultation">
+                        <div class="left-col">
+                            ${consultation}
+                        </div>
+                        <div class="right-col">
+                        </div>
                     </div>
                     `
                 },
