@@ -17,13 +17,13 @@ collections:
           - { label: "body", name: "body", widget: markdown }
           - { label: "credentials", name: "credentials", widget: markdown }
           - { label: "Services", name: "services", widget: markdown }
-          - label: "End of life support"
+          - label: "End of life support list"
             name: eol-support
             widget: markdown
-          - label: "Sensory curation"
+          - label: "Sensory curation list"
             name: sensory-curation
             widget: markdown
-          - label: "Education"
+          - label: "Education list"
             name: education
             widget: markdown
       - label: "About Page"
