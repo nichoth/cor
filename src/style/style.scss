@@ -237,6 +237,37 @@ body {
                 }
             }
         }
+
+        .schedule-consultation {
+            display: flex;
+            background-color: $black;
+            padding: 4rem 2rem;
+
+            p {
+                margin-top: 1rem;
+                &:first-child {
+                    margin-top: 0;
+                }
+            }
+
+            .left-col {
+                width: 50%;
+                color: $white;
+            }
+            .right-col {
+                width: 50%;
+                color: $white;
+                a {
+                    max-width: 20rem;
+                    color: $white;
+                    border-color: $white;
+                    background-color: $black;
+                    &:hover {
+                        background-color: lighten($black, 20%);
+                    }
+                }
+            }
+        }
     }
     
     #content {

@@ -32,8 +32,7 @@ function buildHome () {
             var education = marked(fm.data.education)
             var eolSupport = marked(fm.data['eol-support'])
             var sensoryCuration = marked(fm.data['sensory-curation'])
-            // var consultation = marked(fm.data['consultation'])
-            var consultation = null
+            var consultation = marked(fm.data['consultation'])
 
             var hs = hyperstream({
                 body: {
@@ -103,6 +102,9 @@ function buildHome () {
                             ${consultation}
                         </div>
                         <div class="right-col">
+                            <a class="btn-link" href="/consultation">
+                               Schedule A Consultation
+                            </a>
                         </div>
                     </div>
                     `
