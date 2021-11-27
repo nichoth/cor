@@ -17,7 +17,7 @@ collections:
           - { label: "body", name: "body", widget: markdown }
           - { label: "credentials", name: "credentials", widget: markdown }
           - { label: "Services", name: "services", widget: markdown }
-          - label: "End of life support",
+          - label: "End of life support"
             name: eol-support
             widget: list
             fields:
