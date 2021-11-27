@@ -29,14 +29,9 @@ function buildHome () {
             var intro = marked(fm.data.intro)
             var services = marked(fm.data.services)
             var { credentials } = fm.data
-            // console.log('.data', fm.data)
-            // console.log('edu', fm.data.education)
             var education = marked(fm.data.education)
             var eolSupport = marked(fm.data['eol-support'])
             var sensoryCuration = marked(fm.data['sensory-curation'])
-            // var eolSupport = fm.data['eol-support'] || []
-            // var education = fm.data.education || []
-            // var sensoryCuration = fm.data['sensory-curation'] || []
 
             var hs = hyperstream({
                 body: {
