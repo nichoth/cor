@@ -18,7 +18,7 @@ collections:
           - { label: "credentials", name: "credentials", widget: markdown }
           - { label: "Services", name: "services", widget: markdown }
           - label: "End of life support",
-            name: eol-support,
+            name: eol-support
             widget: list
             fields:
               - {label: Quote, name: quote, widget: string, default: "Everything is awesome!"}
