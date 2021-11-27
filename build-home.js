@@ -32,7 +32,8 @@ function buildHome () {
             var education = marked(fm.data.education)
             var eolSupport = marked(fm.data['eol-support'])
             var sensoryCuration = marked(fm.data['sensory-curation'])
-            var consultation = marked(fm.data['consultation'])
+            // var consultation = marked(fm.data['consultation'])
+            var consultation = null
 
             var hs = hyperstream({
                 body: {
