@@ -35,12 +35,12 @@ sensory-curation: |-
   * Prayer Chanting
   * Herbal Support
 education: |-
-  \* Resources
-  \* Memorial planning
-  \* Self-care
-  \* Consultation
-  \* Home-funeral
-  \* Green funeral
+  * Resources
+  * Memorial planning
+  * Self-care
+  * Consultation
+  * Home-funeral
+  * Green funeral
 featured-image: /uploads/35_daisies-3.png
 ---
 My role is to help you die with grace and diginity. More things straight and to the point go here. Together, we will develop and end of life plan that honors your values and resources. Relieve stress for your loved ones. Ecetera ecetera.
