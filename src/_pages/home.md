@@ -20,10 +20,6 @@ services: >-
 
 
   Below are a few areas of service and what they entail. Everything is in response to the individual's needs. A doula aids in finishing the last chapter of one’s life.
-eol-support:
-  - foo
-  - bar
-  - ham
 sensory-curation:
   - aaa
   - bbbb
