@@ -17,6 +17,14 @@ collections:
           - { label: "body", name: "body", widget: markdown }
           - { label: "credentials", name: "credentials", widget: markdown }
           - { label: "Services", name: "services", widget: markdown }
+          - label: "Featured Image"
+            name: "featured-image"
+            widget: "image"
+            choose_url: true
+            default: "/uploads/chocolate-dogecoin.jpg"
+            media_library:
+              config:
+                multiple: true
           - label: "End of life support list"
             name: eol-support
             widget: markdown
@@ -26,7 +34,9 @@ collections:
           - label: "Education list"
             name: education
             widget: markdown
-          - { label: "Schedule a consultation", name: "consultation", widget: markdown }
+          - label: "Schedule a consultation"
+            name: "consultation"
+            widget: markdown
       - label: "About Page"
         name: "about"
         file: "src/_pages/about.md"
