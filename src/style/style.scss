@@ -272,18 +272,24 @@ body {
         .foot {
             background-color: $black;
             color: $white;
-            padding: 2rem 1rem;
-            border-top: 1px solid;
+            padding-bottom: 2rem;
             padding-top: 0;
 
             h2 {
                 margin: 0;
                 margin-bottom: 2rem;
+                margin-left: 1rem;
+            }
+
+            .contact-info {
+                margin-left: 1rem;
             }
 
             .main-nav {
                 border: none;
                 margin-bottom: 6rem;
+                padding-bottom: 0.4rem;
+                border-bottom: 1px solid;
             }
 
             ul {
