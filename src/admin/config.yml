@@ -42,6 +42,13 @@ collections:
         fields:
           - { label: "Body", name: "body", widget: "markdown" }
           - { label: "Badge", name: "badge", widget: "code", required: false, output_code_only: true }
+          - label: "Featured Image"
+            name: "featured-image"
+            widget: "image"
+            choose_url: true
+            media_library:
+              config:
+                multiple: false
       - label: "Services Page"
         name: "services"
         file: "src/_pages/services.md"
