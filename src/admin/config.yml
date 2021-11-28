@@ -21,10 +21,9 @@ collections:
             name: "featured-image"
             widget: "image"
             choose_url: true
-            default: "/uploads/chocolate-dogecoin.jpg"
             media_library:
               config:
-                multiple: true
+                multiple: false
           - label: "End of life support list"
             name: eol-support
             widget: markdown
