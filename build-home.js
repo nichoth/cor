@@ -55,8 +55,14 @@ function buildHome () {
                         <div class="section-two-content">
                             ${content}
                             <div class="credentials">
-                                <div>Corey Coomes, End-of-Life Doula</div>
-                                <div>${credentials}</div>
+                                <img src="/Daisy_V2_outlined.png" alt="daisies">
+                                <div class="credentials-words">
+                                    <div>
+                                        Corey Coomes, <br>
+                                        End-of-Life Doula
+                                    </div>
+                                    <div>${credentials}</div>
+                                </div>
                             </div>
                             <div class="more-about-me">
                                 <a class="btn-link" href="/about">
