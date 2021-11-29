@@ -36,6 +36,22 @@ body {
     background-color: $bgColor;
     margin: 0;
     font-family: 'Mackinac', sans-serif;
+
+    #content {
+        // font-family: 'Yrsa', serif;
+        font-family: 'Mackinac', sans-serif;
+        // font-family: 'lora', serif;
+        font-weight: 300;
+        // max-width: $textMw;
+        margin: 0 auto;
+        margin-top: 3rem;
+        line-height: 1.8rem;
+        // margin-bottom: 8rem;
+    }
+
+    p {
+        margin: 0rem auto;
+    }
  
     .btn-link {
         color: black;
@@ -155,6 +171,24 @@ body {
             min-height: 20rem;
             max-width: 30rem;
             border: 1px solid;
+            text-align: center;
+        }
+    }
+
+    &.resources {
+        #content {
+            margin-top: 5rem;
+        }
+
+        .resources-content {
+            font-size: 1rem;
+            max-width: 30rem;
+            margin: 0 auto;
+        }
+        h1 {
+            border-bottom: 1px solid;
+            font-weight: lighter;
+            font-size: 1rem;
             text-align: center;
         }
     }
@@ -348,21 +382,6 @@ body {
         }
     }
     
-    #content {
-        // font-family: 'Yrsa', serif;
-        font-family: 'Mackinac', sans-serif;
-        // font-family: 'lora', serif;
-        font-weight: 300;
-        // max-width: $textMw;
-        margin: 0 auto;
-        margin-top: 3rem;
-        line-height: 1.8rem;
-        // margin-bottom: 8rem;
-    }
-
-    p {
-        margin: 0rem auto;
-    }
 }
 
 .main-nav {
