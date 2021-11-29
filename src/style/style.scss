@@ -117,6 +117,7 @@ body {
         #content {
             margin: 2rem;
             display: flex;
+
             .section-one {
                 width: 50%;
                 margin-right: 1rem;
@@ -125,6 +126,7 @@ body {
                     max-width: 16rem;
                 }
             }
+
             .section-two {
                 width: 50%;
                 margin-left: 1rem;
@@ -133,6 +135,27 @@ body {
 
         .featured-image {
             margin: 0;
+        }
+    }
+
+    &.consultation {
+        #content {
+            margin-bottom: 4rem;
+        }
+
+        .contact {
+            div {
+                &:first-child {
+                    border-bottom: 1px solid;
+                    padding: 0.5rem;
+                }
+            }
+
+            margin: 0 auto;
+            min-height: 20rem;
+            max-width: 30rem;
+            border: 1px solid;
+            text-align: center;
         }
     }
 
