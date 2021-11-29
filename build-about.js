@@ -46,6 +46,9 @@ function buildAbout () {
                 '#content': {
                     _appendHtml: `<div class="section-one">
                         ${content}
+                        <a class="btn-link" href="/consultation">
+                            Contact Me
+                        </a>
                     </div>
                     <div class="section-two">
                         <div class="featured-image">
