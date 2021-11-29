@@ -2,6 +2,7 @@ var hyperstream = require('hyperstream')
 var marked = require('marked')
 var matter = require('gray-matter')
 var fs = require('fs')
+const mkdirp = require('mkdirp')
 
 var templatePath = __dirname + '/src/_index.html'
 
