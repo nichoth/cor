@@ -58,12 +58,14 @@ function buildAbout () {
                 }
             })
 
-            // build `about` here
-            var ws = fs.createWriteStream(outFileDir + '/index.html')
-            var rs = fs.createReadStream(templatePath)
-            rs.pipe(hs).pipe(ws)
+            mkdirp(outFileDir).then(() => {
+                // build `about` here
+                var ws = fs.createWriteStream(outFileDir + '/index.html')
+                var rs = fs.createReadStream(templatePath)
+                rs.pipe(hs).pipe(ws)
 
-            resolve(file)
+                resolve(file)
+            })
         })
     })
 }
