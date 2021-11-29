@@ -9,7 +9,7 @@ buildAbout()
 
 function buildAbout () {
     var _path = __dirname + '/src/_pages/about.md'
-    var outFileDir = __dirname + '/public'
+    var outFileDir = __dirname + '/public/about'
 
     var navLinks = [
         ['Services', '/services'],
@@ -32,6 +32,17 @@ function buildAbout () {
                     class: { append: 'about' }
                 },
 
+                '.main-nav': {
+                    _appendHtml: navLinks.reduce(function (acc, item) {
+                        var [link, href] = item
+                        acc += `<li>
+                            <a href="${href}">${link}</a>
+                        </li>`
+
+                        return acc
+                    }, '')
+                },
+
                 '#content': {
                     _appendHtml: `<div class="section-one">
                         ${content}
@@ -40,8 +51,7 @@ function buildAbout () {
                         <div class="featured-image">
                             <img src=${featuredImage}>
                         </div>
-                    </div>
-                    `
+                    </div>`
                 }
             })
 

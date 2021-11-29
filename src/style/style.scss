@@ -14,15 +14,8 @@
     src: url('wigrum-light.otf') format('opentype');
 }
 
-// @import url('https://fonts.googleapis.com/css2?family=Yrsa:wght@300;400&display=swap');
-
 $green: #008051;
-// $lightGreen: #3dfd9d;
-// $purp: #7405d6;
-// $purp: #6a05d6;
 $textMw: 40rem;
-// $teal: #00b3b3;
-// $navHoverBorder: #00ffff;
 $btnCol: #EEE8E1;
 $white: #EDEEEC;
 $black: #131311;
@@ -118,6 +111,25 @@ body {
         align-items: center;
         justify-content: space-around;
         margin: 1rem 0;
+    }
+
+    &.about {
+        #content {
+            margin: 2rem;
+            display: flex;
+            .section-one {
+                width: 50%;
+                margin-right: 1rem;
+            }
+            .section-two {
+                width: 50%;
+                margin-left: 1rem;
+            }
+        }
+
+        .featured-image {
+            margin: 0;
+        }
     }
 
     &.home {
