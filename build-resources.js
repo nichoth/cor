@@ -40,7 +40,8 @@ function buildConsultation () {
                 '.main-nav': {
                     _appendHtml: navLinks.reduce(function (acc, item) {
                         var [link, href] = item
-                        acc += `<li>
+                        var cl = href === '/resources' ? 'active' : ''
+                        acc += `<li class="${cl}">
                             <a href="${href}">${link}</a>
                         </li>`
 
