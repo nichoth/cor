@@ -3,6 +3,7 @@ var marked = require('marked')
 var matter = require('gray-matter')
 var fs = require('fs')
 const mkdirp = require('mkdirp')
+const navLinks = require('./nav-links')
 
 var templatePath = __dirname + '/src/_index.html'
 
@@ -11,13 +12,6 @@ buildAbout()
 function buildAbout () {
     var _path = __dirname + '/src/_pages/about.md'
     var outFileDir = __dirname + '/public/about'
-
-    var navLinks = [
-        ['Services', '/services'],
-        ['Resources', '/resources'],
-        ['About', '/about'],
-        ['Consultation', '/consultation']
-    ]
 
     return new Promise((resolve, reject) => {
         fs.readFile(_path, 'utf8', (err, file) => {
@@ -49,7 +43,7 @@ function buildAbout () {
                     _appendHtml: `<div class="section-one">
                         ${content}
                         <a class="btn-link" href="/consultation">
-                            Contact Me
+                            Schedule A Consultation
                         </a>
                     </div>
                     <div class="section-two">

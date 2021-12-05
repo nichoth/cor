@@ -45,6 +45,15 @@ html {
     margin: 0 auto;
 }
 
+%centerH1 {
+    margin: 0 auto;
+    border-bottom: 1px solid;
+    font-weight: lighter;
+    font-size: 1rem;
+    text-align: center;
+    max-width: 30rem;
+}
+
 
 body {
     background-color: $bgColor;
@@ -147,6 +156,7 @@ body {
         #content {
             margin: 2rem;
             display: flex;
+            margin-bottom: 8rem;
 
             .section-one {
                 width: 50%;
@@ -171,6 +181,12 @@ body {
     &.consultation {
         #content {
             margin-bottom: 4rem;
+        }
+
+        .consultation-content {
+            h1 {
+                @extend %centerH1;
+            }
         }
 
         .contact {
@@ -199,11 +215,9 @@ body {
             max-width: 30rem;
             margin: 0 auto;
         }
+
         h1 {
-            border-bottom: 1px solid;
-            font-weight: lighter;
-            font-size: 1rem;
-            text-align: center;
+            @extend %centerH1;
         }
     }
 

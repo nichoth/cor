@@ -2,6 +2,7 @@ var hyperstream = require('hyperstream')
 var marked = require('marked')
 var matter = require('gray-matter')
 var fs = require('fs')
+var navLinks = require('./nav-links')
 
 var templatePath = __dirname + '/src/_index.html'
 
@@ -10,13 +11,6 @@ buildHome()
 function buildHome () {
     var _path = __dirname + '/src/_pages/home.md'
     var outFileDir = __dirname + '/public'
-
-    var navLinks = [
-        ['Services', '/services'],
-        ['Resources', '/resources'],
-        ['About', '/about'],
-        ['Consultation', '/consultation']
-    ]
 
     return new Promise((resolve, reject) => {
         fs.readFile(_path, 'utf8', (err, file) => {
@@ -75,32 +69,34 @@ function buildHome () {
                         </div>
                     </div>
 
-                    <h2>Services</h2>
-
                     <div id="services">
-                        ${services}
-                        <ul class="services-icons">
-                            <li>
-                                <img src="/olive-branch.png" alt="olive branch">
-                                <h3>End of Life Support</h3>
-                                ${eolSupport}
-                            </li>
-                            <li>
-                                <img src="/sounds.png" alt="sounds">
-                                <h3>Sensory Curation</h3>
-                                <ul>
-                                    ${sensoryCuration}
-                                </ul>
-                            </li>
-                            <li>
-                                <img src="/basket-icon.png" alt="basket">
-                                <h3>Education</h3>
-                                <ul>
-                                    ${education}
-                                </ul>
-                            </li>
-                        </ul>
-                        </ul>
+                        <h2>Services</h2>
+
+                        <div>
+                            ${services}
+                            <ul class="services-icons">
+                                <li>
+                                    <img src="/olive-branch.png" alt="olive branch">
+                                    <h3>End of Life Support</h3>
+                                    ${eolSupport}
+                                </li>
+                                <li>
+                                    <img src="/sounds.png" alt="sounds">
+                                    <h3>Sensory Curation</h3>
+                                    <ul>
+                                        ${sensoryCuration}
+                                    </ul>
+                                </li>
+                                <li>
+                                    <img src="/basket-icon.png" alt="basket">
+                                    <h3>Education</h3>
+                                    <ul>
+                                        ${education}
+                                    </ul>
+                                </li>
+                            </ul>
+                            </ul>
+                        </div>
                     </div>
 
                     <div class="schedule-consultation">

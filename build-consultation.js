@@ -3,6 +3,7 @@ var hyperstream = require('hyperstream')
 // var matter = require('gray-matter')
 var fs = require('fs')
 const mkdirp = require('mkdirp')
+const navLinks = require('./nav-links')
 
 var templatePath = __dirname + '/src/_index.html'
 
@@ -11,13 +12,6 @@ buildConsultation()
 function buildConsultation () {
     // var _path = __dirname + '/src/_pages/consultation.md'
     var outFileDir = __dirname + '/public/consultation'
-
-    var navLinks = [
-        ['Services', '/services'],
-        ['Resources', '/resources'],
-        ['About', '/about'],
-        ['Consultation', '/consultation']
-    ]
 
     return new Promise((resolve, _) => {
         // var fm = matter(file)
@@ -42,11 +36,15 @@ function buildConsultation () {
             },
 
             '#content': {
-                _appendHtml: `<div class="contact">
-                    <div>Get In Touch</div>
+                _appendHtml: `<div class="consultation-content">
+                    <h1>calendly goes here</h1>
                 </div>`
             }
         })
+
+                // _appendHtml: `<div class="contact">
+                //     <div>Get In Touch</div>
+                // </div>`
 
         // build `about` here
         mkdirp(outFileDir).then(() => {
