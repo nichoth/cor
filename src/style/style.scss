@@ -133,13 +133,13 @@ body {
         }
 
         span {
-            font-size: max(1.2rem);
+            font-size: clamp(2vw, 4vw, 1.2rem);
             width: 100%;
             display: block;
 
-            &:first-child {
-                font-size: 2vw;
-            }
+            // &:first-child {
+            //     font-size: 2vw;
+            // }
         }
     }
 
@@ -243,6 +243,8 @@ body {
                 width: 50%;
                 .btn-link {
                     width: 20rem;
+                    max-width: 100%;
+                    font-size: min(3vw, 1rem);
                 }
             }
         }
