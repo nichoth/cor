@@ -219,21 +219,6 @@ body {
         }
     }
 
-    &.services {
-        h1 {
-            @extend %head;
-        }
-
-        p {
-            @extend %main-text;
-            margin-bottom: 1rem;
-
-            &:last-child {
-                margin-bottom: 4rem;
-            }
-        }
-    }
-
     &.home {
         h2 {
             @extend %head;
@@ -321,12 +306,15 @@ body {
         }
 
         #services {
-            max-width: $textMw;
-            margin: 2rem auto;
             margin-bottom: 4rem;
 
             p {
                 margin-top: 1rem;
+            }
+
+            > div {
+                max-width: $textMw;
+                margin: 0 auto;
             }
 
             .services-icons {
