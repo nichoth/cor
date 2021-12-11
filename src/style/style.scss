@@ -266,11 +266,15 @@ body {
             padding: 4rem 2rem;
             display: flex;
             text-align: center;
+            align-items: end;
 
             .section-two-content {
-                margin-top: 3rem;
-                border-top: 1px solid;
                 padding-top: 3rem;
+                line-height: 1.8rem;
+
+                hr {
+                    margin-bottom: 3rem;
+                }
             }
 
             .credentials {
@@ -280,7 +284,7 @@ body {
 
                 img {
                     position: relative;
-                    top: -3rem;
+                    top: -2rem;
                 }
 
                 div:first-child {

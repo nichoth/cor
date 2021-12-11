@@ -47,6 +47,9 @@ function buildHome () {
 
                     <div class="section-two">
                         <div class="section-two-content">
+
+                        <hr>
+                        
                             ${content}
                             <div class="credentials">
                                 <img src="/Daisy_V2_outlined.png" alt="daisies">
