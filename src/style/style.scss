@@ -98,6 +98,8 @@ body {
 
     .main-logo {
         width: 30%;
+        text-align: center;
+
         img {
             max-width: 100%;
         }
@@ -109,7 +111,7 @@ body {
         text-transform: uppercase;
         text-align: center;
         line-height: 1.5rem;
-        height: 20vh;
+        height: 25vh;
         width: 27vw;
         display: flex;
         flex-direction: column;
