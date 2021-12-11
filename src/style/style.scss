@@ -96,26 +96,34 @@ body {
         }
     }
 
+    .main-logo {
+        width: 30%;
+        img {
+            max-width: 100%;
+        }
+    }
+
     .description {
         font-family: 'Wigrum', serif;
+        font-size: 4vw;
         text-transform: uppercase;
         text-align: center;
         line-height: 1.5rem;
-        height: 30vh;
+        height: 20vh;
         width: 27vw;
         display: flex;
         flex-direction: column;
         align-items: center;
         justify-content: space-evenly;
-        letter-spacing: 0.1rem;
+        letter-spacing: 0.1em;
 
         &:first-child {
             border-right: 1px solid black;
-            padding-right: 2rem;
+            padding-right: 2vw;
         }
 
         &:last-child {
-            padding-left: 2rem;
+            padding-left: 2vw;
             border-left: 1px solid black;
         }
         
@@ -124,12 +132,14 @@ body {
             letter-spacing: 0.25rem;
         }
 
-        path {
-            fill: transparent;
-        }
         span {
+            font-size: max(1.2rem);
             width: 100%;
             display: block;
+
+            &:first-child {
+                font-size: 2vw;
+            }
         }
     }
 
