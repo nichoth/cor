@@ -1,9 +1,3 @@
-// @font-face {
-//     font-family: 'lora';
-//     // src: url('webfont.eot'); /* IE9 Compat Modes */
-//     // src: url('Merriweather-Regular.ttf')  format('truetype')
-//     src: url('Lora-VariableFont_wght.ttf')  format('truetype')
-// }
 @font-face {
     font-family: 'Mackinac';
     src: url('P22MackinacPro-Book_25.otf') format('opentype');
@@ -19,7 +13,6 @@ $textMw: 40rem;
 $btnCol: #EEE8E1;
 $white: #EDEEEC;
 $black: #131311;
-$bgColor: #EDEEEC;
 
 
 // ------------------------------------------------------
@@ -53,7 +46,7 @@ html {
 
 
 body {
-    background-color: $bgColor;
+    background-color: $white;
     margin: 0;
     font-family: 'Mackinac', sans-serif;
 
