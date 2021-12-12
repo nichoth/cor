@@ -86,16 +86,12 @@ function buildHome () {
                                 <li>
                                     <img src="/sounds.png" alt="sounds">
                                     <h3>Sensory Curation</h3>
-                                    <ul>
-                                        ${sensoryCuration}
-                                    </ul>
+                                    ${sensoryCuration}
                                 </li>
                                 <li>
                                     <img src="/basket-icon.png" alt="basket">
                                     <h3>Education</h3>
-                                    <ul>
-                                        ${education}
-                                    </ul>
+                                    ${education}
                                 </li>
                             </ul>
                             </ul>

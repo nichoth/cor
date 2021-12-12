@@ -19,13 +19,10 @@ $textMw: 40rem;
 $btnCol: #EEE8E1;
 $white: #EDEEEC;
 $black: #131311;
+$bgColor: #EDEEEC;
 
 
 // ------------------------------------------------------
-
-$bgColor: #EDEEEC;
-
-// Wigrum
 
 html {
     // do root em size
@@ -107,7 +104,8 @@ body {
 
     .description {
         font-family: 'Wigrum', serif;
-        font-size: 4vw;
+        // font-size: 4vw;
+        font-size: clamp(2vw, 4vw, 1rem);
         text-transform: uppercase;
         text-align: center;
         line-height: 1.5rem;
@@ -135,7 +133,7 @@ body {
         }
 
         span {
-            font-size: clamp(2vw, 4vw, 1.2rem);
+            // font-size: clamp(2vw, 4vw, 1.2rem);
             width: 100%;
             display: block;
 
@@ -243,8 +241,10 @@ body {
 
             .intro {
                 width: 50%;
+                margin-top: 20vh;
+
                 .btn-link {
-                    width: 20rem;
+                    width: 17rem;
                     max-width: 100%;
                     font-size: min(3vw, 1rem);
                 }
@@ -341,6 +341,10 @@ body {
 
                 li {
                     width: 20vw;
+                    img {
+                        object-fit: contain;
+                        max-width: 100%;
+                    }
                 }
 
                 img {
@@ -453,3 +457,58 @@ body {
         }
     }
 }
+
+@media screen and (max-width: 650px) {
+    html {
+        font-size: 16px;
+    }
+
+    body {
+        &.home {
+            .section-one {
+                flex-direction: column;
+
+                .intro {
+                    width: initial;
+                    margin-bottom: 2rem;
+                    margin-top: 1rem;
+                }
+
+                .featured-image {
+                    border-right: none;
+                    width: initial;
+                }
+            }
+
+            .section-two {
+                flex-direction: column;
+                gap: 2rem;
+
+                .img-two {
+                    width: initial;
+                }
+
+                .section-two-content {
+                    width: initial;
+                }
+            }
+
+            #services {
+                margin: 2rem;
+            }
+
+            .schedule-consultation {
+                flex-direction: column;
+
+                .left-col {
+                    width: initial;
+                    margin-bottom: 2rem;
+                }
+                .right-col {
+                    width: initial;
+                }
+            }
+        }
+    }
+}
+
