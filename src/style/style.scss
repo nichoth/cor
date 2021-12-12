@@ -464,6 +464,21 @@ body {
     }
 
     body {
+
+        &.about {
+            #content {
+                flex-direction: column;
+                .section-one, .section-two {
+                    width: initial;
+                }
+
+                .section-one {
+                    margin-right: 0;
+                    margin-bottom: 2rem;
+                }
+            }
+        }
+
         &.home {
             .section-one {
                 flex-direction: column;
