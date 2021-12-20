@@ -20,6 +20,7 @@ services: >-
 
 
   Below are a few areas of service and what they entail. Everything is in response to the individual's needs. A doula aids in finishing the last chapter of one’s life.
+featured-image: /uploads/35_daisies-3.png
 eol-support: |-
   * Companionship
   * Comfort Care
@@ -35,7 +36,8 @@ sensory-curation: |-
   * Prayer Chanting
   * Herbal Support
 education: |-
-  * Resources
+  
+
   * Memorial planning
   * Self-care
   * Consultation
@@ -47,7 +49,6 @@ consultation: >-
 
 
   Offering virtual end-of-life services to human beings of all ages, beliefs, and life expressions.
-featured-image: /uploads/35_daisies-3.png
 ---
 My role is to help you die with grace and diginity. More things straight and to the point go here. Together, we will develop and end of life plan that honors your values and resources. Relieve stress for your loved ones. Ecetera ecetera.
 
