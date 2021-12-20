@@ -110,6 +110,13 @@ body {
         justify-content: space-evenly;
         letter-spacing: 0.1em;
 
+        .end-of-life, .exceptional {
+            svg {
+                height: 2rem;
+                width: 200px;
+            }
+        }
+
         &:first-child {
             border-right: 1px solid black;
             padding-right: 2vw;
@@ -235,6 +242,8 @@ body {
             .intro {
                 width: 50%;
                 margin-top: 20vh;
+                margin-left: 1rem;
+                margin-right: 1rem;
 
                 .btn-link {
                     width: 17rem;
@@ -429,6 +438,7 @@ body {
     justify-content: space-evenly;
     list-style: none;
     padding: 1rem 0;
+    padding-bottom: 0.9rem;
     margin-top: 0;
     // border: 1px solid black;
     border-top: 1px solid black;
@@ -439,10 +449,6 @@ body {
         a {
             text-decoration: none;
             color: black;
-
-            &:hover {
-                text-decoration: underline;
-            }
         }
 
         &.active {
