@@ -110,12 +110,12 @@ body {
         justify-content: space-evenly;
         letter-spacing: 0.1em;
 
-        .end-of-life, .exceptional {
-            svg {
-                height: 2rem;
-                width: 100%;
-            }
-        }
+        // .end-of-life, .exceptional {
+        //     svg {
+        //         height: 2rem;
+        //         width: 100%;
+        //     }
+        // }
 
         &:first-child {
             border-right: 1px solid black;
@@ -417,7 +417,9 @@ body {
                 border: none;
                 margin-bottom: 6rem;
                 padding-bottom: 0.4rem;
+                padding-top: 0.5rem;
                 border-bottom: 1px solid;
+                border-top: 1px solid;
             }
 
             ul {
