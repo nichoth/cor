@@ -8,8 +8,20 @@
 
 @font-face {
     font-family: 'Wigrum';
-    font-weight: lighter;
-    src: url('wigrum-light.otf') format('opentype');
+    // font-weight: lighter;
+    src: url('wigrum-light-TRIAL.otf ') format('opentype');
+}
+
+@font-face {
+    font-family: 'WigrumLight';
+    // font-weight: lighter;
+    src: url('wigrum-extralight-TRIAL.otf') format('opentype');
+}
+
+@font-face {
+    font-family: 'WigrumThin';
+    // font-weight: lighter;
+    src: url("wigrum-thin-TRIAL.otf") format("opentype");
 }
 
 
@@ -17,6 +29,7 @@
 
 html {
     // do root em size
+    -webkit-font-smoothing: antialiased;
     font-size: 20px;
 }
 
@@ -62,7 +75,7 @@ body {
         margin-top: 2rem;
         padding: 0.7rem 0;
         background-color: v.$btnCol;
-        font-family: 'Wigrum';
+        font-family: v.$sansFont;
         padding-bottom: 0.4rem;
         transition: 0.4s background-color;
 
@@ -89,7 +102,7 @@ body {
     }
 
     .description {
-        font-family: 'Wigrum', serif;
+        font-family: v.$sansFont;
         // font-size: 4vw;
         font-size: clamp(2vw, 4vw, 1rem);
         text-transform: uppercase;
@@ -236,7 +249,7 @@ body {
     // border: 1px solid black;
     border-top: 1px solid black;
     border-bottom: 1px solid black;
-    font-family: "Wigrum", serif;
+    font-family: v.$sansFont;
     font-weight: lighter;
     font-size: 16px;
     margin-bottom: 0;
@@ -245,7 +258,7 @@ body {
         a {
             text-decoration: none;
             text-transform: uppercase;
-            letter-spacing: 0.06rem;
+            letter-spacing: 0.02rem;
             color: black;
         }
 
