@@ -9,7 +9,6 @@
     .section-one {
         display: flex;
         text-align: center;
-        margin: 0 1rem;
 
         .intro {
             margin: 0 2rem;
@@ -17,6 +16,7 @@
             width: 50%;
 
             .btn-link {
+                margin-top: 4rem;
                 width: 17rem;
                 max-width: 100%;
                 font-size: min(3vw, 0.9rem);
@@ -48,6 +48,7 @@
 
             hr {
                 margin-bottom: 3rem;
+                width: 80%;
             }
         }
 
@@ -109,10 +110,10 @@
         .services-icons {
             display: flex;
             list-style: none;
-            justify-content: space-between;
+            justify-content: space-around;
             padding: 0;
             text-align: center;
-            margin-top: 4rem;
+            margin: 5rem 2rem;
 
             li {
                 width: 20vw;
@@ -141,7 +142,7 @@
     .schedule-consultation {
         display: flex;
         background-color: v.$black;
-        padding: 4rem 2rem;
+        padding: 4rem clamp(2rem, 10vw, 8rem);
         text-align: center;
 
         p {
