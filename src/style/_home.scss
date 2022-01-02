@@ -1,0 +1,207 @@
+@use './variables' as v;
+@use './silent-classes';
+
+.home {
+    h2 {
+        @extend %head;
+    }
+
+    .section-one {
+        display: flex;
+        text-align: center;
+        margin: 0 1rem;
+
+        .intro {
+            margin: 0 2rem;
+            margin-top: 20vh;
+            width: 50%;
+
+            .btn-link {
+                width: 17rem;
+                max-width: 100%;
+                font-size: min(3vw, 0.9rem);
+            }
+        }
+    }
+
+    .featured-image {
+        width: 50%;
+        padding: 2rem;
+        border-right: 1px solid;
+        margin-right: 0;
+        img {
+            vertical-align: middle;
+        }
+    }
+
+    .section-two {
+        background-color: v.$black;
+        color: v.$white;
+        padding: 4rem 2rem;
+        display: flex;
+        text-align: center;
+        align-items: end;
+
+        .section-two-content {
+            padding-top: 3rem;
+            line-height: 1.8rem;
+
+            hr {
+                margin-bottom: 3rem;
+            }
+        }
+
+        .credentials {
+            margin-top: 3rem;
+            text-align: center;
+            display: flex;
+
+            img {
+                position: relative;
+                top: -2rem;
+            }
+
+            div:first-child {
+                font-size: 1.2rem;
+            }
+
+            div:last-child {
+                font-size: 0.8rem;
+            }
+        }
+
+        .more-about-me {
+            a.btn-link {
+                background-color: v.$black;
+                color: v.$white;
+                border-color: v.$white;
+                max-width: 15rem;
+                &:hover {
+                    background-color: lighten(v.$black, 20%);
+                }
+            }
+        }
+
+        > div {
+            padding: 0 1rem;
+            width: 50%;
+        }
+
+        .img-two {
+            img {
+                max-width: 100%;
+            }
+        }
+    }
+
+    #services {
+        margin-bottom: 4rem;
+
+        p {
+            margin-top: 1rem;
+        }
+
+        > div {
+            max-width: v.$textMw;
+            margin: 0 auto;
+        }
+
+        .services-icons {
+            display: flex;
+            list-style: none;
+            justify-content: space-between;
+            padding: 0;
+            text-align: center;
+            margin-top: 4rem;
+
+            li {
+                width: 20vw;
+                img {
+                    object-fit: contain;
+                    max-width: 100%;
+                }
+            }
+
+            img {
+                height: 7rem;
+            }
+
+            h3 {
+                font-family: "Wigrum", serif;
+                font-weight: lighter;
+            }
+
+            ul {
+                padding: 0;
+                list-style: none;
+            }
+        }
+    }
+
+    .schedule-consultation {
+        display: flex;
+        background-color: v.$black;
+        padding: 4rem 2rem;
+        text-align: center;
+
+        p {
+            margin-top: 1rem;
+            &:first-child {
+                margin-top: 0;
+            }
+        }
+
+        .left-col {
+            width: 50%;
+            color: v.$white;
+        }
+        .right-col {
+            width: 50%;
+            color: v.$white;
+            a {
+                max-width: 20rem;
+                color: v.$white;
+                border-color: v.$white;
+                background-color: v.$black;
+                &:hover {
+                    background-color: lighten(v.$black, 20%);
+                }
+            }
+        }
+    }
+
+    .foot {
+        background-color: v.$black;
+        color: v.$white;
+        padding-bottom: 2rem;
+        padding-top: 0;
+
+        h2 {
+            margin: 0;
+            margin-bottom: 2rem;
+            margin-left: 1rem;
+        }
+
+        .contact-info {
+            margin-left: 1rem;
+        }
+
+        .main-nav {
+            border: none;
+            margin-bottom: 6rem;
+            padding-bottom: 0.4rem;
+            padding-top: 0.5rem;
+            border-bottom: 1px solid;
+            border-top: 1px solid;
+        }
+
+        ul {
+            border-color: v.$white;
+            margin-bottom: 0;
+            border-bottom-width: 0;
+            a {
+                color: v.$white;
+            }
+        }
+    }
+}

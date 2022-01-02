@@ -1,3 +1,6 @@
+@use './variables' as v;
+@use './home';
+
 @font-face {
     font-family: 'Mackinac';
     src: url('P22MackinacPro-Book_25.otf') format('opentype');
@@ -5,14 +8,9 @@
 
 @font-face {
     font-family: 'Wigrum';
+    font-weight: lighter;
     src: url('wigrum-light.otf') format('opentype');
 }
-
-$green: #008051;
-$textMw: 40rem;
-$btnCol: #EEE8E1;
-$white: #EDEEEC;
-$black: #131311;
 
 
 // ------------------------------------------------------
@@ -20,19 +18,6 @@ $black: #131311;
 html {
     // do root em size
     font-size: 20px;
-}
-
-%head {
-    text-transform: uppercase;
-    font-size: 1rem;
-    margin: 4rem 1rem;
-    font-family: 'Wigrum', serif;
-    font-weight: 100;
-}
-
-%main-text {
-    max-width: 40rem;
-    margin: 0 auto;
 }
 
 %centerH1 {
@@ -46,7 +31,7 @@ html {
 
 
 body {
-    background-color: $white;
+    background-color: v.$white;
     margin: 0;
     font-family: 'Mackinac', sans-serif;
 
@@ -57,7 +42,7 @@ body {
         font-weight: 300;
         // max-width: $textMw;
         margin: 0 auto;
-        margin-top: 3rem;
+        // margin-top: 3rem;
         line-height: 1.8rem;
         // margin-bottom: 8rem;
     }
@@ -76,13 +61,13 @@ body {
         text-align: center;
         margin-top: 2rem;
         padding: 0.7rem 0;
-        background-color: $btnCol;
+        background-color: v.$btnCol;
         font-family: 'Wigrum';
         padding-bottom: 0.4rem;
         transition: 0.4s background-color;
 
         &:hover {
-            background-color: lighten($btnCol, 10%);
+            background-color: lighten(v.$btnCol, 10%);
         }
     }
 
@@ -148,7 +133,8 @@ body {
     .featured-image {
         text-align: center;
         width: 100%;
-        margin: 0 2rem;
+        padding: 1rem;
+        margin: 0;
 
         img {
             max-width: 100%;
@@ -231,209 +217,6 @@ body {
         }
     }
 
-    &.home {
-        h2 {
-            @extend %head;
-        }
-
-        .section-one {
-            display: flex;
-            text-align: center;
-            margin: 0 1rem;
-
-            .intro {
-                width: 50%;
-                margin-top: 20vh;
-                margin-left: 1rem;
-                margin-right: 1rem;
-
-                .btn-link {
-                    width: 17rem;
-                    max-width: 100%;
-                    font-size: min(3vw, 1rem);
-                }
-            }
-        }
-
-        .featured-image {
-            width: 50%;
-            margin: 1rem;
-            border-right: 1px solid;
-            padding-right: 1rem;
-            margin-right: 0;
-        }
-
-        .section-two {
-            background-color: $black;
-            color: $white;
-            padding: 4rem 2rem;
-            display: flex;
-            text-align: center;
-            align-items: end;
-
-            .section-two-content {
-                padding-top: 3rem;
-                line-height: 1.8rem;
-
-                hr {
-                    margin-bottom: 3rem;
-                }
-            }
-
-            .credentials {
-                margin-top: 3rem;
-                text-align: center;
-                display: flex;
-
-                img {
-                    position: relative;
-                    top: -2rem;
-                }
-
-                div:first-child {
-                    font-size: 1.2rem;
-                }
-
-                div:last-child {
-                    font-size: 0.8rem;
-                }
-            }
-
-            .more-about-me {
-                a.btn-link {
-                    background-color: $black;
-                    color: $white;
-                    border-color: $white;
-                    max-width: 15rem;
-                    &:hover {
-                        background-color: lighten($black, 20%);
-                    }
-                }
-            }
-
-            > div {
-                padding: 0 1rem;
-                width: 50%;
-            }
-
-            .img-two {
-                img {
-                    max-width: 100%;
-                }
-            }
-        }
-
-        #services {
-            margin-bottom: 4rem;
-
-            p {
-                margin-top: 1rem;
-            }
-
-            > div {
-                max-width: $textMw;
-                margin: 0 auto;
-            }
-
-            .services-icons {
-                display: flex;
-                list-style: none;
-                justify-content: space-between;
-                padding: 0;
-                text-align: center;
-                margin-top: 4rem;
-
-                li {
-                    width: 20vw;
-                    img {
-                        object-fit: contain;
-                        max-width: 100%;
-                    }
-                }
-
-                img {
-                    height: 7rem;
-                }
-
-                h3 {
-                    font-family: "Wigrum", serif;
-                    font-weight: lighter;
-                }
-
-                ul {
-                    padding: 0;
-                    list-style: none;
-                }
-            }
-        }
-
-        .schedule-consultation {
-            display: flex;
-            background-color: $black;
-            padding: 4rem 2rem;
-            text-align: center;
-
-            p {
-                margin-top: 1rem;
-                &:first-child {
-                    margin-top: 0;
-                }
-            }
-
-            .left-col {
-                width: 50%;
-                color: $white;
-            }
-            .right-col {
-                width: 50%;
-                color: $white;
-                a {
-                    max-width: 20rem;
-                    color: $white;
-                    border-color: $white;
-                    background-color: $black;
-                    &:hover {
-                        background-color: lighten($black, 20%);
-                    }
-                }
-            }
-        }
-
-        .foot {
-            background-color: $black;
-            color: $white;
-            padding-bottom: 2rem;
-            padding-top: 0;
-
-            h2 {
-                margin: 0;
-                margin-bottom: 2rem;
-                margin-left: 1rem;
-            }
-
-            .contact-info {
-                margin-left: 1rem;
-            }
-
-            .main-nav {
-                border: none;
-                margin-bottom: 6rem;
-                padding-bottom: 0.4rem;
-                padding-top: 0.5rem;
-                border-bottom: 1px solid;
-                border-top: 1px solid;
-            }
-
-            ul {
-                border-color: $white;
-                margin-bottom: 0;
-                border-bottom-width: 0;
-                a {
-                    color: $white;
-                }
-            }
-        }
-    }
     
 }
 
@@ -448,11 +231,15 @@ body {
     border-top: 1px solid black;
     border-bottom: 1px solid black;
     font-family: "Wigrum", serif;
+    font-weight: lighter;
+    font-size: 16px;
+    margin-bottom: 0;
 
     li {
         a {
             text-decoration: none;
             text-transform: uppercase;
+            letter-spacing: 0.1rem;
             color: black;
         }
 

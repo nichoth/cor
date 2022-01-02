@@ -55,7 +55,7 @@ function buildHome () {
                                 <img src="/Daisy_V2_outlined.png" alt="daisies">
                                 <div class="credentials-words">
                                     <div>
-                                        Corey Coomes, <br> End-of-Life Doula
+                                        Corey Coomes, End-of-Life Doula
                                     </div>
                                     <div>${credentials}</div>
                                 </div>
