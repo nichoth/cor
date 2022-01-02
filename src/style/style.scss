@@ -77,6 +77,12 @@ body {
         border-left: 1px solid;
         border-right: 1px solid;
 
+        a {
+            display: block;
+            margin: 0 auto;
+            width: 25%;
+        }
+
         img {
             max-width: 100%;
         }
