@@ -12,15 +12,21 @@
 
         .intro {
             margin: 0 clamp(2rem, 5vw, 6rem);
-            margin-top: 42vh;
+            margin-top: 33vh;
             width: 45%;
 
             .btn-link {
-                letter-spacing: 0.05rem;
+                font-size: 17px;
+                letter-spacing: 0.02rem;
                 margin-top: 4rem;
-                width: 17rem;
+                width: 279px;
                 max-width: 100%;
-                font-size: min(3vw, 0.9rem);
+
+                // letter-spacing: 0.05rem;
+                // margin-top: 4rem;
+                // width: 17rem;
+                // max-width: 100%;
+                // font-size: min(3vw, 0.9rem);
             }
         }
     }
