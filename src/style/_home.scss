@@ -11,11 +11,12 @@
         text-align: center;
 
         .intro {
-            margin: 0 2rem;
-            margin-top: 20vh;
+            margin: 0 clamp(2rem, 5vw, 6rem);
+            margin-top: 45vh;
             width: 50%;
 
             .btn-link {
+                letter-spacing: 0.05rem;
                 margin-top: 4rem;
                 width: 17rem;
                 max-width: 100%;
@@ -67,7 +68,7 @@
             }
 
             div:last-child {
-                font-size: 0.8rem;
+                font-size: 0.7rem;
             }
         }
 
@@ -76,7 +77,13 @@
                 background-color: v.$black;
                 color: v.$white;
                 border-color: v.$white;
-                max-width: 15rem;
+                max-width: 10rem;
+                margin-top: 0;
+                font-size: 17px;
+
+                padding: 0.7em 0;
+                padding-bottom: 0.4em;
+
                 &:hover {
                     background-color: lighten(v.$black, 20%);
                 }
@@ -155,17 +162,29 @@
         .left-col {
             width: 50%;
             color: v.$white;
+            padding: 3rem;
         }
         .right-col {
             width: 50%;
             color: v.$white;
             margin-left: 3rem;
 
+            vertical-align: middle;
+            align-items: center;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+
             a {
+                margin-top: 0;
                 max-width: 18rem;
                 color: v.$white;
                 border-color: v.$white;
                 background-color: v.$black;
+                padding: 0.8rem 1rem;
+                padding-bottom: 0.6rem;
+                letter-spacing: 0.05em;
+
                 &:hover {
                     background-color: lighten(v.$black, 20%);
                 }

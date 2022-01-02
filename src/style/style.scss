@@ -72,7 +72,7 @@ body {
     }
 
     .main-logo {
-        width: 50%;
+        width: 46%;
         text-align: center;
         border-left: 1px solid;
         border-right: 1px solid;
@@ -80,7 +80,7 @@ body {
         a {
             display: block;
             margin: 0 auto;
-            width: 25%;
+            width: 23%;
         }
 
         img {
@@ -151,7 +151,7 @@ body {
         display: flex;
         align-items: center;
         justify-content: space-around;
-        margin: 1rem 0;
+        margin: 0.5rem 0;
     }
 
     &.about {
@@ -245,7 +245,7 @@ body {
         a {
             text-decoration: none;
             text-transform: uppercase;
-            letter-spacing: 0.1rem;
+            letter-spacing: 0.06rem;
             color: black;
         }
 
