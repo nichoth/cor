@@ -159,8 +159,10 @@
         .right-col {
             width: 50%;
             color: v.$white;
+            margin-left: 3rem;
+
             a {
-                max-width: 20rem;
+                max-width: 18rem;
                 color: v.$white;
                 border-color: v.$white;
                 background-color: v.$black;
