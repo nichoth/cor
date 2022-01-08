@@ -1,5 +1,6 @@
 @use './variables' as v;
 @use './home';
+@use './main-nav';
 
 @font-face {
     font-family: 'Mackinac';
@@ -239,35 +240,7 @@ body {
     
 }
 
-.main-nav {
-    display: flex;
-    justify-content: space-evenly;
-    list-style: none;
-    padding: 0.8rem 0;
-    padding-bottom: 0.7rem;
-    margin-top: 0;
-    // border: 1px solid black;
-    border-top: 1px solid black;
-    border-bottom: 1px solid black;
-    font-family: v.$sansFont;
-    font-weight: lighter;
-    font-size: 16px;
-    margin-bottom: 0;
-
-    li {
-        a {
-            text-decoration: none;
-            text-transform: uppercase;
-            letter-spacing: 0.02rem;
-            color: black;
-        }
-
-        &.active {
-            border-bottom: 3px solid #000;
-        }
-    }
-}
-
+// media queries
 @media screen and (max-width: 650px) {
     html {
         font-size: 16px;
@@ -340,4 +313,3 @@ body {
         }
     }
 }
-
