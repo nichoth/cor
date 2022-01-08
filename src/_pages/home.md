@@ -50,5 +50,5 @@ consultation: >-
 
   Offering virtual end-of-life services to human beings of all ages, beliefs, and life expressions.
 ---
-My role is to help you die with grace and diginity. More things straight and to the point go here. Together, we will develop and end of life plan that honors your values and resources. Relieve stress for your loved ones. Ecetera ecetera.
 
+As an end-of-life doula, I provide emotional support and aspire to  empower others to grow through deep listening and personalized, non-judgemental care. I always practice to  align myself compassionately with your goals, wishes, and needs in mind.
