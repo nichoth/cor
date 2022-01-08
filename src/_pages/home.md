@@ -21,6 +21,7 @@ services: >-
 
   Below are a few areas of service and what they entail. Everything is in response to the individual's needs. A doula aids in finishing the last chapter of one’s life.
 featured-image: /uploads/35_daisies-3.png
+profile-pic: /uploads/corey_photo_bw.jpg
 eol-support: |-
   * Companionship
   * Comfort Care
