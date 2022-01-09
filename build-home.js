@@ -123,7 +123,11 @@ function buildHome () {
                         <div class="contact-info">
                             <p>Corey Coomes</p>
                             <p>(815) 677-5152</p>
-                            <p>seijocoomes@gmail.com</p>
+                            <p>
+                                <a href="mailto:seijocoomes@gmail.com">
+                                    seijocoomes@gmail.com
+                                </a>
+                            </p>
                             <p>© Still Brilliance 2021</p>
                         </div>
                     </div>

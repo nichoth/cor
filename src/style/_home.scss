@@ -213,6 +213,13 @@
 
         .contact-info {
             margin-left: 1rem;
+            a {
+                color: v.$white;
+                text-decoration: none;
+                &:hover {
+                    text-decoration: underline;
+                }
+            }
         }
 
         .main-nav {
