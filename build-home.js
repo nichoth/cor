@@ -67,7 +67,7 @@ function buildHome () {
                             </div>
                         </div>
                         <div class="img-two">
-                            <img src="/rectangle-38.png">
+                            <img src="${fm.data['profile-pic']}">
                         </div>
                     </div>
 
