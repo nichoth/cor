@@ -53,6 +53,7 @@
         .section-two-content {
             padding-top: 3rem;
             line-height: 1.8rem;
+            align-self: center;
 
             hr {
                 margin-bottom: 2rem;
@@ -64,7 +65,8 @@
             margin-top: 2rem;
             text-align: center;
             display: flex;
-            justify-content: center;
+            // justify-content: center;
+            justify-content: space-evenly;
             position: relative;
             left: -2rem;
 
