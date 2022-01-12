@@ -37,7 +37,12 @@ function buildConsultation () {
 
             '#content': {
                 _appendHtml: `<div class="consultation-content">
-                    <h1>calendly goes here</h1>
+
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/stillbrilliance?background_color=131311&text_color=edeeec&primary_color=5ac2a2" style="min-width:320px;height:630px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <!-- Calendly inline widget end -->
+
                 </div>`
             }
         })
