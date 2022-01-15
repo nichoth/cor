@@ -1,6 +1,10 @@
 @use './variables' as v;
 @use './silent-classes';
 
+
+
+
+
 .home {
     h2 {
         @extend %head;
@@ -253,5 +257,12 @@
                 color: v.$white;
             }
         }
+    }
+}
+
+// example media query
+@media only screen and (min-width: 600px) {
+    body {
+        background-color: pink;
     }
 }
