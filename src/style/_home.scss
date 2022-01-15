@@ -174,7 +174,7 @@
         .left-col {
             width: 50%;
             color: v.$white;
-            padding: 3rem;
+            padding: 1rem;
         }
         .right-col {
             width: 50%;
@@ -194,8 +194,6 @@
                 border-color: v.$white;
                 background-color: v.$black;
                 padding: 0.8rem 1rem;
-                padding-bottom: 0.6rem;
-                letter-spacing: 0.05em;
 
                 &:hover {
                     background-color: lighten(v.$black, 20%);
