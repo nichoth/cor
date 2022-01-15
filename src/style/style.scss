@@ -44,6 +44,30 @@ html {
 }
 
 
+
+/*
+body.foo {
+
+}
+
+body .foo {
+
+}
+*/
+
+
+/*
+
+<body class="foo"></body>
+
+<body>
+  <div class="foo"></div>
+</body>
+
+*/
+
+
+
 body {
     background-color: v.$white;
     margin: 0;
