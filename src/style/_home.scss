@@ -56,8 +56,7 @@
 
         .section-two-content {
             padding: 3vw;
-            flex-basis: 50%;
-            // height: calc(100vh - 2rem);
+            flex-basis: 60%;
             line-height: 2.01vw;
 
             display: flex;
@@ -118,10 +117,10 @@
 
         > div {
             padding: 3vw;
-            flex-basis: 50%;
         }
 
         .img-two {
+            flex-basis: 40%;
             img {
                 max-height: 100%;
                 max-width: 100%;
