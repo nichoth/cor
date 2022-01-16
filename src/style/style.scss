@@ -31,7 +31,8 @@
 html {
     // do root em size
     -webkit-font-smoothing: antialiased;
-    font-size: 20px;
+    // font-size: 20px;
+    font-size: 1.38vw;
 }
 
 %centerH1 {
@@ -42,31 +43,6 @@ html {
     text-align: center;
     max-width: 30rem;
 }
-
-
-
-/*
-body.foo {
-
-}
-
-body .foo {
-
-}
-*/
-
-
-/*
-
-<body class="foo"></body>
-
-<body>
-  <div class="foo"></div>
-</body>
-
-*/
-
-
 
 body {
     background-color: v.$white;
@@ -87,7 +63,7 @@ body {
 
     p {
         margin: 0rem auto;
-        line-height: 2rem;
+        line-height: 2.8vw;
     }
  
     .btn-link {
@@ -99,7 +75,7 @@ body {
         display: block;
         text-align: center;
         margin-top: 2rem;
-        padding: 0.4rem 0;
+        padding: 0.4em 0;
         background-color: v.$btnCol;
         font-family: v.$sansFont;
         transition: 0.4s background-color;
@@ -176,9 +152,8 @@ body {
 
     .featured-image {
         text-align: center;
-        width: 100%;
-        padding: 1rem;
-        margin: 0;
+        // width: 100%;
+        // margin: 0;
 
         img {
             max-width: 100%;

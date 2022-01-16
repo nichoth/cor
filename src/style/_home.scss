@@ -1,9 +1,6 @@
 @use './variables' as v;
 @use './silent-classes';
 
-
-
-
 .home {
     h2 {
         @extend %head;
@@ -16,19 +13,24 @@
         .intro {
             // margin: 0 clamp(2rem, 5vw, 6rem);
             // margin-top: 15%;
-            margin: 3vw;
-            margin-bottom: 1rem;
-            width: 45%;
+            // margin: 3vw;
+            // margin-bottom: 1rem;
+            width: 50%;
 
             justify-content: center;
             display: flex;
             flex-direction: column;
 
+            p {
+                margin: 0 2rem;
+            }
+
             .btn-link {
+                @extend %all-caps;
                 font-size: 17px;
-                letter-spacing: 0.02rem;
-                margin-top: 2rem;
-                width: 279px;
+                width: 17em;
+                letter-spacing: 0.02em;
+                margin-top: 2.4em;
                 max-width: 100%;
             }
         }
@@ -36,9 +38,10 @@
 
     .featured-image {
         width: 50%;
-        padding: 2rem;
+        // padding: 2rem;
+        // padding: 2.777vw;
         border-right: 1px solid;
-        margin-right: 0;
+        // margin-right: 0;
         img {
             vertical-align: middle;
         }
@@ -48,7 +51,7 @@
         background-color: v.$black;
         color: v.$white;
         // padding: 4rem 2rem;
-        height: 100vh;
+        // height: 100vh;
         padding: 0 2rem;
         display: flex;
         align-items: center;
@@ -57,7 +60,8 @@
         .section-two-content {
             height: calc(100vh - 2rem);
             padding-top: 3rem;
-            line-height: 1.8rem;
+            // line-height: 1.8rem;
+            line-height: 2.01vw;
             // align-self: center;
 
             display: flex;
