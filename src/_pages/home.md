@@ -51,5 +51,4 @@ consultation: >-
 
   Offering virtual end-of-life services to human beings of all ages, beliefs, and life expressions.
 ---
-
-As an end-of-life doula, I provide emotional support and aspire to  empower others to grow through deep listening and personalized, non-judgemental care. I always practice to  align myself compassionately with your goals, wishes, and needs in mind.
+As an end-of-life doula, I provide emotional support and aspire to <br>  empower others to grow through deep listening <br> and personalized, non-judgemental care. I always practice <br> to  align myself compassionately with your <br> goals, wishes, and needs in mind.
