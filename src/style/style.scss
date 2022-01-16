@@ -80,6 +80,7 @@ body {
         background-color: v.$btnCol;
         font-family: v.$sansFont;
         transition: 0.4s background-color;
+        line-height: 1.8rem;
 
         &:hover {
             background-color: lighten(v.$btnCol, 10%);
