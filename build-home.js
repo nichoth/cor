@@ -58,7 +58,7 @@ function buildHome () {
                                     <div>
                                         Corey Coomes, End&#8209;of&#8209;Life&nbsp;Doula
                                     </div>
-                                    <div>${credentials}</div>
+                                    <div class="certificate">${credentials}</div>
                                     <div class="more-about-me">
                                         <a class="btn-link" href="/about">
                                             More about me

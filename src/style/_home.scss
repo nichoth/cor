@@ -77,18 +77,23 @@
         }
 
         .credentials {
+            left: -1.7rem;
             margin: 0 2rem;
             margin-top: 1rem;
             text-align: center;
             display: flex;
             justify-content: space-evenly;
             position: relative;
-            left: -2rem;
+
+            .certificate {
+                margin-top: 0.5rem;
+            }
 
             img {
                 height: 100%;
                 position: relative;
-                top: -1.2rem;
+                top: -2.2rem;
+                left: -1rem;
             }
 
             div:first-child {
@@ -98,8 +103,8 @@
             }
 
             div:last-child {
-                margin-top: 1rem;
-                font-size: 0.7rem;
+                // margin-top: 1rem;
+                font-size: 1vw;
             }
         }
 
@@ -108,7 +113,7 @@
                 background-color: v.$black;
                 color: v.$white;
                 border-color: v.$white;
-                margin-top: 1.5rem;
+                margin-top: 2.4em;
 
                 &:hover {
                     background-color: lighten(v.$black, 20%);
