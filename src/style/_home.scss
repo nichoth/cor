@@ -179,8 +179,10 @@
             }
 
             h3 {
+                @extend %all-caps;
                 font-family: "Wigrum", serif;
                 font-weight: lighter;
+                font-size: 1.3vw;
             }
 
             ul {
