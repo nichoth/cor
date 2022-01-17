@@ -5,9 +5,19 @@
     margin: 4rem 4rem;
     font-family: 'Wigrum', serif;
     font-weight: 100;
+    letter-spacing: 0.02em;
 }
 
 %main-text {
     max-width: 40rem;
     margin: 0 auto;
+}
+
+%all-caps {
+    letter-spacing: 0.02em;
+    text-transform: uppercase;
+}
+
+%btn-text {
+    font-size: 1.11vw;
 }
