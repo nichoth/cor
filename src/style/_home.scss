@@ -56,6 +56,8 @@
         padding: 2rem;
 
         .section-two-content {
+            position: relative;
+            top: 2rem;
             padding: 3vw;
             flex-basis: 60%;
             line-height: 2.01vw;
@@ -74,16 +76,24 @@
                 margin-bottom: 2rem;
                 width: 70%;
             }
+
+            .about-cor {
+                img {
+                    bottom: 1rem;
+                    position: relative;
+                    left: -12rem;
+                }
+            }
         }
 
         .credentials {
-            left: -1.7rem;
             margin: 0 2rem;
             margin-top: 1rem;
             text-align: center;
             display: flex;
             justify-content: space-evenly;
             position: relative;
+            bottom: 7rem;
 
             .certificate {
                 margin-top: 0.5rem;
@@ -98,8 +108,8 @@
 
             div:first-child {
                 font-size: 1.8vw;
-                position: relative;
-                left: -1rem;
+                // position: relative;
+                // left: -1rem;
             }
 
             div:last-child {
