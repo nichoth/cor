@@ -38,10 +38,10 @@ function buildConsultation () {
             '#content': {
                 _appendHtml: `<div class="consultation-content">
 
-                    <!-- Calendly inline widget begin -->
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/stillbrilliance?background_color=131311&text_color=edeeec&primary_color=5ac2a2" style="min-width:320px;height:630px;"></div>
-                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                    <!-- Calendly inline widget end -->
+                <!-- Calendly inline widget begin -->
+                <div class="calendly-inline-widget" data-url="https://calendly.com/stillbrilliance?text_color=131311&primary_color=79c8a9" style="min-width:320px;height:630px;"></div>
+                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                <!-- Calendly inline widget end -->
 
                 </div>`
             }
