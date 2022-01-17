@@ -107,7 +107,7 @@
             }
 
             div:first-child {
-                font-size: 1.8vw;
+                font-size: 1.5vw;
             }
 
             div:last-child {
@@ -121,7 +121,6 @@
                 color: v.$white;
                 border-color: v.$white;
                 margin-top: 2.4em;
-                font-size: 1.3vw;
 
                 &:hover {
                     background-color: lighten(v.$black, 20%);
@@ -167,6 +166,8 @@
             margin: 5rem 2rem;
 
             li {
+                margin-bottom: 0.4rem;
+                font-size: 1.1vw;
                 width: 20vw;
                 img {
                     object-fit: contain;
