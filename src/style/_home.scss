@@ -108,12 +108,9 @@
 
             div:first-child {
                 font-size: 1.8vw;
-                // position: relative;
-                // left: -1rem;
             }
 
             div:last-child {
-                // margin-top: 1rem;
                 font-size: 1vw;
             }
         }
@@ -124,6 +121,7 @@
                 color: v.$white;
                 border-color: v.$white;
                 margin-top: 2.4em;
+                font-size: 1.3vw;
 
                 &:hover {
                     background-color: lighten(v.$black, 20%);
@@ -146,6 +144,10 @@
 
     #services {
         margin-bottom: 4rem;
+
+        h2 {
+            font-size: 1.3vw;
+        }
 
         p {
             margin-top: 1rem;
