@@ -40,19 +40,46 @@ function buildAbout () {
                 },
 
                 '#content': {
-                    _appendHtml: `<div class="section-one">
-                        ${content}
-                        <div class="btn-wrapper">
-                            <a class="btn-link" href="/consultation">
-                                Schedule A Consultation
-                            </a>
+                    _appendHtml: `<div class="abouts">
+                        <div class="section-one">
+                            ${content}
+                            <div class="btn-wrapper">
+                                <a class="btn-link" href="/consultation">
+                                    Schedule A Consultation
+                                </a>
+                            </div>
+                        </div>
+                        <div class="section-two">
+                            <div class="featured-image">
+                                <img src=${featuredImage}>
+                            </div>
                         </div>
                     </div>
-                    <div class="section-two">
-                        <div class="featured-image">
-                            <img src=${featuredImage}>
+
+                    <div class="foot">
+                        <ul class="main-nav">
+                            ${navLinks.reduce(function (acc, item) {
+                                var [link, href] = item
+                                acc += `<li>
+                                    <a href="${href}">${link}</a>
+                                </li>`
+
+                                return acc
+                            }, '')}
+                        </ul>
+                        <h2>Contact</h2>
+                        <div class="contact-info">
+                            <p>Corey Coomes</p>
+                            <p>(815) 677-5152</p>
+                            <p>
+                                <a href="mailto:seijocoomes@gmail.com">
+                                    seijocoomes@gmail.com
+                                </a>
+                            </p>
+                            <p>© Still Brilliance 2022</p>
                         </div>
-                    </div>`
+                    </div>
+                    `
                 }
             })
 

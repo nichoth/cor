@@ -5,21 +5,24 @@ body {
 
     &.about {
         #content {
-            // margin: 2rem;
-            display: flex;
-            margin-bottom: 8rem;
-            > div {
-                flex-basis: 50%;
-                padding: 3vw;
-            }
+            .abouts {
+                display: flex;
+                margin-bottom: 8rem;
+                > div {
+                    flex-basis: 50%;
+                    padding: 3vw;
+                }
 
-            .section-one {
-                .btn-link {
-                    display: inline-block;
-                    margin: 0 auto;
-                    margin-top: 2.4em;
+                .section-one {
+                    .btn-link {
+                        display: inline-block;
+                        margin: 0 auto;
+                        margin-top: 2.4em;
+                    }
                 }
             }
+            // margin: 2rem;
+
         }
 
         .featured-image {
