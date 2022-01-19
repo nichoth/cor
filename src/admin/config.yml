@@ -43,6 +43,9 @@ collections:
           - label: "Schedule a consultation"
             name: "consultation"
             widget: markdown
+          - label: "section 3"
+            name: "section3"
+            widget: markdown
       - label: "About Page"
         name: "about"
         file: "src/_pages/about.md"
