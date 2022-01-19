@@ -1,0 +1,29 @@
+body {
+    .btn-wrapper {
+        text-align: center;
+    }
+
+    &.about {
+        #content {
+            // margin: 2rem;
+            display: flex;
+            margin-bottom: 8rem;
+            > div {
+                flex-basis: 50%;
+                padding: 3vw;
+            }
+
+            .section-one {
+                .btn-link {
+                    display: inline-block;
+                    margin: 0 auto;
+                    margin-top: 2.4em;
+                }
+            }
+        }
+
+        .featured-image {
+            margin: 0;
+        }
+    }
+}

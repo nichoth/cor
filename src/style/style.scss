@@ -2,6 +2,7 @@
 @use './home';
 @use './main-nav';
 @use './silent-classes';
+@use './about';
 
 @font-face {
     font-family: 'Mackinac';
@@ -166,32 +167,6 @@ body {
         align-items: center;
         justify-content: space-around;
         margin: 8px 0;
-    }
-
-    &.about {
-        #content {
-            margin: 2rem;
-            display: flex;
-            margin-bottom: 8rem;
-
-            .section-one {
-                width: 50%;
-                margin-right: 1rem;
-
-                .btn-link {
-                    max-width: 16rem;
-                }
-            }
-
-            .section-two {
-                width: 50%;
-                margin-left: 1rem;
-            }
-        }
-
-        .featured-image {
-            margin: 0;
-        }
     }
 
     &.consultation {
