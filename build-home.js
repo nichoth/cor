@@ -140,7 +140,7 @@ function buildHome () {
                                     seijocoomes@gmail.com
                                 </a>
                             </p>
-                            <p>© Still Brilliance 2021</p>
+                            <p>© Still Brilliance 2022</p>
                         </div>
                     </div>
                     `
