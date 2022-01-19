@@ -261,6 +261,8 @@
                 color: v.$white;
                 border-color: v.$white;
                 background-color: v.$black;
+                position: relative;
+                left: -1rem;
 
                 &:hover {
                     background-color: lighten(v.$black, 20%);
