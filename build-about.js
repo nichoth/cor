@@ -52,6 +52,8 @@ function buildAbout () {
                         <div class="section-two">
                             <div class="featured-image">
                                 <img src=${featuredImage}>
+
+                                <img class="doula-cert" src="/doula-cert.svg">
                             </div>
                         </div>
                     </div>
