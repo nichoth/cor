@@ -3,6 +3,7 @@
 @use './main-nav';
 @use './silent-classes';
 @use './about';
+@use './resources';
 
 @font-face {
     font-family: 'Mackinac';
@@ -34,15 +35,6 @@ html {
     // do root em size
     -webkit-font-smoothing: antialiased;
     font-size: 1.3vw;
-}
-
-%centerH1 {
-    margin: 0 auto;
-    border-bottom: 1px solid;
-    font-weight: lighter;
-    font-size: 1rem;
-    text-align: center;
-    max-width: 30rem;
 }
 
 body {
@@ -193,22 +185,6 @@ body {
             max-width: 30rem;
             border: 1px solid;
             text-align: center;
-        }
-    }
-
-    &.resources {
-        #content {
-            margin-top: 5rem;
-        }
-
-        .resources-content {
-            font-size: 1rem;
-            max-width: 30rem;
-            margin: 0 auto;
-        }
-
-        h1 {
-            @extend %centerH1;
         }
     }
 

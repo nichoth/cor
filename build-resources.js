@@ -45,7 +45,32 @@ function buildConsultation () {
                     _appendHtml: `<div class="resources-content">
                         <h1>Resources</h1>
                         ${content}
-                    </div>`
+                    </div>
+
+                    <div class="foot">
+                        <ul class="main-nav">
+                            ${navLinks.reduce(function (acc, item) {
+                                var [link, href] = item
+                                acc += `<li>
+                                    <a href="${href}">${link}</a>
+                                </li>`
+
+                                return acc
+                            }, '')}
+                        </ul>
+                        <h2>Contact</h2>
+                        <div class="contact-info">
+                            <p>Corey Coomes</p>
+                            <p>(815) 677-5152</p>
+                            <p>
+                                <a href="mailto:seijocoomes@gmail.com">
+                                    seijocoomes@gmail.com
+                                </a>
+                            </p>
+                            <p>© Still Brilliance 2022</p>
+                        </div>
+                    </div>
+                    `
                 }
             })
 
