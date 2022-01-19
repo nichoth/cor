@@ -38,12 +38,37 @@ function buildConsultation () {
             '#content': {
                 _appendHtml: `<div class="consultation-content">
 
-                <!-- Calendly inline widget begin -->
-                <div class="calendly-inline-widget" data-url="https://calendly.com/stillbrilliance?text_color=131311&primary_color=79c8a9" style="min-width:320px;height:630px;"></div>
-                <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-                <!-- Calendly inline widget end -->
+                    <!-- Calendly inline widget begin -->
+                    <div class="calendly-inline-widget" data-url="https://calendly.com/stillbrilliance?text_color=131311&primary_color=79c8a9" style="min-width:320px;height:630px;"></div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <!-- Calendly inline widget end -->
 
-                </div>`
+                </div>
+
+                <div class="foot">
+                    <ul class="main-nav">
+                        ${navLinks.reduce(function (acc, item) {
+                            var [link, href] = item
+                            acc += `<li>
+                                <a href="${href}">${link}</a>
+                            </li>`
+
+                            return acc
+                        }, '')}
+                    </ul>
+                    <h2>Contact</h2>
+                    <div class="contact-info">
+                        <p>Corey Coomes</p>
+                        <p>(815) 677-5152</p>
+                        <p>
+                            <a href="mailto:seijocoomes@gmail.com">
+                                seijocoomes@gmail.com
+                            </a>
+                        </p>
+                        <p>© Still Brilliance 2022</p>
+                    </div>
+                </div>
+                `
             }
         })
 

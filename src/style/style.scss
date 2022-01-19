@@ -4,6 +4,7 @@
 @use './silent-classes';
 @use './about';
 @use './resources';
+@use './consultation';
 
 @font-face {
     font-family: 'Mackinac';
@@ -159,33 +160,6 @@ body {
         align-items: center;
         justify-content: space-around;
         margin: 8px 0;
-    }
-
-    &.consultation {
-        #content {
-            margin-bottom: 4rem;
-        }
-
-        .consultation-content {
-            h1 {
-                @extend %centerH1;
-            }
-        }
-
-        .contact {
-            div {
-                &:first-child {
-                    border-bottom: 1px solid;
-                    padding: 0.5rem;
-                }
-            }
-
-            margin: 0 auto;
-            min-height: 20rem;
-            max-width: 30rem;
-            border: 1px solid;
-            text-align: center;
-        }
     }
 
     .foot {
