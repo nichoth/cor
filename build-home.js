@@ -111,8 +111,13 @@ function buildHome () {
                         </div>
                     </div>
 
-                    <div class="section-3">
-                        <div class="column-text">${fm.data.section3}</div>
+                    <div class="section-three">
+                        <div class="column-pic">
+                            <img src="${fm.data['section3-pic']}">
+                        </div>
+                        <div class="column-text">
+                            <p>${fm.data.section3}</p>
+                        </div>
                     </div>
 
                     <div class="foot">
