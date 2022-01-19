@@ -7,7 +7,7 @@ body {
         #content {
             .abouts {
                 display: flex;
-                margin-bottom: 8rem;
+                margin-bottom: 2rem;
                 justify-content: space-evenly;
 
                 > div {
@@ -17,6 +17,10 @@ body {
 
                 .section-one {
                     flex-basis: 60%;
+                    justify-content: center;
+                    flex-direction: column;
+                    display: flex;
+                    margin-bottom: 2rem;
 
                     .btn-link {
                         display: inline-block;
