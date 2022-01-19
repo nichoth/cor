@@ -240,15 +240,16 @@
         }
 
         .left-col {
-            width: 50%;
+            flex-basis: 50%;
+            flex: 1 1 0;
             color: v.$white;
-            // padding: 1rem;
-            padding: 2rem 5rem;
+            padding: 2rem 4rem;
         }
         .right-col {
-            width: 50%;
+            // width: 50%;
+            flex-basis: 50%;
             color: v.$white;
-            margin-left: 6rem;
+            // margin-left: 6rem;
 
             vertical-align: middle;
             align-items: center;
