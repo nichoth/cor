@@ -1,6 +1,6 @@
 ---
 title: About Me
-featured-image: /uploads/rectangle-38.png
+featured-image: /uploads/corey_photo_bw.jpg
 ---
 Corey Coomes was formally trained as a photographer and animator, yet after college found himself working with others as an Educator, Counselor, and Case Manager. He apprenticed with a formidable yoga teacher for seven years, granting him the transmission to teach Hatha yoga. Corey then trained at a Zen Buddhist monastery for three years, which inspired him to work as an End-of-Life Doula.  
 
