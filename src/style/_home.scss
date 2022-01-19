@@ -146,22 +146,26 @@
         display: flex;
         > div {
             padding: 3vw;
+            flex-basis: 50%;
         }
 
         .column-pic {
-            flex-basis: 40%;
             text-align: center;
             border-right: 1px solid;
+            justify-content: center;
+            flex-direction: column;
+            display: flex;
+            vertical-align: middle;
+            align-items: center;
 
             img {
-                height: 100%;
-                width: 100%;
+                height: 80%;
+                width: 80%;
                 object-fit: cover;
             }
         }
 
         .column-text {
-            flex-basis: 60%;
             display: flex;
             justify-content: center;
             flex-direction: column;
@@ -238,7 +242,8 @@
         .left-col {
             width: 50%;
             color: v.$white;
-            padding: 1rem;
+            // padding: 1rem;
+            padding: 2rem 5rem;
         }
         .right-col {
             width: 50%;
