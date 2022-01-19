@@ -111,6 +111,10 @@ function buildHome () {
                         </div>
                     </div>
 
+                    <div class="section-3">
+                        <div class="column-text">${fm.data.section3}</div>
+                    </div>
+
                     <div class="foot">
                         <ul class="main-nav">
                             ${navLinks.reduce(function (acc, item) {

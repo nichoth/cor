@@ -46,6 +46,9 @@ collections:
           - label: "section 3"
             name: "section3"
             widget: markdown
+          - label: "secion 3 image"
+            name: "section3-pic"
+            widget: "image"
       - label: "About Page"
         name: "about"
         file: "src/_pages/about.md"
