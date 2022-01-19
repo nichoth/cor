@@ -52,7 +52,7 @@ function buildHome () {
                         
                             <div class="about-cor">
                                 ${content}
-                                <img src="/Daisy_V2_outlined.png" alt="daisies">
+                                <img src="/Daisy_outline_SVG.svg" alt="daisies">
                             </div>
 
                             <div class="credentials">
@@ -83,7 +83,7 @@ function buildHome () {
 
                         <ul class="services-icons">
                             <li>
-                                <img src="/olive-branch.png" alt="olive branch">
+                                <img src="/column_1_icon.svg" alt="olive branch">
                                 <h3>End of Life Support</h3>
                                 ${eolSupport}
                             </li>
@@ -93,7 +93,7 @@ function buildHome () {
                                 ${sensoryCuration}
                             </li>
                             <li>
-                                <img src="/basket-icon.png" alt="basket">
+                                <img src="/column_3_icon.svg" alt="basket">
                                 <h3>Education</h3>
                                 ${education}
                             </li>
