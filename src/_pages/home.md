@@ -50,5 +50,18 @@ consultation: >-
 
 
   Offering virtual end-of-life services to human beings of all ages, beliefs, and life expressions.
+section3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum urna
+  molestie amet scelerisque tempor sagittis urna sit. Pretium tincidunt risus
+  ligula mus tincidunt sapien. Non enim, quam libero enim gravida laoreet sit
+  justo. Ipsum congue cras elit dignissim pretium quam felis sodales amet. In
+  mi, sed tincidunt tristique ornare tempor. Donec sollicitudin nisl faucibus
+  pretium aliquam in nunc purus, ultricies. Dui dolor vel augue viverra viverra
+  blandit tincidunt. Dui pretium ornare consectetur aliquet diam sit. Nulla
+  ultrices urna cras non elit pellentesque purus sit. Aliquam nunc at eget sit
+  tellus proin phasellus. Purus consectetur faucibus diam netus. Malesuada
+  adipiscing integer dictum amet. Tempor ultrices cras nibh bibendum. Pretium
+  neque fermentum lacus, urna ut nisi, leo. Sed mattis in justo, ac, dolor urna.
+  Eu ornare consequat eu sed mauris, ultrices erat ut.
+section3-pic: /uploads/1_pinetree-1.png
 ---
 As an end-of-life doula, I provide emotional support <br> and aspire to  empower others to grow through deep listening <br> and personalized, non-judgemental care. I always practice <br> to  align myself compassionately with your <br> goals, wishes, and needs in mind.
