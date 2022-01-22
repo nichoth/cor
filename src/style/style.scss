@@ -5,6 +5,7 @@
 @use './about';
 @use './resources';
 @use './consultation';
+@use './media' as media;
 
 @font-face {
     font-family: 'Mackinac';
@@ -82,15 +83,23 @@ body {
         text-align: center;
         border-left: 1px solid;
         border-right: 1px solid;
+        height: 100%;
+        // display: flex;
+        // align-items: center;
 
         a {
             display: block;
             margin: 0 auto;
             width: 23%;
+
+            @include media.mobile {
+                width: 40%;
+            }
         }
 
         img {
             max-width: 100%;
+            max-height: 100%;
         }
     }
 
@@ -110,7 +119,7 @@ body {
 
         img {
             height: 50%;
-            width: 12vw;
+            width: clamp(80px, 12vw, 12vw);
         }
 
         &:first-child {
@@ -133,7 +142,7 @@ body {
     }
 
     .top-nav {
-        height: 18vmin;
+        height: 16vmin;
         display: flex;
         align-items: center;
         justify-content: space-around;
