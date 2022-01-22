@@ -12,6 +12,7 @@
     font-weight: lighter;
     font-size: 1.11vw;
     margin-bottom: 0;
+    font-size: clamp(14px, 1.3vw, 20px);
 
     li {
         a {
