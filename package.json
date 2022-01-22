@@ -4,7 +4,7 @@
   "description": "cor",
   "main": "index.js",
   "scripts": {
-    "copy": "mkdir -p public && cp src/static/wigrum-light.otf public && cp src/static/mackinac/P22MackinacPro-Book_25.otf public/ && mkdir -p public/uploads && mkdir -p public/admin && cp src/admin/* public/admin && cp src/static/*.svg public && cp src/static/*.png public && cp src/static/*.otf public && cp src/uploads/* public/uploads",
+    "copy": "mkdir -p public && mkdir -p public/uploads && mkdir -p public/admin && cp src/admin/* public/admin && cp src/static/*.svg public && cp src/static/*.otf public && cp src/static/*.png public && cp src/uploads/* public/uploads && cp src/static/favicon.ico public",
     "start": "npm run build && concurrently --kill-others \"npm run serve\" \"npm run sass-watch\"",
     "build": "npm run copy && node build-home.js && node build-services.js && node build-consultation.js && node build-about.js && node build-resources.js && npm run sass && npm run build-js",
     "serve": "budo src/index.js:bundle.js --dir=public --live --open -- -p esmify --debug",
