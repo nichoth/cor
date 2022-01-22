@@ -116,13 +116,11 @@ body {
         // }
 
         &:first-child {
-            border-right: 1px solid black;
             padding-right: 2vw;
         }
 
         &:last-child {
             padding-left: 2vw;
-            border-left: 1px solid black;
         }
         
         // text {

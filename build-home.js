@@ -17,7 +17,6 @@ function buildHome () {
             if (err) return reject(err)
 
             var fm = matter(file)
-            // var { badge } = fm.data
             var featuredImage = fm.data['featured-image']
             var content = marked(fm.content)
             var intro = marked(fm.data.intro)
