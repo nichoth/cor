@@ -1,3 +1,5 @@
+@use './variables' as v;
+
 body {
     .btn-wrapper {
         text-align: center;
@@ -9,6 +11,7 @@ body {
                 display: flex;
                 margin-bottom: 2rem;
                 justify-content: space-evenly;
+                padding: v.$sectionPadding;
 
                 > div {
                     flex-basis: 50%;
@@ -43,7 +46,7 @@ body {
             .doula-cert {
                 position: relative;
                 bottom: 6rem;
-                left: 39%;
+                left: 12.5vw;
             }
         }
     }
