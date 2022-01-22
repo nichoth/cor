@@ -22,14 +22,3 @@ $ npm start
 -----------------------------
 
 * https://dev.to/koabrook/creating-a-basic-blog-with-eleventy-and-netlify-cms-completely-from-scratch-197e
-
-
-## todo
-
-* get each page (md file) and write the page html
-    - could take an input folder and an output folder
-* test
-
-----------------------------------------------------
-
-

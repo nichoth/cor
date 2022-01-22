@@ -35,7 +35,7 @@
 html {
     // do root em size
     -webkit-font-smoothing: antialiased;
-    font-size: 1.3vw;
+    font-size: clamp(16px, 1.3vw, 20px);
 }
 
 body {
@@ -48,17 +48,13 @@ body {
         font-family: 'Mackinac', sans-serif;
         // font-family: 'lora', serif;
         font-weight: 300;
-        // max-width: $textMw;
         margin: 0 auto;
-        // margin-top: 3rem;
-        line-height: 1.8rem;
-        // margin-bottom: 8rem;
+        line-height: 1.8em;
     }
 
     p {
         margin: 0rem auto;
-        line-height: 2.6vw;
-        // line-height: 2.8vw;
+        margin-bottom: 1em;
     }
  
     .btn-link {
@@ -178,6 +174,11 @@ body {
 
         .contact-info {
             margin-left: 1rem;
+
+            p {
+                margin: 0;
+            }
+
             a {
                 color: v.$white;
                 text-decoration: none;
