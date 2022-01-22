@@ -86,7 +86,7 @@ body {
         a {
             display: block;
             margin: 0 auto;
-            width: 35%;
+            width: 23%;
         }
 
         img {
@@ -133,6 +133,7 @@ body {
     }
 
     .top-nav {
+        height: 18vmin;
         display: flex;
         align-items: center;
         justify-content: space-around;

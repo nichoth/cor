@@ -1,5 +1,6 @@
 @use './variables' as v;
 @use './silent-classes';
+@use './media' as media;
 
 .home {
     h2 {
@@ -53,10 +54,7 @@
             position: relative;
             top: 2rem;
             flex-basis: 60%;
-
             line-height: 1.8em;
-            // line-height: clamp(1em, 2.01vw, 2.05vw);
-
             display: flex;
             align-items: center;
             flex-direction: column;
@@ -92,7 +90,7 @@
             margin-top: 1rem;
 
             .certificate {
-                font-size: clamp(0.5rem, 1.2vw, 1rem);
+                font-size: clamp(0.8rem, 1.2vw, 1rem);
             }
 
             img {
@@ -103,7 +101,7 @@
             }
 
             div:first-child {
-                font-size: 1.5vw;
+                font-size: clamp(1rem, 1.5vw, 1.5rem);
             }
         }
 
@@ -167,7 +165,7 @@
         margin-bottom: 4rem;
 
         h2 {
-            font-size: 1.11vw;
+            font-size: clamp(0.8rem, 1.11vw, 1.5rem);
         }
 
         // p {
@@ -187,10 +185,18 @@
             text-align: center;
             margin: 5rem 2rem;
 
+            @include media.mobile {
+                margin-left: 0;
+                margin-right: 0;
+                justify-content: space-between;
+            }
+
+
             li {
                 margin-bottom: 0.4rem;
-                font-size: 1.2vw;
+                font-size: clamp(0.5rem, 1.2vw, 1rem);
                 width: 20vw;
+
                 img {
                     object-fit: contain;
                     max-width: 100%;
@@ -205,7 +211,7 @@
                 @extend %all-caps;
                 font-family: "Wigrum", serif;
                 font-weight: lighter;
-                font-size: 1.11vw;
+                font-size: clamp(0.4rem, 1.11vw, 1rem);
                 text-decoration: underline;
                 text-underline-offset: 0.6em;
             }
@@ -267,9 +273,19 @@
 
 
 
+
 // example media query
-@media only screen and (min-width: 600px) {
-    body {
-        background-color: pink;
+@media only screen and (max-width: 600px) {
+    #services {
+        h2 {
+            margin-left: -1rem;
+            margin-bottom: 1rem;
+        }
+        
+        // .services-icons {
+        //     margin-left: 0;
+        //     margin-right: 0;
+        // }
+
     }
 }
