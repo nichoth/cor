@@ -131,7 +131,9 @@ function buildHome () {
                                 return acc
                             }, '')}
                         </ul>
+
                         <h2>Contact</h2>
+
                         <div class="contact-info">
                             <p>Corey Coomes</p>
                             <p>(815) 677-5152</p>

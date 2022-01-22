@@ -21,7 +21,6 @@ function makeHs (file, baseName, navLinks) {
     var fm = matter(file)
     var content = marked(fm.content)
 
-    var { badge } = fm.data
     var featuredImage = fm.data['featured-image']
 
     var h1 = fm.data.title ? `<h1>${fm.data.title}</h1>` : ''
