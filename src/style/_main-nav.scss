@@ -20,6 +20,10 @@
             text-transform: uppercase;
             letter-spacing: 0.02em;
             color: black;
+
+            &:hover {
+                border-bottom: 1px solid #000;
+            }
         }
 
         &.active {
