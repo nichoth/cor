@@ -133,6 +133,12 @@
 
     .section-three {
         display: flex;
+
+        @include media.mobile {
+            flex-direction: column;
+            padding: 1rem;
+        }
+
         > div {
             padding: 3vw;
             flex-basis: 50%;
@@ -146,6 +152,10 @@
             display: flex;
             vertical-align: middle;
             align-items: center;
+
+            @include media.mobile {
+                border-right: none;
+            }
 
             img {
                 height: 100%;
@@ -260,6 +270,7 @@
                 background-color: v.$black;
                 position: relative;
                 left: -1rem;
+                margin-left: 20%;
 
                 &:hover {
                     background-color: lighten(v.$black, 20%);

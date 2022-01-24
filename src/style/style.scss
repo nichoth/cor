@@ -122,7 +122,7 @@ body {
 
         img {
             height: 50%;
-            width: clamp(80px, 12vw, 12vw);
+            width: clamp(80px, 11vw, 12vw);
         }
 
         &:first-child {
@@ -267,9 +267,15 @@ body {
                 .left-col {
                     width: initial;
                     margin-bottom: 2rem;
+                    padding: 2rem 1rem;
                 }
                 .right-col {
                     width: initial;
+                    
+                    a {
+                        position: initial;
+                        left: 0;
+                    }
                 }
             }
         }
