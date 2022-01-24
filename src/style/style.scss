@@ -127,6 +127,9 @@ body {
 
         &:first-child {
             padding-right: 2vw;
+            img {
+                width: clamp(80px, 10.5vw, 12vw);
+            }
         }
 
         &:last-child {
