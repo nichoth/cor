@@ -6,6 +6,8 @@
     }
 
     .consultation-content {
+        height: 200vh;
+
         h1 {
             @extend %centerH1;
         }
