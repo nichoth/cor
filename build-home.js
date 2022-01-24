@@ -87,7 +87,7 @@ function buildHome () {
                                 ${eolSupport}
                             </li>
                             <li>
-                                <img src="/sounds.png" alt="sounds">
+                                <img src="/sounds.svg" alt="sounds">
                                 <h3>Sensory Curation</h3>
                                 ${sensoryCuration}
                             </li>
