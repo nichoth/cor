@@ -6,7 +6,15 @@
     }
 
     .consultation-content {
-        height: 200vh;
+        // height: 200vh;
+        height: 100vh;
+
+        .calendly-inline-widget {
+            width: 50vw;
+            height: 50vw;
+            margin: 0 auto;
+            margin-top: 2rem;
+        }
 
         h1 {
             @extend %centerH1;

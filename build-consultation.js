@@ -37,12 +37,12 @@ function buildConsultation () {
 
             '#content': {
                 _appendHtml: `<div class="consultation-content">
-
                     <!-- Calendly inline widget begin -->
-                    <div class="calendly-inline-widget" data-url="https://calendly.com/stillbrilliance?text_color=131311&primary_color=79c8a9" style="min-width:320px;height:630px;"></div>
-                        <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                    <div class="calendly-inline-widget"
+                        data-url="https://calendly.com/stillbrilliance" style="min-width:320px;height:630px;">
+                    </div>
+                    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
                     <!-- Calendly inline widget end -->
-
                 </div>
 
                 <div class="foot">
@@ -71,6 +71,13 @@ function buildConsultation () {
                 `
             }
         })
+
+                // <!-- Calendly inline widget begin -->
+                // <div class="calendly-inline-widget"
+                //     data-url="https://calendly.com/stillbrilliance?text_color=131311&primary_color=79c8a9"
+                //     style="min-width:320px;height:630px;"></div>
+                // <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
+                // <!-- Calendly inline widget end -->
 
                 // _appendHtml: `<div class="contact">
                 //     <div>Get In Touch</div>
