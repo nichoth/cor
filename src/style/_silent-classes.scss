@@ -23,7 +23,8 @@
 }
 
 %btn-text {
-    font-size: clamp(0.7rem, 1.11vw, 1rem);
+    // font-size: clamp(0.7rem, 1.11vw, 1rem);
+    font-size: clamp(14px, 1.11vw, 20px);
 }
 
 %centerH1 {
