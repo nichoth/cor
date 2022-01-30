@@ -45,13 +45,15 @@ function buildHome () {
                     </div>
 
                     <div class="section-two">
+                        <img class="daisies" src="/Daisy_outline_SVG.svg"
+                            alt="daisies">
+
                         <div class="section-two-content">
 
                             <hr>
                         
                             <div class="about-cor">
                                 ${content}
-                                <img src="/Daisy_outline_SVG.svg" alt="daisies">
                             </div>
 
                             <div class="credentials">
@@ -68,6 +70,7 @@ function buildHome () {
                                 </div>
                             </div>
                         </div>
+
                         <div class="img-two">
                             <img src="${fm.data['profile-pic']}">
                         </div>

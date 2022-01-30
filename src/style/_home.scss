@@ -48,11 +48,40 @@
         display: flex;
         align-items: center;
         text-align: center;
+        margin-left: -5rem;
+        min-height: 50vh;
         // padding: v.$sectionPadding;
+
+        @include media.mobile {
+            margin-left: 0;
+        }
+
+        img {
+            &.daisies {
+                // height: clamp(4rem, 20vh, 8rem);
+                width: 5rem;
+                align-self: end;
+                position: relative;
+
+                bottom: 25vh;
+                left: 20vh;
+
+                @include media.tablet {
+                    left: 7rem;
+                    bottom: 12vh;
+                }
+
+                @include media.mobile {
+                    align-self: start;
+                    left: 0;
+                    bottom: 20vh;
+                }
+            }
+        }
 
         .section-two-content {
             // padding: 0;
-            height: 100vh;
+            // height: 100vh;
             flex-basis: 60%;
             display: flex;
             align-items: center;
@@ -71,24 +100,15 @@
                 margin-bottom: 2rem;
                 width: 70%;
             }
-
-            .about-cor {
-                img {
-                    height: 8rem;
-                    bottom: -1rem;
-                    position: relative;
-                    left: -16rem;
-                }
-            }
         }
 
         .credentials {
             margin: 0 2rem;
             text-align: center;
-            display: flex;
+            // display: flex;
             justify-content: space-evenly;
-            position: relative;
-            bottom: 8rem;
+            // position: relative;
+            // bottom: 8rem;
             margin-top: 1rem;
 
             .certificate {
