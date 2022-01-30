@@ -280,6 +280,10 @@
                 left: -1rem;
                 margin-left: 20%;
 
+                @include media.mobile {
+                    margin: 0 auto;
+                }
+
                 &:hover {
                     background-color: lighten(v.$black, 20%);
                 }
