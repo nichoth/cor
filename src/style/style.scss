@@ -84,8 +84,10 @@ body {
         border-left: 1px solid;
         border-right: 1px solid;
         height: 100%;
-        // display: flex;
-        // align-items: center;
+        
+        @include media.mobile {
+            border: none;
+        }
 
         a {
             display: block;
@@ -119,6 +121,10 @@ body {
         align-items: center;
         justify-content: space-evenly;
         letter-spacing: 0.1em;
+
+        @include media.mobile {
+            display: none;
+        }
 
         img {
             height: 50%;
