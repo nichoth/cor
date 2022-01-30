@@ -254,6 +254,10 @@
             flex: 1 1 0;
             color: v.$white;
             padding: 2rem 4rem;
+
+            @include media.tablet {
+                padding: 2rem 0rem;
+            }
         }
         .right-col {
             // width: 50%;
