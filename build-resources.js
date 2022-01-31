@@ -30,15 +30,16 @@ function buildConsultation () {
                 },
 
                 '.main-nav': {
-                    _appendHtml: navLinks.reduce(function (acc, item) {
-                        var [link, href] = item
-                        var cl = href === '/resources' ? 'active' : ''
-                        acc += `<li class="${cl}">
-                            <a href="${href}">${link}</a>
-                        </li>`
+                    _appendHtml: navLinks
+                    // _appendHtml: navLinks.reduce(function (acc, item) {
+                    //     var [link, href] = item
+                    //     var cl = href === '/resources' ? 'active' : ''
+                    //     acc += `<li class="${cl}">
+                    //         <a href="${href}">${link}</a>
+                    //     </li>`
 
-                        return acc
-                    }, '')
+                    //     return acc
+                    // }, '')
                 },
 
                 '#content': {
@@ -49,7 +50,7 @@ function buildConsultation () {
 
                     <div class="foot">
                         <ul class="main-nav">
-                            ${navLinks.reduce(function (acc, item) {
+                            ${navLinks.links.reduce(function (acc, item) {
                                 var [link, href] = item
                                 acc += `<li>
                                     <a href="${href}">${link}</a>

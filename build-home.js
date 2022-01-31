@@ -125,7 +125,7 @@ function buildHome () {
 
                     <div class="foot">
                         <ul class="main-nav">
-                            ${navLinks.reduce(function (acc, item) {
+                            ${navLinks.links.reduce(function (acc, item) {
                                 var [link, href] = item
                                 acc += `<li>
                                     <a href="${href}">${link}</a>
@@ -152,16 +152,7 @@ function buildHome () {
                 },
 
                 '.main-nav': {
-                    _appendHtml: `<li class="close">
-                        <button class="material-icons close-nav">close</button>
-                    </li>` + navLinks.reduce(function (acc, item) {
-                        var [link, href] = item
-                        acc += `<li>
-                            <a href="${href}">${link}</a>
-                        </li>`
-
-                        return acc
-                    }, '')
+                    _appendHtml: navLinks
                 }
             })
 
