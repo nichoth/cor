@@ -31,6 +31,7 @@ function buildHome () {
                 body: {
                     class: { append: 'home' }
                 },
+
                 '#content': {
                     _appendHtml: `<div class="section-one">
                         <div class="featured-image">

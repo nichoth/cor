@@ -1,4 +1,5 @@
 @use './variables' as v;
+@use './media' as media;
 
 .main-nav {
     display: flex;
@@ -13,6 +14,10 @@
     font-size: 1.11vw;
     margin-bottom: 0;
     font-size: clamp(0.7rem, 1.11vw, 20px);
+
+    @include media.mobile {
+        display: none;
+    }
 
     li {
         a {

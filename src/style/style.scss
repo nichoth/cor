@@ -87,6 +87,7 @@ body {
         
         @include media.mobile {
             border: none;
+            width: 100%;
         }
 
         a {
@@ -159,6 +160,16 @@ body {
         align-items: center;
         justify-content: space-around;
         margin: 8px 0;
+
+        .hamburger {
+            margin-left: 1rem;
+            display: none;
+            border: none;
+
+            @include media.mobile {
+                display: block;
+            }
+        }
     }
 
     .foot {
