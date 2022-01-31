@@ -150,8 +150,11 @@ function buildHome () {
                     </div>
                     `
                 },
+
                 '.main-nav': {
-                    _appendHtml: navLinks.reduce(function (acc, item) {
+                    _appendHtml: `<div class="close">
+                        <span class="material-icons">close</span>
+                    </div>` + navLinks.reduce(function (acc, item) {
                         var [link, href] = item
                         acc += `<li>
                             <a href="${href}">${link}</a>

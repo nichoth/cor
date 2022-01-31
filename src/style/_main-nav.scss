@@ -1,6 +1,32 @@
 @use './variables' as v;
 @use './media' as media;
 
+body {
+    > .main-nav {
+
+        @include media.mobile {
+            background-color: v.$black;
+            width: 100vw;
+            height: 100vh;
+            
+            &.open {
+                display: flex;
+                flex-direction: column;
+                justify-content: start;
+                padding: 1rem;
+                position: absolute;
+                top: 0;
+            }
+            li {
+                margin-bottom: 1rem;
+                a {
+                    color: white;
+                }
+            }
+        }
+    }
+}
+
 .main-nav {
     display: flex;
     justify-content: space-evenly;

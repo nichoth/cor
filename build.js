@@ -51,15 +51,20 @@ function makeHs (file, baseName, navLinks) {
         // b/c there is a different 'active' link on each page
         '.main-nav': {
             // need to deal with the order of the links
-            _appendHtml: navLinks.reduce(function (acc, item) {
+            _appendHtml: `<div class="close">
+                <span class="material-icons">close</span>
+            </div>` + navLinks.reduce(function (acc, item) {
                 var [link, href] = item
                 // var _basename = path.basename(filename, '.md')
+
                 var cl = path.basename(href) === baseName ?
                     'active' :
                     ''
+
                 if (baseName === 'home' && path.basename(href) === '') {
                     cl = 'active'
                 }
+
                 acc += `<li class="${cl}">
                     <a href="${href}">${link}</a>
                 </li>`

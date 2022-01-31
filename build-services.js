@@ -3,6 +3,7 @@ var marked = require('marked')
 var matter = require('gray-matter')
 var fs = require('fs')
 const mkdirp = require('mkdirp')
+const navLinks = require('./nav-links')
 
 var templatePath = __dirname + '/src/_index.html'
 
@@ -11,15 +12,6 @@ buildConsultation()
 function buildConsultation () {
     var _path = __dirname + '/src/_pages/services.md'
     var outFileDir = __dirname + '/public/services'
-
-    var navLinks = [
-        ['Services', '/services'],
-        ['Resources', '/resources'],
-        ['About', '/about'],
-        ['Consultation', '/consultation']
-    ]
-
-
 
     return new Promise((resolve, reject) => {
         // var fm = matter(file)
