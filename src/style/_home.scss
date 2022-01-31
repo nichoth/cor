@@ -50,10 +50,15 @@
         text-align: center;
         margin-left: -5rem;
         min-height: 50vh;
+        padding: 2rem;
         // padding: v.$sectionPadding;
 
         @include media.mobile {
             margin-left: 0;
+        }
+
+        .about-cor {
+            margin: 0 2rem;
         }
 
         img {
@@ -64,7 +69,7 @@
                 position: relative;
 
                 bottom: 25vh;
-                left: 20vh;
+                left: 30vh;
 
                 @include media.tablet {
                     left: 7rem;
