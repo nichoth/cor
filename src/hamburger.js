@@ -8,4 +8,8 @@ hamburger.addEventListener('click', ev => {
     menuEl.classList.add('open');
 })
 
-console.log('hamburger', hamburger)
+var closer = document.querySelector('button.close-nav')
+closer.addEventListener('click', ev => {
+    ev.preventDefault()
+    menuEl.classList.remove('open')
+})

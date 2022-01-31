@@ -4,23 +4,42 @@
 body {
     > .main-nav {
 
+        .close {
+            margin-bottom: 2rem;
+            display: none;
+
+            button {
+                background-color: transparent;
+                border: none;
+                color: white;
+                padding: 0;
+            }
+        }
+
         @include media.mobile {
             background-color: v.$black;
             width: 100vw;
             height: 100vh;
             
             &.open {
+                z-index: 10;
+                position: fixed;
                 display: flex;
                 flex-direction: column;
                 justify-content: start;
                 padding: 1rem;
-                position: absolute;
                 top: 0;
+
+                .close {
+                    display: initial;
+                };
             }
             li {
                 margin-bottom: 1rem;
                 a {
                     color: white;
+                    display: block;
+                    width: 100%;
                 }
             }
         }
