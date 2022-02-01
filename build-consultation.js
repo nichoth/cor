@@ -24,16 +24,7 @@ function buildConsultation () {
             },
 
             '.main-nav': {
-                _appendHtml: navLinks
-                // _appendHtml: navLinks.reduce(function (acc, item) {
-                //     var [link, href] = item
-                //     var cl = href === '/consultation' ? 'active' : ''
-                //     acc += `<li class="${cl}">
-                //         <a href="${href}">${link}</a>
-                //     </li>`
-
-                //     return acc
-                // }, '')
+                _appendHtml: navLinks.string
             },
 
             '#content': {

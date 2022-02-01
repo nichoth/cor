@@ -147,12 +147,11 @@ function buildHome () {
                             </p>
                             <p>© Still Brilliance 2022</p>
                         </div>
-                    </div>
-                    `
+                    </div>`
                 },
 
                 '.main-nav': {
-                    _appendHtml: navLinks
+                    _appendHtml: navLinks.string
                 }
             })
 

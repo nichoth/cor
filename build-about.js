@@ -28,16 +28,7 @@ function buildAbout () {
                 },
 
                 '.main-nav': {
-                    _appendHtml: navLinks
-                    // _appendHtml: navLinks.reduce(function (acc, item) {
-                    //     var [link, href] = item
-                    //     var cl = href === '/about' ? 'active' : ''
-                    //     acc += `<li class="${cl}">
-                    //         <a href="${href}">${link}</a>
-                    //     </li>`
-
-                    //     return acc
-                    // }, '')
+                    _appendHtml: navLinks.string
                 },
 
                 '#content': {
