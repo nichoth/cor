@@ -100,6 +100,7 @@ body {
 
             @include media.mobile {
                 width: 40%;
+                justify-content: center;
             }
         }
 
@@ -161,14 +162,15 @@ body {
         justify-content: space-around;
         margin: 8px 0;
 
+        @include media.mobile {
+            height: 22vmin;
+            display: block;
+        }
+            
         .hamburger {
             margin-left: 1rem;
             display: none;
             border: none;
-
-            @include media.mobile {
-                display: block;
-            }
         }
     }
 
@@ -177,6 +179,10 @@ body {
         color: v.$white;
         padding-bottom: 2rem;
         padding-top: 0;
+
+        @include media.mobile {
+            padding-top: 1rem;
+        }
 
         h2 {
             @extend %head;
