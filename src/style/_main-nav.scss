@@ -22,7 +22,6 @@ body {
             height: 100vh;
             
             &.open {
-                z-index: 10;
                 position: fixed;
                 display: flex;
                 flex-direction: column;

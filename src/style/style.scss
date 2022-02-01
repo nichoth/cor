@@ -6,6 +6,7 @@
 @use './resources';
 @use './consultation';
 @use './media' as media;
+@use './z-index';
 
 @font-face {
     font-family: 'Mackinac';
@@ -88,6 +89,8 @@ body {
         @include media.mobile {
             border: none;
             width: 100%;
+            position: relative;
+            left: -2rem;
         }
 
         a {
@@ -164,11 +167,10 @@ body {
 
         @include media.mobile {
             height: 22vmin;
-            display: block;
         }
             
         .hamburger {
-            // margin-left: 1rem;
+            margin-left: 1rem;
             display: none;
             border: none;
 
