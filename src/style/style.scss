@@ -168,9 +168,13 @@ body {
         }
             
         .hamburger {
-            margin-left: 1rem;
+            // margin-left: 1rem;
             display: none;
             border: none;
+
+            @include media.mobile {
+                display: initial;
+            }
         }
     }
 
