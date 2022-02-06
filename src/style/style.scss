@@ -186,9 +186,9 @@ body {
         padding-bottom: 2rem;
         padding-top: 0;
 
-        // @include media.mobile {
-        //     // padding-top: 1rem;
-        // }
+        @include media.mobile {
+            padding-top: 1rem;
+        }
 
         h2 {
             @extend %head;
@@ -291,6 +291,10 @@ body {
                     width: initial;
                     margin-bottom: 2rem;
                     padding: 2rem 1rem;
+
+                    @include media.mobile {
+                        margin-bottom: 0;
+                    }
                 }
                 .right-col {
                     width: initial;

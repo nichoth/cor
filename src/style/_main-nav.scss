@@ -1,5 +1,6 @@
 @use './variables' as v;
 @use './media' as media;
+@use './silent-classes' as s;
 
 body {
     > .main-nav {
@@ -20,6 +21,7 @@ body {
             background-color: v.$black;
             width: 100vw;
             height: 100vh;
+            font-size: clamp(16px, 1.11vw, 20px);
             
             &.open {
                 position: fixed;
@@ -34,7 +36,13 @@ body {
                 };
             }
             li {
-                margin-bottom: 1rem;
+                margin-bottom: 1em;
+                text-align: center;
+
+                &.close {
+                    text-align: left;
+                }
+
                 a {
                     color: white;
                     display: block;
@@ -47,6 +55,7 @@ body {
 
 .foot {
     .main-nav {
+        @extend %btn-text;
         display: flex;
         margin-bottom: 7rem;
         border: none;
@@ -56,20 +65,20 @@ body {
         border-top: 1px solid;
 
         @include media.mobile {
-            display: none;
+            // display: none;
             padding-bottom: 0;
             padding-top: 1rem;
             margin-bottom: 3rem;
             flex-direction: column;
             border: none;
+            text-align: center;
 
             li {
-                // &:first-child {
-                //     border-top: 1px solid;
-                // }
-                padding-left: 1rem;
+                &:first-child {
+                    border-top: 1px solid;
+                }
+                padding: 1rem;
                 border-bottom: 1px solid;
-                margin-bottom: 1rem;
             }
         }
     }
