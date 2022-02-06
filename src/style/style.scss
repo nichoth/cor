@@ -186,9 +186,9 @@ body {
         padding-bottom: 2rem;
         padding-top: 0;
 
-        @include media.mobile {
-            padding-top: 1rem;
-        }
+        // @include media.mobile {
+        //     // padding-top: 1rem;
+        // }
 
         h2 {
             @extend %head;
@@ -212,15 +212,6 @@ body {
                     text-decoration: underline;
                 }
             }
-        }
-
-        .main-nav {
-            border: none;
-            margin-bottom: 7rem;
-            padding-bottom: 0.4rem;
-            padding-top: 0.5rem;
-            border-bottom: 1px solid;
-            border-top: 1px solid;
         }
 
         ul {

@@ -45,6 +45,36 @@ body {
     }
 }
 
+.foot {
+    .main-nav {
+        margin-bottom: 7rem;
+        border: none;
+        padding-bottom: 0.4rem;
+        padding-top: 0.5rem;
+        border-bottom: 1px solid;
+        border-top: 1px solid;
+
+        @include media.mobile {
+            // display: none;
+            padding-bottom: 0;
+            padding-top: 1rem;
+            margin-bottom: 3rem;
+            flex-direction: column;
+            border: none;
+
+            li {
+                // &:first-child {
+                //     border-top: 1px solid;
+                // }
+                padding-left: 1rem;
+                border-bottom: 1px solid;
+                margin-bottom: 1rem;
+            }
+        }
+    }
+
+}
+
 .main-nav {
     display: flex;
     justify-content: space-evenly;
@@ -59,9 +89,6 @@ body {
     margin-bottom: 0;
     font-size: clamp(0.7rem, 1.11vw, 20px);
 
-    @include media.mobile {
-        display: none;
-    }
 
     li {
         a {
