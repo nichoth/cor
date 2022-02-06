@@ -47,6 +47,7 @@ body {
 
 .foot {
     .main-nav {
+        display: flex;
         margin-bottom: 7rem;
         border: none;
         padding-bottom: 0.4rem;
@@ -76,7 +77,7 @@ body {
 }
 
 .main-nav {
-    display: flex;
+    display: none;
     justify-content: space-evenly;
     list-style: none;
     padding: 0.8rem 0;
