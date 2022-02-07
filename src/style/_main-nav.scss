@@ -30,9 +30,11 @@ body {
                 justify-content: start;
                 padding: 1rem;
                 top: 0;
+                padding-left: 0;
 
                 .close {
                     display: initial;
+                    margin-left: 1rem;
                 };
             }
             li {
@@ -59,15 +61,15 @@ body {
         display: flex;
         margin-bottom: 7rem;
         border: none;
-        padding-bottom: 0.4rem;
+        padding: 0;
         padding-top: 0.5rem;
+        padding-bottom: 0.5rem;
         border-bottom: 1px solid;
         border-top: 1px solid;
 
         @include media.mobile {
-            // display: none;
             padding-bottom: 0;
-            padding-top: 1rem;
+            padding-top: 0;
             margin-bottom: 3rem;
             flex-direction: column;
             border: none;
