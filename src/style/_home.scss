@@ -67,22 +67,21 @@
 
         img {
             &.daisies {
-                // height: clamp(4rem, 20vh, 8rem);
                 width: 5rem;
                 align-self: end;
                 position: relative;
 
-                bottom: 25vh;
-                left: 30vh;
+                bottom: 10vh;
+                left: 10vw;
 
                 @include media.tablet {
-                    left: 7rem;
-                    bottom: 12vh;
+                    left: 8vw;
+                    bottom: 5vh;
                 }
 
                 @include media.mobile {
                     align-self: start;
-                    left: 0vh;
+                    left: 0vw;
                     bottom: 18vh;
                 }
             }
@@ -92,10 +91,10 @@
             // padding: 0;
             // height: 100vh;
             flex-basis: 50%;
-            display: flex;
-            align-items: center;
-            flex-direction: column;
-            justify-content: center;
+            // display: flex;
+            // align-items: center;
+            // flex-direction: column;
+            // justify-content: center;
 
             p {
                 margin: 0 2rem;
