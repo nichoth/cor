@@ -6,24 +6,26 @@ var navLinks = [
 ]
 
 module.exports = {
-    string: `<li class="close">
-            <button class="material-icons close-nav">close</button>
-        </li>` + navLinks.reduce(function (acc, item) {
-            var [link, href] = item
+    button: `<div class="close">
+        <button class="material-icons close-nav">close</button>
+    </div>`,
 
-            var cl
-            if (href.includes('services')) {
-                cl = 'services'
-            }
+    string: navLinks.reduce(function (acc, item) {
+        var [link, href] = item
 
-            acc += `<li>
-                <a href="${href}" class="${cl || ''}">
-                    ${link}
-                </a>
-            </li>`
+        var cl
+        if (href.includes('services')) {
+            cl = 'services'
+        }
 
-            return acc
-        }, ''),
+        acc += `<li>
+            <a href="${href}" class="${cl || ''}">
+                ${link}
+            </a>
+        </li>`
+
+        return acc
+    }, ''),
 
     links: navLinks
 }
