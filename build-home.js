@@ -46,9 +46,6 @@ function buildHome () {
                     </div>
 
                     <div class="section-two">
-                        <img class="daisies" src="/Daisy_outline_SVG.svg"
-                            alt="daisies">
-
                         <div class="section-two-content">
 
                             <hr>
@@ -58,17 +55,21 @@ function buildHome () {
                             </div>
 
                             <div class="credentials">
+                                <img class="daisies" src="/Daisy_outline_SVG.svg"
+                                    alt="daisies">
+
                                 <div class="credentials-words">
                                     <div>
                                         Corey Coomes, End&#8209;of&#8209;Life&nbsp;Doula
                                     </div>
                                     <div class="certificate">${credentials}</div>
-                                    <div class="more-about-me">
-                                        <a class="btn-link" href="/about">
-                                            More about me
-                                        </a>
-                                    </div>
                                 </div>
+                            </div>
+                        
+                            <div class="more-about-me">
+                                <a class="btn-link" href="/about">
+                                    More about me
+                                </a>
                             </div>
                         </div>
 

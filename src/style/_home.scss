@@ -55,32 +55,37 @@
 
         @include media.mobile {
             margin-left: 0;
+            padding: 3rem 1rem;
         }
 
         .about-cor {
             margin: 0 2rem;
+
+            @include media.mobile {
+                margin: 0;
+            }
         }
 
         img {
             &.daisies {
-                // height: clamp(4rem, 20vh, 8rem);
-                width: 5rem;
-                align-self: end;
-                position: relative;
+                height: clamp(4rem, 20vh, 8rem);
+                // width: 5rem;
+                // align-self: end;
+                // position: relative;
 
-                bottom: 25vh;
-                left: 30vh;
+                // bottom: 25vh;
+                // left: 30vh;
 
-                @include media.tablet {
-                    left: 7rem;
-                    bottom: 12vh;
-                }
+                // @include media.tablet {
+                //     left: 7rem;
+                //     bottom: 12vh;
+                // }
 
-                @include media.mobile {
-                    align-self: start;
-                    left: 0vh;
-                    bottom: 18vh;
-                }
+                // @include media.mobile {
+                //     align-self: start;
+                //     left: 0vh;
+                //     bottom: 18vh;
+                // }
             }
         }
 
@@ -108,24 +113,30 @@
         }
 
         .credentials {
-            margin: 0 2rem;
+            display: flex;
+            margin: 2rem;
             text-align: center;
             // display: flex;
             justify-content: space-evenly;
             // position: relative;
             // bottom: 8rem;
-            margin-top: 1rem;
+            // margin-top: 2rem;
+
+            @include media.mobile {
+                margin: 0;
+                margin-top: 2rem;
+            }
 
             .certificate {
                 font-size: clamp(0.8rem, 1.2vw, 1rem);
             }
 
-            img {
-                height: 100%;
-                position: relative;
-                top: -2.2rem;
-                left: -1rem;
-            }
+            // img {
+            //     height: 100%;
+            //     position: relative;
+            //     top: -2.2rem;
+            //     left: -1rem;
+            // }
 
             div:first-child {
                 font-size: clamp(1rem, 1.5vw, 1.5rem);
@@ -137,7 +148,6 @@
                 background-color: v.$black;
                 color: v.$white;
                 border-color: v.$white;
-                margin-top: 2.4em;
 
                 &:hover {
                     background-color: lighten(v.$black, 20%);
@@ -147,6 +157,9 @@
 
         > div {
             padding: 3vw;
+            @include media.mobile {
+                padding: 0;
+            }
         }
 
         .img-two {
