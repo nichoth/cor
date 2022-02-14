@@ -186,9 +186,9 @@ body {
         padding-bottom: 2rem;
         padding-top: 0;
 
-        @include media.mobile {
-            padding-top: 1rem;
-        }
+        // @include media.mobile {
+        //     padding-top: 1rem;
+        // }
 
         h2 {
             @extend %head;
@@ -214,15 +214,6 @@ body {
             }
         }
 
-        .main-nav {
-            border: none;
-            margin-bottom: 7rem;
-            padding-bottom: 0.4rem;
-            padding-top: 0.5rem;
-            border-bottom: 1px solid;
-            border-top: 1px solid;
-        }
-
         ul {
             border-color: v.$white;
             margin-bottom: 0;
@@ -235,7 +226,7 @@ body {
 }
 
 // media queries
-@media screen and (max-width: 650px) {
+@media screen and (max-width: 600px) {
     html {
         font-size: 16px;
     }
@@ -300,6 +291,10 @@ body {
                     width: initial;
                     margin-bottom: 2rem;
                     padding: 2rem 1rem;
+
+                    @include media.mobile {
+                        margin-bottom: 0;
+                    }
                 }
                 .right-col {
                     width: initial;

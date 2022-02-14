@@ -13,7 +13,7 @@ badge: >-
 
 
   <script type="text/javascript" async src="//cdn.credly.com/assets/utilities/embed.js"></script>
-title: home
+title: Still Brilliance
 intro: >
   An End-of-Life Doula is someone who offers holistic, unconditional support and
   guidance to individuals and their loved ones as they navigate the complex and
