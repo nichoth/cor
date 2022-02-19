@@ -46,7 +46,8 @@
         background-color: v.$black;
         color: v.$white;
         display: flex;
-        justify-content: space-around;
+        justify-content: center;
+        // justify-content: space-around;
         align-items: center;
         text-align: center;
         margin-left: -5rem;
@@ -119,8 +120,10 @@
             text-align: center;
             // display: flex;
             // justify-content: space-evenly;
-            justify-content: center;
+            // justify-content: center;
+            justify-content: start;
             align-items: center;
+            margin-left: 4vw;
             // position: relative;
             // bottom: 8rem;
             // margin-top: 2rem;
@@ -303,6 +306,10 @@
 
             &:first-child {
                 margin-top: 0;
+            }
+
+            &:last-child {
+                margin-bottom: 0;
             }
         }
 
