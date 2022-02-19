@@ -53,8 +53,10 @@ function buildHome () {
                             </div>
 
                             <div class="credentials">
-                                <img class="daisies" src="/Daisy_outline_SVG.svg"
-                                    alt="daisies">
+                                <div class="daisy-box">
+                                    <img class="daisies" src="/Daisy_outline_SVG.svg"
+                                        alt="daisies">
+                                </div>
 
                                 <div class="credentials-words">
                                     <div>
@@ -64,6 +66,8 @@ function buildHome () {
                                         Professional Certificate, University of Vermont 2020
                                     </div>
                                 </div>
+
+                                <div class="stupid-empty-box"></div>
                             </div>
                         
                             <div class="more-about-me">
