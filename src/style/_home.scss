@@ -53,6 +53,8 @@
         margin-left: -5rem;
         min-height: 50vh;
         padding: 2rem;
+        padding-top: 4rem;
+        padding-bottom: 4rem;
         // padding: v.$sectionPadding;
 
         @include media.mobile {
@@ -117,6 +119,7 @@
         .credentials {
             display: flex;
             margin: 2rem;
+            margin-top: 0;
             text-align: center;
             // display: flex;
             // justify-content: space-evenly;
