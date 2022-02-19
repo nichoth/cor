@@ -6,9 +6,10 @@
 
         .calendly-inline-widget {
             width: 50vw;
-            height: 50vh;
+            // height: 50vh;
             margin: 0 auto;
             margin-top: 2rem;
+            max-height: 100%;
         }
 
         h1 {
