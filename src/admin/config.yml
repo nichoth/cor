@@ -14,7 +14,6 @@ collections:
           - { label: Title, name: title, widget: string }
           - { label: Intro, name: intro, widget: markdown }
           - { label: "body", name: "body", widget: markdown }
-          - { label: "credentials", name: "credentials", widget: markdown }
           - { label: "Services", name: "services", widget: markdown }
           - label: "Featured Image"
             name: "featured-image"

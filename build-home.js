@@ -21,7 +21,6 @@ function buildHome () {
             var content = marked(fm.content)
             var intro = marked(fm.data.intro)
             var services = marked(fm.data.services)
-            var { credentials } = fm.data
             var education = marked(fm.data.education)
             var eolSupport = marked(fm.data['eol-support'])
             var sensoryCuration = marked(fm.data['sensory-curation'])
@@ -62,7 +61,9 @@ function buildHome () {
                                     <div>
                                         Corey Coomes, End&#8209;of&#8209;Life&nbsp;Doula
                                     </div>
-                                    <div class="certificate">${credentials}</div>
+                                    <div class="certificate">
+                                        Professional Certificate, University of Vermont 2020
+                                    </div>
                                 </div>
                             </div>
                         
