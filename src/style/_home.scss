@@ -57,6 +57,10 @@
         padding-bottom: 4rem;
         // padding: v.$sectionPadding;
 
+        .pointless-div {
+            margin: 4rem;
+        }
+
         @include media.mobile {
             margin-left: 0;
             padding: 3rem 1rem;
