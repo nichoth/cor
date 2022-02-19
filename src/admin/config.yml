@@ -57,11 +57,6 @@ collections:
             media_library:
               config:
                 multiple: false
-      - label: "Services Page"
-        name: "services"
-        file: "src/_pages/services.md"
-        fields:
-          - { label: "Body", name: "body", widget: "markdown" }
       - label: "Resources Page"
         name: "resources"
         file: "src/_pages/resources.md"
