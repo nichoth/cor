@@ -28,13 +28,23 @@ body {
                 justify-content: start;
                 padding: 1rem;
                 top: 0;
+                padding-left: 0;
+                text-align: center;
+
+                li {
+                    &:first-child {
+                        text-align: left;
+                        margin-left: 1rem;
+                    }
+                }
 
                 .close {
                     display: initial;
                 };
             }
             li {
-                margin-bottom: 1rem;
+                margin-bottom: 2rem;
+
                 a {
                     color: white;
                     display: block;
@@ -55,12 +65,12 @@ body {
     border-bottom: 1px solid black;
     font-family: v.$sansFont;
     font-weight: lighter;
-    font-size: 1.11vw;
     margin-bottom: 0;
     font-size: clamp(0.7rem, 1.11vw, 20px);
 
     @include media.mobile {
         display: none;
+        font-size: clamp(16px, 1.11vw, 20px);
     }
 
     li {
