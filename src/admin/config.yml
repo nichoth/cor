@@ -38,9 +38,6 @@ collections:
           - label: "Education list"
             name: education
             widget: markdown
-          - label: "Schedule a consultation"
-            name: "consultation"
-            widget: markdown
           - label: "section 3"
             name: "section3"
             widget: markdown

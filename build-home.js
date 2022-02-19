@@ -24,7 +24,6 @@ function buildHome () {
             var education = marked(fm.data.education)
             var eolSupport = marked(fm.data['eol-support'])
             var sensoryCuration = marked(fm.data['sensory-curation'])
-            var consultation = marked(fm.data['consultation'])
 
             var hs = hyperstream({
                 body: {
@@ -107,7 +106,16 @@ function buildHome () {
 
                     <div class="schedule-consultation">
                         <div class="left-col">
-                            ${consultation}
+                            <p>
+                                Let’s start the conversation. Schedule an
+                                initial 30 minute phone call or Zoom call for
+                                free.
+                            </p>
+                            <p>
+                                Offering virtual end-of-life services to human
+                                beings of all ages, beliefs, and life
+                                expressions.
+                            </p>
                         </div>
                         <div class="right-col">
                             <a class="btn-link" href="/consultation">
