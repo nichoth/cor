@@ -72,7 +72,8 @@
 
         img {
             &.daisies {
-                height: clamp(7rem, 20vh, 8rem);
+                width: 7vw;
+                // height: clamp(7rem, 20vh, 8rem);
                 // width: 5rem;
                 // align-self: end;
                 // position: relative;
@@ -121,19 +122,20 @@
             margin: 2rem;
             margin-top: 0;
             text-align: center;
-            // display: flex;
-            // justify-content: space-evenly;
-            // justify-content: center;
             justify-content: start;
             align-items: center;
             margin-left: 3.5vw;
-            // position: relative;
-            // bottom: 8rem;
-            // margin-top: 2rem;
 
             @include media.mobile {
                 margin: 0;
                 margin-top: 2rem;
+            }
+
+            .stupid-empty-box {
+                background-color: red;
+                width: 7vw;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
             }
 
             .certificate {
