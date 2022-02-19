@@ -64,7 +64,16 @@ body {
                 };
             }
             li {
+<<<<<<< HEAD
                 margin-bottom: 2rem;
+=======
+                margin-bottom: 2em;
+                text-align: center;
+
+                &.close {
+                    text-align: left;
+                }
+>>>>>>> menu-again
 
                 a {
                     color: white;
