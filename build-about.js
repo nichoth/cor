@@ -27,8 +27,9 @@ function buildAbout () {
                     class: { append: 'about' }
                 },
 
-                '.main-nav': {
-                    _appendHtml: navLinks.string
+                '.main-nav-wrapper': {
+                    _appendHtml: navLinks.button +
+                        '<ul class="main-nav">' + navLinks.string + '</ul>'
                 },
 
                 '#content': {

@@ -29,8 +29,9 @@ function buildConsultation () {
                     class: { append: 'resources' }
                 },
 
-                '.main-nav': {
-                    _appendHtml: navLinks.string
+                '.main-nav-wrapper': {
+                    _appendHtml: navLinks.button +
+                        '<ul class="main-nav">' + navLinks.string + '</ul>'
                 },
 
                 '#content': {
