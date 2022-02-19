@@ -44,37 +44,46 @@ function buildHome () {
                     </div>
 
                     <div class="section-two">
-                        <div class="section-two-content">
+                        <div class="pointless-div">
+                            <div class="section-two-content">
 
-                            <hr>
-                        
-                            <div class="about-cor">
-                                ${content}
-                            </div>
-
-                            <div class="credentials">
-                                <img class="daisies" src="/Daisy_outline_SVG.svg"
-                                    alt="daisies">
-
-                                <div class="credentials-words">
-                                    <div>
-                                        Corey Coomes, End&#8209;of&#8209;Life&nbsp;Doula
-                                    </div>
-                                    <div class="certificate">
-                                        Professional Certificate, University of Vermont 2020
-                                    </div>
+                                <hr>
+                            
+                                <div class="about-cor">
+                                    ${content}
                                 </div>
-                            </div>
-                        
-                            <div class="more-about-me">
-                                <a class="btn-link" href="/about">
-                                    More about me
-                                </a>
+
+                                <div class="credentials">
+                                    <div class="daisy-box">
+                                        <img class="daisies" src="/Daisy_outline_SVG.svg"
+                                            alt="daisies">
+                                    </div>
+
+                                    <div class="credentials-words">
+                                        <div>
+                                            Corey Coomes, End&#8209;of&#8209;Life&nbsp;Doula
+                                        </div>
+                                        <div class="certificate">
+                                            Professional Certificate, University of Vermont 2020
+                                        </div>
+                                    </div>
+
+                                    <div class="stupid-empty-box"></div>
+                                </div>
+                            
+                                <div class="more-about-me">
+                                    <a class="btn-link" href="/about">
+                                        More about me
+                                    </a>
+                                </div>
                             </div>
                         </div>
 
-                        <div class="img-two">
-                            <img src="${fm.data['profile-pic']}">
+
+                        <div class="pointless-div">
+                            <div class="img-two">
+                                <img src="${fm.data['profile-pic']}">
+                            </div>
                         </div>
                     </div>
 

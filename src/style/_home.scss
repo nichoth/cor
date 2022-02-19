@@ -50,12 +50,16 @@
         // justify-content: space-around;
         align-items: center;
         text-align: center;
-        margin-left: -5rem;
+        // margin-left: -5rem;
         min-height: 50vh;
         padding: 2rem;
         padding-top: 4rem;
         padding-bottom: 4rem;
         // padding: v.$sectionPadding;
+
+        .pointless-div {
+            margin: 1rem;
+        }
 
         @include media.mobile {
             margin-left: 0;
@@ -63,16 +67,21 @@
         }
 
         .about-cor {
-            margin: 0 2rem;
+            // margin: 0 2rem;
 
             @include media.mobile {
                 margin: 0;
             }
         }
 
+        .daisy-box {
+            width: 7vw;
+        }
+
         img {
             &.daisies {
-                height: clamp(7rem, 20vh, 8rem);
+                width: 7vw;
+                // height: clamp(7rem, 20vh, 8rem);
                 // width: 5rem;
                 // align-self: end;
                 // position: relative;
@@ -121,19 +130,20 @@
             margin: 2rem;
             margin-top: 0;
             text-align: center;
-            // display: flex;
-            // justify-content: space-evenly;
-            // justify-content: center;
             justify-content: start;
             align-items: center;
-            margin-left: 3.5vw;
-            // position: relative;
-            // bottom: 8rem;
-            // margin-top: 2rem;
+            // margin-left: 3.5vw;
 
             @include media.mobile {
                 margin: 0;
                 margin-top: 2rem;
+            }
+
+            .stupid-empty-box {
+                // background-color: red;
+                width: 7vw;
+                padding-top: 1rem;
+                padding-bottom: 1rem;
             }
 
             .certificate {
@@ -147,9 +157,9 @@
             //     left: -1rem;
             // }
 
-            div:first-child {
-                font-size: clamp(1rem, 1.5vw, 1.5rem);
-            }
+            // div:first-child {
+            //     font-size: clamp(1rem, 1.5vw, 1.5rem);
+            // }
         }
 
         .more-about-me {
@@ -172,7 +182,8 @@
         }
 
         .img-two {
-            flex-basis: 30%;
+            // flex-basis: 30%;
+            margin: 4rem;
 
             img {
                 max-height: 100%;
