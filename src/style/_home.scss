@@ -76,11 +76,16 @@
 
         .daisy-box {
             width: 7vw;
+            @include media.mobile {
+                position: relative;
+                top: 3rem
+            }
         }
 
         img {
             &.daisies {
                 width: 7vw;
+                min-width: 3rem;
                 // height: clamp(7rem, 20vh, 8rem);
                 // width: 5rem;
                 // align-self: end;
@@ -184,7 +189,7 @@
 
         .img-two {
             // flex-basis: 30%;
-            margin: 3rem;
+            margin: 4vw;
 
             img {
                 max-height: 100%;
