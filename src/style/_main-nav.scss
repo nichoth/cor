@@ -16,12 +16,16 @@ body {
         @include media.mobile {
             position: fixed;
             .close {
-                display: initial;
                 margin-bottom: 2rem;
             }
         }
 
         &.open {
+
+            .close {
+                display: initial;
+            }
+
             top: 0;
             display: flex;
             flex-direction: column;
