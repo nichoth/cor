@@ -52,13 +52,16 @@
         text-align: center;
         // margin-left: -5rem;
         min-height: 50vh;
-        padding: 2rem;
+        // padding: 2rem;
         padding-top: 4rem;
         padding-bottom: 4rem;
         // padding: v.$sectionPadding;
 
         .pointless-div {
             margin: 1rem;
+            @include media.mobile {
+                margin: 0;
+            }
         }
 
         @include media.mobile {
@@ -76,10 +79,10 @@
 
         .daisy-box {
             width: 7vw;
-            @include media.mobile {
-                position: relative;
-                top: 3rem
-            }
+            // @include media.mobile {
+            //     position: relative;
+            //     top: 3rem
+            // }
         }
 
         img {
@@ -142,6 +145,7 @@
 
             @include media.mobile {
                 margin: 0;
+                margin-bottom: 2.4em;
                 margin-top: 2rem;
             }
 
