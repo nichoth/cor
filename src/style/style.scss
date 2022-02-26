@@ -180,6 +180,7 @@ body {
 
             @include media.mobile {
                 display: initial;
+                padding: 0;
             }
         }
     }
