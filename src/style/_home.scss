@@ -12,7 +12,8 @@
         text-align: center;
         
         > div {
-            padding: 3vw;
+            // padding: 3vw;
+            padding: 4rem 2rem;
             flex-basis: 50%;
         }
 
@@ -39,6 +40,9 @@
         // margin-right: 0;
         img {
             vertical-align: middle;
+            height: 100%;
+            width: 100%;
+            object-fit: cover;
         }
     }
 
@@ -53,8 +57,8 @@
         // margin-left: -5rem;
         min-height: 50vh;
         // padding: 2rem;
-        padding-top: 4rem;
-        padding-bottom: 4rem;
+        // padding-top: 4rem;
+        // padding-bottom: 4rem;
         // padding: v.$sectionPadding;
 
         .pointless-div {
