@@ -14,7 +14,9 @@ See [the figma file](https://www.figma.com/file/ru9jQNy1aqUQ30120coVim/Corey's-W
 $ npm run build
 ```
 
+## develop
 Start a local server that will automatically refresh on any file change
+
 ```
 $ npm start
 ```
