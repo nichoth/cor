@@ -90,7 +90,8 @@ body {
             border: none;
             width: 100%;
             position: relative;
-            left: -2rem;
+            // left: -2rem;
+            left: calc(-24px - 1rem);
         }
 
         a {
