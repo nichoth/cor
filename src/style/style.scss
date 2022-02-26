@@ -135,7 +135,8 @@ body {
         img {
             height: 50%;
             // width: clamp(80px, 11vw, 12vw);
-            width: clamp(135px, 18vw, 190px);
+            // width: clamp(135px, 18vw, 190px);
+            width: clamp(4vw, 18vw, 10rem);
             // width: clamp(135px, 11vw, 12vw)
         }
 
