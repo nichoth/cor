@@ -4,7 +4,7 @@
 
 A website
 
-This is a totally static website -- no client side or server-side JS
+This is a totally static website -- just HTML, no client side JS or server-side code
 
 See [the figma file](https://www.figma.com/file/ru9jQNy1aqUQ30120coVim/Corey's-Website?node-id=1014%3A6776)
 
