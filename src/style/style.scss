@@ -89,9 +89,10 @@ body {
         @include media.mobile {
             border: none;
             width: 100%;
-            position: relative;
+            margin-left: calc(-24px - 1rem);
+            // position: relative;
             // left: -2rem;
-            left: calc(-24px - 1rem);
+            // left: calc(-24px - 1rem);
         }
 
         a {
@@ -122,7 +123,7 @@ body {
         text-align: center;
         line-height: 1.5rem;
         height: 25vh;
-        width: 27vw;
+        // width: 27vw;
         display: flex;
         flex-direction: column;
         align-items: center;
