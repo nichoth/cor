@@ -41,13 +41,14 @@ body {
             color: white;
             padding: 0;
             padding: 1rem;
+            font-size: 3rem;
         }
     }
 
     .main-nav {
         @include media.mobile {
             &.open {
-                gap: 2rem;
+                gap: 1rem;
                 margin-top: 4rem;
                 // position: relative;
                 width: 100%;
@@ -116,7 +117,7 @@ body {
                     border-top: 1px solid;
                 }
                 margin-bottom: 0;
-                padding: 1rem;
+                padding: 2rem;
                 border-bottom: 1px solid;
             }
         }
@@ -139,7 +140,8 @@ body {
 
     @include media.mobile {
         display: none;
-        font-size: clamp(16px, 1.11vw, 20px);
+        // font-size: clamp(16px, 1.11vw, 20px);
+        font-size: 20px;
     }
 
 
