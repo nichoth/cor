@@ -168,7 +168,7 @@ body {
         height: 18vmin;
         display: flex;
         align-items: center;
-        justify-content: space-around;
+        justify-content: space-evenly;
         margin: 8px 0;
 
         @include media.mobile {
