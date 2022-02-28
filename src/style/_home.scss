@@ -85,10 +85,11 @@
 
         .daisy-box {
             width: 7vw;
-            // @include media.mobile {
-            //     position: relative;
-            //     top: 3rem
-            // }
+
+            @include media.mobile {
+                position: relative;
+                top: 4rem;
+            }
         }
 
         img {
@@ -235,6 +236,8 @@
 
             @include media.mobile {
                 border-right: none;
+                padding-top: 2rem;
+                padding-bottom: 2rem;
             }
 
             img {
