@@ -229,8 +229,9 @@
         }
 
         .column-pic {
-            padding-top: 4rem;
-            padding-bottom: 4rem;
+            padding: 4rem 2rem;
+            // padding-top: 4rem;
+            // padding-bottom: 4rem;
             text-align: center;
             border-right: 1px solid;
             justify-content: center;
@@ -241,18 +242,22 @@
 
             @include media.mobile {
                 border-right: none;
-                padding-top: 2rem;
-                padding-bottom: 2rem;
+                // padding-top: 2rem;
+                padding: 2rem 1vw;
+                // padding-bottom: 2rem;
+                // padding-left: 1vw;
+                // padding-right: 1vw;
             }
 
             img {
                 height: 100%;
-                width: 80%;
+                width: 100%;
+                // width: 80%;
                 object-fit: cover;
 
-                @include media.mobile {
-                    width: 100%;
-                }
+                // @include media.mobile {
+                //     width: 100%;
+                // }
             }
         }
 
