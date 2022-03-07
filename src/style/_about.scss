@@ -38,7 +38,7 @@ body {
                     .btn-link {
                         display: inline-block;
                         margin: 0 auto;
-                        margin-top: 2.4em;
+                        // margin-top: 2.4em;
                     }
                 }
 
@@ -52,6 +52,14 @@ body {
 
         .featured-image {
             margin: 0;
+            height: 100%;
+
+            img {
+                &:first-child {
+                    height: 100%;
+                    object-fit: contain;
+                }
+            }
 
             .doula-cert {
                 position: relative;
