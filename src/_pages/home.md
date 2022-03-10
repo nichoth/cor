@@ -60,7 +60,7 @@ section3: >-
   <br></br>
 
 
-  -Joan Halifax
+  <sp><sp><sp>-Joan Halifax
 section3-pic: /uploads/1_pinetree-1.png
 credentials: Professional Certificate, University of Vermont 2020
 ---
