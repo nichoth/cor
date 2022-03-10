@@ -50,13 +50,13 @@ consultation: >-
 
   Offering virtual end-of-life services to human beings of all ages, beliefs, and life expressions.
 section3: >-
-  ***To serve and support those transitioning beyond this life***
+  **To serve and support those transitioning beyond this life**
 
 
   “In being with dying, we arrive at a natural crucible of what it means to love and be loved. And we can ask ourselves this: Knowing that death is inevitable, what is most precious today?”
 
 
-  \-Joan Halifax
+  -Joan Halifax
 section3-pic: /uploads/1_pinetree-1.png
 credentials: Professional Certificate, University of Vermont 2020
 ---
