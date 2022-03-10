@@ -52,10 +52,12 @@ consultation: >-
 section3: >-
   To serve and support those transitioning beyond this life
 
+  <br></br>
 
   “In being with dying, we arrive at a natural crucible of what it means to love and be loved. And we can ask ourselves this: Knowing that death is inevitable, what is most precious today?”
 
 
+  <br></br>
 
 
   -Joan Halifax
