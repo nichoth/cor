@@ -18,7 +18,6 @@ intro: >
   An End-of-Life Doula is someone who offers holistic, unconditional support and
   guidance to individuals and their loved ones as they navigate the complex and
   often difficult terrain of death and grief.
-credentials: Professional Certificate, University of Vermont 2020
 services: >-
   An End-of-Life Doula is in service to those diagnosed as terminal, and works
   to ensure comfort to those near death. Extending to supporting the family
@@ -50,18 +49,15 @@ consultation: >-
 
 
   Offering virtual end-of-life services to human beings of all ages, beliefs, and life expressions.
-section3: Lorem ipsum dolor sit amet, consectetur adipiscing elit. Dictum urna
-  molestie amet scelerisque tempor sagittis urna sit. Pretium tincidunt risus
-  ligula mus tincidunt sapien. Non enim, quam libero enim gravida laoreet sit
-  justo. Ipsum congue cras elit dignissim pretium quam felis sodales amet. In
-  mi, sed tincidunt tristique ornare tempor. Donec sollicitudin nisl faucibus
-  pretium aliquam in nunc purus, ultricies. Dui dolor vel augue viverra viverra
-  blandit tincidunt. Dui pretium ornare consectetur aliquet diam sit. Nulla
-  ultrices urna cras non elit pellentesque purus sit. Aliquam nunc at eget sit
-  tellus proin phasellus. Purus consectetur faucibus diam netus. Malesuada
-  adipiscing integer dictum amet. Tempor ultrices cras nibh bibendum. Pretium
-  neque fermentum lacus, urna ut nisi, leo. Sed mattis in justo, ac, dolor urna.
-  Eu ornare consequat eu sed mauris, ultrices erat ut.
+section3: >-
+  ***To serve and support those transitioning beyond this life***
+
+
+  “In being with dying, we arrive at a natural crucible of what it means to love and be loved. And we can ask ourselves this: Knowing that death is inevitable, what is most precious today?”
+
+
+  \-Joan Halifax
 section3-pic: /uploads/1_pinetree-1.png
+credentials: Professional Certificate, University of Vermont 2020
 ---
 As an end-of-life doula, I provide emotional support and aspire to  empower others to grow through deep listening and personalized, non-judgemental care. I always practice to  align myself compassionately with your goals, wishes, and needs in mind.
