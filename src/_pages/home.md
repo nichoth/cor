@@ -56,9 +56,7 @@ section3: >-
 
   “In being with dying, we arrive at a natural crucible of what it means to love and be loved. And we can ask ourselves this: Knowing that death is inevitable, what is most precious today?”
 
-
   <br></br>
-
 
   <sp><sp><sp>-Joan Halifax
 section3-pic: /uploads/1_pinetree-1.png
