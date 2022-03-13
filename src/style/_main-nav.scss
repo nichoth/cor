@@ -136,7 +136,8 @@ body {
     font-family: v.$sansFont;
     font-weight: lighter;
     margin-bottom: 0;
-    font-size: clamp(14px, 1.11vw, 20px);
+    // font-size: clamp(14px, 1.11vw, 20px);
+    font-size: 14px;
 
     @include media.mobile {
         display: none;

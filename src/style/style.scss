@@ -37,6 +37,7 @@
 html {
     // do root em size
     -webkit-font-smoothing: antialiased;
+    // font-size: 14px;
     font-size: clamp(14px, 1.3vw, 20px);
 }
 
@@ -98,11 +99,12 @@ body {
         a {
             display: block;
             margin: 0 auto;
-            width: 23%;
+            // width: 23%;
             height: 100%;
             display: flex;
             align-items: center;
-            min-width: 8rem;
+            // min-width: 8rem;
+            width: 125px;
 
             @include media.mobile {
                 width: 40%;
