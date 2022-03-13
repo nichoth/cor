@@ -93,7 +93,8 @@
 
             @include media.mobile {
                 position: relative;
-                top: 4rem;
+                top: 6rem;
+                left: 0.5rem;
             }
         }
 
@@ -148,7 +149,8 @@
         .credentials {
             display: flex;
             margin: 2rem;
-            margin-top: 0;
+            // margin-top: 0;
+            margin-top: 2rem;
             text-align: center;
             justify-content: start;
             align-items: center;
