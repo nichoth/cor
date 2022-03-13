@@ -91,11 +91,11 @@
         .daisy-box {
             width: 7vw;
 
-            @include media.mobile {
-                position: relative;
-                top: 6rem;
-                left: 0.5rem;
-            }
+            // @include media.mobile {
+            //     position: relative;
+            //     top: 6rem;
+            //     left: 0.5rem;
+            // }
         }
 
         img {
