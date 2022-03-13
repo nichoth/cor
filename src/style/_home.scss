@@ -390,9 +390,6 @@
                 color: v.$white;
                 border-color: v.$white;
                 background-color: v.$black;
-                position: relative;
-                left: -1rem;
-                margin-left: 20%;
 
                 @include media.mobile {
                     margin: 0 auto;
