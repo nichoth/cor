@@ -2,6 +2,8 @@
 
 [![Netlify Status](https://api.netlify.com/api/v1/badges/e44c3b41-bf91-464a-acf2-425be7a9e6ef/deploy-status)](https://app.netlify.com/sites/corrr/deploys)
 
+https://corrr.netlify.app/
+
 A website
 
 This is a totally static website -- just HTML, no client side JS or server-side code
