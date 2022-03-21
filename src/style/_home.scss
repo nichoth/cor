@@ -270,6 +270,12 @@
             display: flex;
             justify-content: center;
             flex-direction: column;
+
+            > p {
+                max-width: 30rem;
+                min-width: 20rem;
+                width: 35vw;
+            }
         }
     }
 
