@@ -7,12 +7,20 @@
 
     .resources-content {
         font-size: 1rem;
-        max-width: 30rem;
+        max-width: 50rem;
         margin: 0 auto;
         margin-bottom: 6rem;
+
+        li {
+            margin-bottom: 2rem;
+        }
     }
 
     h1 {
-        @extend %centerH1;
+        // @extend %centerH1;
+        @extend %head;
+        text-transform: uppercase;
+        font-size: clamp(0.8rem, 1.11vw, 1.5rem);
+        font-weight: normal;
     }
 }

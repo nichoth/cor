@@ -35,10 +35,10 @@ function buildConsultation () {
                 },
 
                 '#content': {
-                    _appendHtml: `<div class="resources-content">
-                        <h1>Resources</h1>
-                        ${content}
-                    </div>
+                    _appendHtml: `<h1>Guides To Burials In New Mexico</h1>
+                        <div class="resources-content">
+                            ${content}
+                        </div>
 
                     <div class="foot">
                         <ul class="main-nav">
