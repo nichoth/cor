@@ -52,17 +52,16 @@ body {
 
         .featured-image {
             margin: 0;
-            height: 100%;
 
             img {
                 &:first-child {
-                    height: 100%;
                     object-fit: contain;
                 }
             }
 
             .doula-cert {
                 position: relative;
+                display: inline-block;
                 bottom: 6rem;
                 left: 12.5vw;
 
