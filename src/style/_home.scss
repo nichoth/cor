@@ -275,6 +275,11 @@
                 max-width: 30rem;
                 min-width: 20rem;
                 width: 35vw;
+
+                @include media.mobile {
+                    min-width: 0;
+                    width: initial;
+                }
             }
         }
     }
